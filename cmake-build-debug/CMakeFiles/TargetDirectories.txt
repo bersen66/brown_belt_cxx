@@ -1,0 +1,10 @@
+/home/ortur/CLionProjects/brown_belt/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/ortur/CLionProjects/brown_belt/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build/CMakeFiles/rebuild_cache.dir
+/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build/CMakeFiles/edit_cache.dir
+/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build/task1/CMakeFiles/rebuild_cache.dir
+/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build/task1/CMakeFiles/edit_cache.dir
+/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build/task1/CMakeFiles/WEEK_1_TASK_1.dir
+/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build/task2/CMakeFiles/rebuild_cache.dir
+/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build/task2/CMakeFiles/edit_cache.dir
+/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build/task2/CMakeFiles/WEEK_1_TASK_2.dir
