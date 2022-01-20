@@ -5,3 +5,4 @@ project(WEEK_1)
 set(CMAKE_CXX_STANDARD 17)
 
 add_subdirectory(hash_table)
+add_subdirectory(set_iterator)

@@ -5,3 +5,6 @@
 /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build/hash_table/CMakeFiles/rebuild_cache.dir
 /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build/hash_table/CMakeFiles/edit_cache.dir
 /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build/hash_table/CMakeFiles/HASH_TABLE.dir
+/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build/set_iterator/CMakeFiles/edit_cache.dir
+/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build/set_iterator/CMakeFiles/rebuild_cache.dir
+/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build/set_iterator/CMakeFiles/SET_ITERATOR.dir
