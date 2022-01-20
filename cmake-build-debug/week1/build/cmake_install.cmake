@@ -52,3 +52,8 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build/set_iterator/cmake_install.cmake")
 endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build/hash_point/cmake_install.cmake")
+endif()
+
