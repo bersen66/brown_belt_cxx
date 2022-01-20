@@ -216,6 +216,15 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
+HASH_TABLE_BINARY_DIR:STATIC=/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build/hash_table
+
+//Value Computed by CMake
+HASH_TABLE_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+HASH_TABLE_SOURCE_DIR:STATIC=/home/ortur/CLionProjects/brown_belt/week1/hash_table
+
+//Value Computed by CMake
 LIBS_FROM_LAST_COURSES_BINARY_DIR:STATIC=/home/ortur/CLionProjects/brown_belt/cmake-build-debug/libs/build
 
 //Value Computed by CMake
@@ -223,6 +232,15 @@ LIBS_FROM_LAST_COURSES_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
 LIBS_FROM_LAST_COURSES_SOURCE_DIR:STATIC=/home/ortur/CLionProjects/brown_belt/libs
+
+//Value Computed by CMake
+PRIORITY_COLLECTION_BINARY_DIR:STATIC=/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build/priority_collection
+
+//Value Computed by CMake
+PRIORITY_COLLECTION_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+PRIORITY_COLLECTION_SOURCE_DIR:STATIC=/home/ortur/CLionProjects/brown_belt/week1/priority_collection
 
 //Value Computed by CMake
 PROFILER_BINARY_DIR:STATIC=/home/ortur/CLionProjects/brown_belt/cmake-build-debug/libs/build/profiler
@@ -379,7 +397,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

@@ -4,5 +4,4 @@ project(WEEK_1)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_subdirectory(task1)
-add_subdirectory(task2)
+add_subdirectory(hash_table)

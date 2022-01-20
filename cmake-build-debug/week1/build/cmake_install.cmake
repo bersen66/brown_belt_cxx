@@ -44,11 +44,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build/task1/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build/task2/cmake_install.cmake")
+  include("/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build/hash_table/cmake_install.cmake")
 endif()
 
