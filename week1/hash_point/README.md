@@ -6,13 +6,13 @@
 using CoordType = int;
 
 struct Point3D {
-CoordType x;
-CoordType y;
-CoordType z;
+    CoordType x;
+    CoordType y;
+    CoordType z;
 
-bool operator==(const Point3D& other) const {
-// реализуйте оператор
-}
+    bool operator==(const Point3D& other) const {
+    // реализуйте оператор
+    }
 };
 
 struct Hasher {
