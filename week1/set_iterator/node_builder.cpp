@@ -49,8 +49,6 @@ Node* Next(Node* me) {
             result = result->left;
         }
         return result;
-
     }
-
 
 }

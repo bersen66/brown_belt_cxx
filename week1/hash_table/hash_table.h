@@ -9,7 +9,6 @@
 #include <vector>
 #include <algorithm>
 
-using namespace std;
 
 template<typename Type, typename Hasher>
 class HashSet {
