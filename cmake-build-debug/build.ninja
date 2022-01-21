@@ -279,7 +279,69 @@ build week1/build/hash_point/HASH_POINT: CXX_EXECUTABLE_LINKER__HASH_POINT_Debug
   TARGET_PDB = HASH_POINT.dbg
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/ortur/CLionProjects/brown_belt/week1/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build week1/build/hash_person/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build/hash_person && /snap/clion/178/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt -B/home/ortur/CLionProjects/brown_belt/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build week1/build/hash_person/rebuild_cache: phony week1/build/hash_person/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build week1/build/hash_person/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build/hash_person && /snap/clion/178/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build week1/build/hash_person/edit_cache: phony week1/build/hash_person/CMakeFiles/edit_cache.util
+
+# =============================================================================
+# Object build statements for EXECUTABLE target HASH_PERSON
+
+
+#############################################
+# Order-only phony target for HASH_PERSON
+
+build cmake_object_order_depends_target_HASH_PERSON: phony || week1/build/hash_person/CMakeFiles/HASH_PERSON.dir
+
+build week1/build/hash_person/CMakeFiles/HASH_PERSON.dir/main.cpp.o: CXX_COMPILER__HASH_PERSON_Debug /home/ortur/CLionProjects/brown_belt/week1/hash_person/main.cpp || cmake_object_order_depends_target_HASH_PERSON
+  DEP_FILE = week1/build/hash_person/CMakeFiles/HASH_PERSON.dir/main.cpp.o.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I/home/ortur/CLionProjects/brown_belt/libs
+  OBJECT_DIR = week1/build/hash_person/CMakeFiles/HASH_PERSON.dir
+  OBJECT_FILE_DIR = week1/build/hash_person/CMakeFiles/HASH_PERSON.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target HASH_PERSON
+
+
+#############################################
+# Link the executable week1/build/hash_person/HASH_PERSON
+
+build week1/build/hash_person/HASH_PERSON: CXX_EXECUTABLE_LINKER__HASH_PERSON_Debug week1/build/hash_person/CMakeFiles/HASH_PERSON.dir/main.cpp.o
+  FLAGS = -g
+  OBJECT_DIR = week1/build/hash_person/CMakeFiles/HASH_PERSON.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = week1/build/hash_person/HASH_PERSON
+  TARGET_PDB = HASH_PERSON.dbg
+
+# =============================================================================
 # Target aliases.
+
+build HASH_PERSON: phony week1/build/hash_person/HASH_PERSON
 
 build HASH_POINT: phony week1/build/hash_point/HASH_POINT
 
@@ -302,7 +364,14 @@ build all: phony week1/build/all
 #############################################
 # Folder: /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build
 
-build week1/build/all: phony week1/build/hash_table/all week1/build/set_iterator/all week1/build/hash_point/all
+build week1/build/all: phony week1/build/hash_table/all week1/build/set_iterator/all week1/build/hash_point/all week1/build/hash_person/all
+
+# =============================================================================
+
+#############################################
+# Folder: /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build/hash_person
+
+build week1/build/hash_person/all: phony week1/build/hash_person/HASH_PERSON
 
 # =============================================================================
 
@@ -332,14 +401,14 @@ build week1/build/set_iterator/all: phony week1/build/set_iterator/SET_ITERATOR
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../week1/CMakeLists.txt ../week1/hash_point/CMakeLists.txt ../week1/hash_table/CMakeLists.txt ../week1/set_iterator/CMakeLists.txt /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCInformation.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCXXInformation.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/CMakeGenericSystem.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/CMakeInitializeConfigs.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/CMakeLanguageInformation.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-C.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-CXX.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-C.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.21.1/CMakeCCompiler.cmake CMakeFiles/3.21.1/CMakeCXXCompiler.cmake CMakeFiles/3.21.1/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../week1/CMakeLists.txt ../week1/hash_person/CMakeLists.txt ../week1/hash_point/CMakeLists.txt ../week1/hash_table/CMakeLists.txt ../week1/set_iterator/CMakeLists.txt /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCInformation.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCXXInformation.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/CMakeGenericSystem.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/CMakeInitializeConfigs.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/CMakeLanguageInformation.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-C.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-CXX.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-C.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.21.1/CMakeCCompiler.cmake CMakeFiles/3.21.1/CMakeCXXCompiler.cmake CMakeFiles/3.21.1/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt ../week1/CMakeLists.txt ../week1/hash_point/CMakeLists.txt ../week1/hash_table/CMakeLists.txt ../week1/set_iterator/CMakeLists.txt /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCInformation.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCXXInformation.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/CMakeGenericSystem.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/CMakeInitializeConfigs.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/CMakeLanguageInformation.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-C.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-CXX.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-C.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.21.1/CMakeCCompiler.cmake CMakeFiles/3.21.1/CMakeCXXCompiler.cmake CMakeFiles/3.21.1/CMakeSystem.cmake: phony
+build ../CMakeLists.txt ../week1/CMakeLists.txt ../week1/hash_person/CMakeLists.txt ../week1/hash_point/CMakeLists.txt ../week1/hash_table/CMakeLists.txt ../week1/set_iterator/CMakeLists.txt /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCInformation.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCXXInformation.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/CMakeGenericSystem.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/CMakeInitializeConfigs.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/CMakeLanguageInformation.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-C.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-CXX.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-C.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux.cmake /snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.21.1/CMakeCCompiler.cmake CMakeFiles/3.21.1/CMakeCXXCompiler.cmake CMakeFiles/3.21.1/CMakeSystem.cmake: phony
 
 
 #############################################
