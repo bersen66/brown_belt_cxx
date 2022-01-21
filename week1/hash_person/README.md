@@ -73,8 +73,8 @@ struct AddressHasher {
         
         // C x^3 + A * x + B
         return base * base * base * C +
-        base * A +
-        B;
+               base * A +
+               B;
     }
     
 };
@@ -97,11 +97,11 @@ struct PersonHasher {
         size_t C = std::hash<int>{}(person.height);
         size_t D = std::hash<double>{}(person.weight);
         
-        // C x^3 + A * x + B
+        // A x^4 + B x^3 + C x + D
         return base * base * base * base * A +
-        base * base * base * B +
-        base * C +
-        D;
+               base * base * base * B +
+               base * C +
+               D;
     }
 };
 
