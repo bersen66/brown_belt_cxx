@@ -14,3 +14,6 @@
 /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build/hash_person/CMakeFiles/rebuild_cache.dir
 /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build/hash_person/CMakeFiles/edit_cache.dir
 /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build/hash_person/CMakeFiles/HASH_PERSON.dir
+/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build/secondary_index/CMakeFiles/rebuild_cache.dir
+/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build/secondary_index/CMakeFiles/edit_cache.dir
+/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build/secondary_index/CMakeFiles/DATABASE.dir
