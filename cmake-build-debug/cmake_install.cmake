@@ -47,6 +47,21 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build/cmake_install.cmake")
 endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week2/build/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week3/build/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week4/build/cmake_install.cmake")
+endif()
+
 if(CMAKE_INSTALL_COMPONENT)
   set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
 else()
