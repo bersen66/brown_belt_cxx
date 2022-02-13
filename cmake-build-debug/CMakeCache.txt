@@ -378,6 +378,15 @@ SYNC_IS_TOP_LEVEL:STATIC=OFF
 SYNC_SOURCE_DIR:STATIC=/home/ortur/CLionProjects/brown_belt/week3/synchronized
 
 //Value Computed by CMake
+TEXTURES_BINARY_DIR:STATIC=/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week4/build/textures
+
+//Value Computed by CMake
+TEXTURES_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+TEXTURES_SOURCE_DIR:STATIC=/home/ortur/CLionProjects/brown_belt/week4/textures
+
+//Value Computed by CMake
 TREE_BINARY_DIR:STATIC=/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week3/build/tree
 
 //Value Computed by CMake
@@ -613,7 +622,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=26
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=27
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

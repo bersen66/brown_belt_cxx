@@ -71,3 +71,6 @@
 /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week3/build/tree/CMakeFiles/TREE.dir
 /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week4/build/CMakeFiles/rebuild_cache.dir
 /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week4/build/CMakeFiles/edit_cache.dir
+/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week4/build/textures/CMakeFiles/rebuild_cache.dir
+/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week4/build/textures/CMakeFiles/edit_cache.dir
+/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week4/build/textures/CMakeFiles/TEXTURES.dir
