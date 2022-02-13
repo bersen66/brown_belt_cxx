@@ -396,6 +396,15 @@ TREE_IS_TOP_LEVEL:STATIC=OFF
 TREE_SOURCE_DIR:STATIC=/home/ortur/CLionProjects/brown_belt/week3/tree
 
 //Value Computed by CMake
+UNIQ_PTR_BINARY_DIR:STATIC=/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week4/build/unique_ptr
+
+//Value Computed by CMake
+UNIQ_PTR_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+UNIQ_PTR_SOURCE_DIR:STATIC=/home/ortur/CLionProjects/brown_belt/week4/unique_ptr
+
+//Value Computed by CMake
 WEEK2_BINARY_DIR:STATIC=/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week2/build
 
 //Value Computed by CMake
@@ -622,7 +631,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=27
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=28
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

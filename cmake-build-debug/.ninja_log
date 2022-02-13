@@ -16,7 +16,7 @@
 1	1041	1643272712524803687	week2/build/json_loader/CMakeFiles/JSON_LOADER.dir/main.cpp.o	5ba057a23b75cba4
 2	1354	1643448118841462285	week2/build/ini_loader/CMakeFiles/INI_LOADER.dir/ini.cpp.o	132f36bac8e8ba8b
 2	608	1643540993061544691	week2/build/game_collisions/CMakeFiles/GAME_COLLISIONS.dir/geo2d.cpp.o	e228625b38c45d6a
-0	66	1644687702792340526	build.ninja	6685fc0f9802f11e
+0	66	1644749725169829185	build.ninja	6685fc0f9802f11e
 5678	5894	1644509543402541889	week3/build/concurent_map/concurent_map	b6174330310b97a4
 0	1144	1643271902593036346	week1/build/secondary_index/CMakeFiles/DATABASE.dir/main.cpp.o	30bdd632977f823b
 0	1336	1644257495143252973	week3/build/demographical_indicators/CMakeFiles/dem_ind.dir/main.cpp.o	2c7cc6aac9f74c97
@@ -60,3 +60,13 @@
 1406	1565	1643449454561125672	week2/build/code_refactoring/CODE_REFACTORING	49b612d0df748d45
 1	1148	1643271902597035816	week1/build/secondary_index/CMakeFiles/DATABASE.dir/database.cpp.o	1483482d978c1109
 0	364	1642609041672733538	week1/build/task2/CMakeFiles/WEEK_1_TASK_2.dir/main.cpp.o	2198657067237c5b
+0	650	1644750967790174535	week4/build/unique_ptr/CMakeFiles/UNIQ_PTR.dir/main.cpp.o	b5072a7605bbc268
+650	749	1644750967886175597	week4/build/unique_ptr/UNIQ_PTR	dd6a0bb70a75592
+2	802	1644751097375178715	week4/build/unique_ptr/CMakeFiles/UNIQ_PTR.dir/main.cpp.o	b5072a7605bbc268
+802	921	1644751097491179261	week4/build/unique_ptr/UNIQ_PTR	dd6a0bb70a75592
+2	643	1644751214959458251	week4/build/unique_ptr/CMakeFiles/UNIQ_PTR.dir/main.cpp.o	b5072a7605bbc268
+643	736	1644751215051458270	week4/build/unique_ptr/UNIQ_PTR	dd6a0bb70a75592
+0	720	1644751457798645250	week4/build/unique_ptr/CMakeFiles/UNIQ_PTR.dir/main.cpp.o	b5072a7605bbc268
+720	832	1644751457910644535	week4/build/unique_ptr/UNIQ_PTR	dd6a0bb70a75592
+0	939	1644752010344787264	week4/build/unique_ptr/CMakeFiles/UNIQ_PTR.dir/main.cpp.o	b5072a7605bbc268
+939	1093	1644752010500785149	week4/build/unique_ptr/UNIQ_PTR	dd6a0bb70a75592
