@@ -195,7 +195,7 @@ void RangeByTimestamp(int low, int high, Callback callback) const {
 template<typename Callback>
 void RangeByKarma(int low, int high, Callback callback) const {
     if (low > high) { return; }
-            IterateThrough(
+    IterateThrough(
             karma_index.lower_bound(low),
             karma_index.upper_bound(high),
             callback
