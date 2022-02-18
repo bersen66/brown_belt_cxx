@@ -23,6 +23,15 @@ BROWN_BELT_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 BROWN_BELT_SOURCE_DIR:STATIC=/home/ortur/CLionProjects/brown_belt
 
+//Value Computed by CMake
+CACHE_BINARY_DIR:STATIC=/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week4/build/cache
+
+//Value Computed by CMake
+CACHE_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+CACHE_SOURCE_DIR:STATIC=/home/ortur/CLionProjects/brown_belt/week4/cache
+
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 
@@ -243,6 +252,15 @@ DEM_IND_IS_TOP_LEVEL:STATIC=OFF
 DEM_IND_SOURCE_DIR:STATIC=/home/ortur/CLionProjects/brown_belt/week3/demographical_indicators
 
 //Value Computed by CMake
+DOMAINS_BINARY_DIR:STATIC=/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week5/build/banned_domains
+
+//Value Computed by CMake
+DOMAINS_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+DOMAINS_SOURCE_DIR:STATIC=/home/ortur/CLionProjects/brown_belt/week5/banned_domains
+
+//Value Computed by CMake
 GAME_COLLISIONS_BINARY_DIR:STATIC=/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week2/build/game_collisions
 
 //Value Computed by CMake
@@ -342,6 +360,15 @@ POLYNOMIAL_IS_TOP_LEVEL:STATIC=OFF
 POLYNOMIAL_SOURCE_DIR:STATIC=/home/ortur/CLionProjects/brown_belt/week3/polynomial
 
 //Value Computed by CMake
+RAII_BOOKING_BINARY_DIR:STATIC=/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week4/build/raii_booking
+
+//Value Computed by CMake
+RAII_BOOKING_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+RAII_BOOKING_SOURCE_DIR:STATIC=/home/ortur/CLionProjects/brown_belt/week4/raii_booking
+
+//Value Computed by CMake
 SET_ITERATOR_BINARY_DIR:STATIC=/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build/set_iterator
 
 //Value Computed by CMake
@@ -412,6 +439,15 @@ WEEK2_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
 WEEK2_SOURCE_DIR:STATIC=/home/ortur/CLionProjects/brown_belt/week2
+
+//Value Computed by CMake
+WEEK5_BINARY_DIR:STATIC=/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week5/build
+
+//Value Computed by CMake
+WEEK5_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+WEEK5_SOURCE_DIR:STATIC=/home/ortur/CLionProjects/brown_belt/week5
 
 //Value Computed by CMake
 WEEK_1_BINARY_DIR:STATIC=/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build
@@ -631,7 +667,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=28
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=32
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

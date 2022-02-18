@@ -77,3 +77,14 @@
 /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week4/build/unique_ptr/CMakeFiles/rebuild_cache.dir
 /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week4/build/unique_ptr/CMakeFiles/edit_cache.dir
 /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week4/build/unique_ptr/CMakeFiles/UNIQ_PTR.dir
+/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week4/build/cache/CMakeFiles/rebuild_cache.dir
+/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week4/build/cache/CMakeFiles/edit_cache.dir
+/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week4/build/cache/CMakeFiles/CACHE.dir
+/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week4/build/raii_booking/CMakeFiles/rebuild_cache.dir
+/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week4/build/raii_booking/CMakeFiles/edit_cache.dir
+/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week4/build/raii_booking/CMakeFiles/RAII_BOOKING.dir
+/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week5/build/CMakeFiles/rebuild_cache.dir
+/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week5/build/CMakeFiles/edit_cache.dir
+/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week5/build/banned_domains/CMakeFiles/edit_cache.dir
+/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week5/build/banned_domains/CMakeFiles/rebuild_cache.dir
+/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week5/build/banned_domains/CMakeFiles/DOMAINS.dir

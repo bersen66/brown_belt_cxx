@@ -10,4 +10,5 @@ add_subdirectory(week1 week1/build)
 add_subdirectory(week2 week2/build)
 add_subdirectory(week3 week3/build)
 add_subdirectory(week4 week4/build)
+add_subdirectory(week5 week5/build)
 

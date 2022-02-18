@@ -32,6 +32,3 @@
 *.app
 
 .idea
-
-#week2/json_loader
-#week2/xml_loader
