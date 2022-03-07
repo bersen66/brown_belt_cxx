@@ -39,13 +39,13 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /home/ortur/CLionProjects/brown_belt/cmake-build-debug/
+cmake_ninja_workdir = /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/
 
 #############################################
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt -B/home/ortur/CLionProjects/brown_belt/cmake-build-debug
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt_cxx -B/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -57,7 +57,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -65,7 +65,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/ortur/CLionProjects/brown_belt/CMakeLists.txt
+# /home/ortur/CLionProjects/brown_belt_cxx/CMakeLists.txt
 # =============================================================================
 
 
@@ -73,7 +73,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build week1/build/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt -B/home/ortur/CLionProjects/brown_belt/cmake-build-debug
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week1/build && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt_cxx -B/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -85,7 +85,7 @@ build week1/build/rebuild_cache: phony week1/build/CMakeFiles/rebuild_cache.util
 # Utility command for edit_cache
 
 build week1/build/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week1/build && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -93,7 +93,7 @@ build week1/build/edit_cache: phony week1/build/CMakeFiles/edit_cache.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/ortur/CLionProjects/brown_belt/week1/CMakeLists.txt
+# /home/ortur/CLionProjects/brown_belt_cxx/week1/CMakeLists.txt
 # =============================================================================
 
 
@@ -101,7 +101,7 @@ build week1/build/edit_cache: phony week1/build/CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build week1/build/hash_table/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build/hash_table && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt -B/home/ortur/CLionProjects/brown_belt/cmake-build-debug
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week1/build/hash_table && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt_cxx -B/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -113,7 +113,7 @@ build week1/build/hash_table/rebuild_cache: phony week1/build/hash_table/CMakeFi
 # Utility command for edit_cache
 
 build week1/build/hash_table/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build/hash_table && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week1/build/hash_table && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -128,10 +128,10 @@ build week1/build/hash_table/edit_cache: phony week1/build/hash_table/CMakeFiles
 
 build cmake_object_order_depends_target_HASH_TABLE: phony || week1/build/hash_table/CMakeFiles/HASH_TABLE.dir
 
-build week1/build/hash_table/CMakeFiles/HASH_TABLE.dir/main.cpp.o: CXX_COMPILER__HASH_TABLE_Debug /home/ortur/CLionProjects/brown_belt/week1/hash_table/main.cpp || cmake_object_order_depends_target_HASH_TABLE
+build week1/build/hash_table/CMakeFiles/HASH_TABLE.dir/main.cpp.o: CXX_COMPILER__HASH_TABLE_Debug /home/ortur/CLionProjects/brown_belt_cxx/week1/hash_table/main.cpp || cmake_object_order_depends_target_HASH_TABLE
   DEP_FILE = week1/build/hash_table/CMakeFiles/HASH_TABLE.dir/main.cpp.o.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I/home/ortur/CLionProjects/brown_belt/libs
+  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs
   OBJECT_DIR = week1/build/hash_table/CMakeFiles/HASH_TABLE.dir
   OBJECT_FILE_DIR = week1/build/hash_table/CMakeFiles/HASH_TABLE.dir
 
@@ -153,7 +153,7 @@ build week1/build/hash_table/HASH_TABLE: CXX_EXECUTABLE_LINKER__HASH_TABLE_Debug
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/ortur/CLionProjects/brown_belt/week1/CMakeLists.txt
+# /home/ortur/CLionProjects/brown_belt_cxx/week1/CMakeLists.txt
 # =============================================================================
 
 
@@ -161,7 +161,7 @@ build week1/build/hash_table/HASH_TABLE: CXX_EXECUTABLE_LINKER__HASH_TABLE_Debug
 # Utility command for edit_cache
 
 build week1/build/set_iterator/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build/set_iterator && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week1/build/set_iterator && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -172,7 +172,7 @@ build week1/build/set_iterator/edit_cache: phony week1/build/set_iterator/CMakeF
 # Utility command for rebuild_cache
 
 build week1/build/set_iterator/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build/set_iterator && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt -B/home/ortur/CLionProjects/brown_belt/cmake-build-debug
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week1/build/set_iterator && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt_cxx -B/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -188,17 +188,17 @@ build week1/build/set_iterator/rebuild_cache: phony week1/build/set_iterator/CMa
 
 build cmake_object_order_depends_target_SET_ITERATOR: phony || week1/build/set_iterator/CMakeFiles/SET_ITERATOR.dir
 
-build week1/build/set_iterator/CMakeFiles/SET_ITERATOR.dir/main.cpp.o: CXX_COMPILER__SET_ITERATOR_Debug /home/ortur/CLionProjects/brown_belt/week1/set_iterator/main.cpp || cmake_object_order_depends_target_SET_ITERATOR
+build week1/build/set_iterator/CMakeFiles/SET_ITERATOR.dir/main.cpp.o: CXX_COMPILER__SET_ITERATOR_Debug /home/ortur/CLionProjects/brown_belt_cxx/week1/set_iterator/main.cpp || cmake_object_order_depends_target_SET_ITERATOR
   DEP_FILE = week1/build/set_iterator/CMakeFiles/SET_ITERATOR.dir/main.cpp.o.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I/home/ortur/CLionProjects/brown_belt/libs
+  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs
   OBJECT_DIR = week1/build/set_iterator/CMakeFiles/SET_ITERATOR.dir
   OBJECT_FILE_DIR = week1/build/set_iterator/CMakeFiles/SET_ITERATOR.dir
 
-build week1/build/set_iterator/CMakeFiles/SET_ITERATOR.dir/node_builder.cpp.o: CXX_COMPILER__SET_ITERATOR_Debug /home/ortur/CLionProjects/brown_belt/week1/set_iterator/node_builder.cpp || cmake_object_order_depends_target_SET_ITERATOR
+build week1/build/set_iterator/CMakeFiles/SET_ITERATOR.dir/node_builder.cpp.o: CXX_COMPILER__SET_ITERATOR_Debug /home/ortur/CLionProjects/brown_belt_cxx/week1/set_iterator/node_builder.cpp || cmake_object_order_depends_target_SET_ITERATOR
   DEP_FILE = week1/build/set_iterator/CMakeFiles/SET_ITERATOR.dir/node_builder.cpp.o.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I/home/ortur/CLionProjects/brown_belt/libs
+  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs
   OBJECT_DIR = week1/build/set_iterator/CMakeFiles/SET_ITERATOR.dir
   OBJECT_FILE_DIR = week1/build/set_iterator/CMakeFiles/SET_ITERATOR.dir
 
@@ -220,7 +220,7 @@ build week1/build/set_iterator/SET_ITERATOR: CXX_EXECUTABLE_LINKER__SET_ITERATOR
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/ortur/CLionProjects/brown_belt/week1/CMakeLists.txt
+# /home/ortur/CLionProjects/brown_belt_cxx/week1/CMakeLists.txt
 # =============================================================================
 
 
@@ -228,7 +228,7 @@ build week1/build/set_iterator/SET_ITERATOR: CXX_EXECUTABLE_LINKER__SET_ITERATOR
 # Utility command for rebuild_cache
 
 build week1/build/hash_point/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build/hash_point && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt -B/home/ortur/CLionProjects/brown_belt/cmake-build-debug
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week1/build/hash_point && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt_cxx -B/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -240,7 +240,7 @@ build week1/build/hash_point/rebuild_cache: phony week1/build/hash_point/CMakeFi
 # Utility command for edit_cache
 
 build week1/build/hash_point/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build/hash_point && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week1/build/hash_point && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -255,10 +255,10 @@ build week1/build/hash_point/edit_cache: phony week1/build/hash_point/CMakeFiles
 
 build cmake_object_order_depends_target_HASH_POINT: phony || week1/build/hash_point/CMakeFiles/HASH_POINT.dir
 
-build week1/build/hash_point/CMakeFiles/HASH_POINT.dir/main.cpp.o: CXX_COMPILER__HASH_POINT_Debug /home/ortur/CLionProjects/brown_belt/week1/hash_point/main.cpp || cmake_object_order_depends_target_HASH_POINT
+build week1/build/hash_point/CMakeFiles/HASH_POINT.dir/main.cpp.o: CXX_COMPILER__HASH_POINT_Debug /home/ortur/CLionProjects/brown_belt_cxx/week1/hash_point/main.cpp || cmake_object_order_depends_target_HASH_POINT
   DEP_FILE = week1/build/hash_point/CMakeFiles/HASH_POINT.dir/main.cpp.o.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I/home/ortur/CLionProjects/brown_belt/libs
+  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs
   OBJECT_DIR = week1/build/hash_point/CMakeFiles/HASH_POINT.dir
   OBJECT_FILE_DIR = week1/build/hash_point/CMakeFiles/HASH_POINT.dir
 
@@ -280,7 +280,7 @@ build week1/build/hash_point/HASH_POINT: CXX_EXECUTABLE_LINKER__HASH_POINT_Debug
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/ortur/CLionProjects/brown_belt/week1/CMakeLists.txt
+# /home/ortur/CLionProjects/brown_belt_cxx/week1/CMakeLists.txt
 # =============================================================================
 
 
@@ -288,7 +288,7 @@ build week1/build/hash_point/HASH_POINT: CXX_EXECUTABLE_LINKER__HASH_POINT_Debug
 # Utility command for rebuild_cache
 
 build week1/build/hash_person/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build/hash_person && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt -B/home/ortur/CLionProjects/brown_belt/cmake-build-debug
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week1/build/hash_person && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt_cxx -B/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -300,7 +300,7 @@ build week1/build/hash_person/rebuild_cache: phony week1/build/hash_person/CMake
 # Utility command for edit_cache
 
 build week1/build/hash_person/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build/hash_person && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week1/build/hash_person && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -315,10 +315,10 @@ build week1/build/hash_person/edit_cache: phony week1/build/hash_person/CMakeFil
 
 build cmake_object_order_depends_target_HASH_PERSON: phony || week1/build/hash_person/CMakeFiles/HASH_PERSON.dir
 
-build week1/build/hash_person/CMakeFiles/HASH_PERSON.dir/main.cpp.o: CXX_COMPILER__HASH_PERSON_Debug /home/ortur/CLionProjects/brown_belt/week1/hash_person/main.cpp || cmake_object_order_depends_target_HASH_PERSON
+build week1/build/hash_person/CMakeFiles/HASH_PERSON.dir/main.cpp.o: CXX_COMPILER__HASH_PERSON_Debug /home/ortur/CLionProjects/brown_belt_cxx/week1/hash_person/main.cpp || cmake_object_order_depends_target_HASH_PERSON
   DEP_FILE = week1/build/hash_person/CMakeFiles/HASH_PERSON.dir/main.cpp.o.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I/home/ortur/CLionProjects/brown_belt/libs
+  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs
   OBJECT_DIR = week1/build/hash_person/CMakeFiles/HASH_PERSON.dir
   OBJECT_FILE_DIR = week1/build/hash_person/CMakeFiles/HASH_PERSON.dir
 
@@ -340,7 +340,7 @@ build week1/build/hash_person/HASH_PERSON: CXX_EXECUTABLE_LINKER__HASH_PERSON_De
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/ortur/CLionProjects/brown_belt/week1/CMakeLists.txt
+# /home/ortur/CLionProjects/brown_belt_cxx/week1/CMakeLists.txt
 # =============================================================================
 
 
@@ -348,7 +348,7 @@ build week1/build/hash_person/HASH_PERSON: CXX_EXECUTABLE_LINKER__HASH_PERSON_De
 # Utility command for rebuild_cache
 
 build week1/build/secondary_index/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build/secondary_index && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt -B/home/ortur/CLionProjects/brown_belt/cmake-build-debug
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week1/build/secondary_index && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt_cxx -B/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -360,7 +360,7 @@ build week1/build/secondary_index/rebuild_cache: phony week1/build/secondary_ind
 # Utility command for edit_cache
 
 build week1/build/secondary_index/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build/secondary_index && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week1/build/secondary_index && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -375,17 +375,17 @@ build week1/build/secondary_index/edit_cache: phony week1/build/secondary_index/
 
 build cmake_object_order_depends_target_DATABASE: phony || week1/build/secondary_index/CMakeFiles/DATABASE.dir
 
-build week1/build/secondary_index/CMakeFiles/DATABASE.dir/main.cpp.o: CXX_COMPILER__DATABASE_Debug /home/ortur/CLionProjects/brown_belt/week1/secondary_index/main.cpp || cmake_object_order_depends_target_DATABASE
+build week1/build/secondary_index/CMakeFiles/DATABASE.dir/main.cpp.o: CXX_COMPILER__DATABASE_Debug /home/ortur/CLionProjects/brown_belt_cxx/week1/secondary_index/main.cpp || cmake_object_order_depends_target_DATABASE
   DEP_FILE = week1/build/secondary_index/CMakeFiles/DATABASE.dir/main.cpp.o.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I/home/ortur/CLionProjects/brown_belt/libs
+  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs
   OBJECT_DIR = week1/build/secondary_index/CMakeFiles/DATABASE.dir
   OBJECT_FILE_DIR = week1/build/secondary_index/CMakeFiles/DATABASE.dir
 
-build week1/build/secondary_index/CMakeFiles/DATABASE.dir/database.cpp.o: CXX_COMPILER__DATABASE_Debug /home/ortur/CLionProjects/brown_belt/week1/secondary_index/database.cpp || cmake_object_order_depends_target_DATABASE
+build week1/build/secondary_index/CMakeFiles/DATABASE.dir/database.cpp.o: CXX_COMPILER__DATABASE_Debug /home/ortur/CLionProjects/brown_belt_cxx/week1/secondary_index/database.cpp || cmake_object_order_depends_target_DATABASE
   DEP_FILE = week1/build/secondary_index/CMakeFiles/DATABASE.dir/database.cpp.o.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I/home/ortur/CLionProjects/brown_belt/libs
+  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs
   OBJECT_DIR = week1/build/secondary_index/CMakeFiles/DATABASE.dir
   OBJECT_FILE_DIR = week1/build/secondary_index/CMakeFiles/DATABASE.dir
 
@@ -407,7 +407,7 @@ build week1/build/secondary_index/DATABASE: CXX_EXECUTABLE_LINKER__DATABASE_Debu
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/ortur/CLionProjects/brown_belt/CMakeLists.txt
+# /home/ortur/CLionProjects/brown_belt_cxx/CMakeLists.txt
 # =============================================================================
 
 
@@ -415,7 +415,7 @@ build week1/build/secondary_index/DATABASE: CXX_EXECUTABLE_LINKER__DATABASE_Debu
 # Utility command for rebuild_cache
 
 build week2/build/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week2/build && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt -B/home/ortur/CLionProjects/brown_belt/cmake-build-debug
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week2/build && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt_cxx -B/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -427,7 +427,7 @@ build week2/build/rebuild_cache: phony week2/build/CMakeFiles/rebuild_cache.util
 # Utility command for edit_cache
 
 build week2/build/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week2/build && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week2/build && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -435,7 +435,7 @@ build week2/build/edit_cache: phony week2/build/CMakeFiles/edit_cache.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/ortur/CLionProjects/brown_belt/week2/CMakeLists.txt
+# /home/ortur/CLionProjects/brown_belt_cxx/week2/CMakeLists.txt
 # =============================================================================
 
 
@@ -443,7 +443,7 @@ build week2/build/edit_cache: phony week2/build/CMakeFiles/edit_cache.util
 # Utility command for edit_cache
 
 build week2/build/xml_loader/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week2/build/xml_loader && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week2/build/xml_loader && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -454,7 +454,7 @@ build week2/build/xml_loader/edit_cache: phony week2/build/xml_loader/CMakeFiles
 # Utility command for rebuild_cache
 
 build week2/build/xml_loader/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week2/build/xml_loader && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt -B/home/ortur/CLionProjects/brown_belt/cmake-build-debug
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week2/build/xml_loader && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt_cxx -B/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -470,17 +470,17 @@ build week2/build/xml_loader/rebuild_cache: phony week2/build/xml_loader/CMakeFi
 
 build cmake_object_order_depends_target_XML_LOADER: phony || week2/build/xml_loader/CMakeFiles/XML_LOADER.dir
 
-build week2/build/xml_loader/CMakeFiles/XML_LOADER.dir/main.cpp.o: CXX_COMPILER__XML_LOADER_Debug /home/ortur/CLionProjects/brown_belt/week2/xml_loader/main.cpp || cmake_object_order_depends_target_XML_LOADER
+build week2/build/xml_loader/CMakeFiles/XML_LOADER.dir/main.cpp.o: CXX_COMPILER__XML_LOADER_Debug /home/ortur/CLionProjects/brown_belt_cxx/week2/xml_loader/main.cpp || cmake_object_order_depends_target_XML_LOADER
   DEP_FILE = week2/build/xml_loader/CMakeFiles/XML_LOADER.dir/main.cpp.o.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I/home/ortur/CLionProjects/brown_belt/libs
+  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs
   OBJECT_DIR = week2/build/xml_loader/CMakeFiles/XML_LOADER.dir
   OBJECT_FILE_DIR = week2/build/xml_loader/CMakeFiles/XML_LOADER.dir
 
-build week2/build/xml_loader/CMakeFiles/XML_LOADER.dir/xml.cpp.o: CXX_COMPILER__XML_LOADER_Debug /home/ortur/CLionProjects/brown_belt/week2/xml_loader/xml.cpp || cmake_object_order_depends_target_XML_LOADER
+build week2/build/xml_loader/CMakeFiles/XML_LOADER.dir/xml.cpp.o: CXX_COMPILER__XML_LOADER_Debug /home/ortur/CLionProjects/brown_belt_cxx/week2/xml_loader/xml.cpp || cmake_object_order_depends_target_XML_LOADER
   DEP_FILE = week2/build/xml_loader/CMakeFiles/XML_LOADER.dir/xml.cpp.o.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I/home/ortur/CLionProjects/brown_belt/libs
+  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs
   OBJECT_DIR = week2/build/xml_loader/CMakeFiles/XML_LOADER.dir
   OBJECT_FILE_DIR = week2/build/xml_loader/CMakeFiles/XML_LOADER.dir
 
@@ -502,7 +502,7 @@ build week2/build/xml_loader/XML_LOADER: CXX_EXECUTABLE_LINKER__XML_LOADER_Debug
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/ortur/CLionProjects/brown_belt/week2/CMakeLists.txt
+# /home/ortur/CLionProjects/brown_belt_cxx/week2/CMakeLists.txt
 # =============================================================================
 
 
@@ -510,7 +510,7 @@ build week2/build/xml_loader/XML_LOADER: CXX_EXECUTABLE_LINKER__XML_LOADER_Debug
 # Utility command for edit_cache
 
 build week2/build/json_loader/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week2/build/json_loader && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week2/build/json_loader && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -521,7 +521,7 @@ build week2/build/json_loader/edit_cache: phony week2/build/json_loader/CMakeFil
 # Utility command for rebuild_cache
 
 build week2/build/json_loader/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week2/build/json_loader && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt -B/home/ortur/CLionProjects/brown_belt/cmake-build-debug
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week2/build/json_loader && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt_cxx -B/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -537,17 +537,17 @@ build week2/build/json_loader/rebuild_cache: phony week2/build/json_loader/CMake
 
 build cmake_object_order_depends_target_JSON_LOADER: phony || week2/build/json_loader/CMakeFiles/JSON_LOADER.dir
 
-build week2/build/json_loader/CMakeFiles/JSON_LOADER.dir/main.cpp.o: CXX_COMPILER__JSON_LOADER_Debug /home/ortur/CLionProjects/brown_belt/week2/json_loader/main.cpp || cmake_object_order_depends_target_JSON_LOADER
+build week2/build/json_loader/CMakeFiles/JSON_LOADER.dir/main.cpp.o: CXX_COMPILER__JSON_LOADER_Debug /home/ortur/CLionProjects/brown_belt_cxx/week2/json_loader/main.cpp || cmake_object_order_depends_target_JSON_LOADER
   DEP_FILE = week2/build/json_loader/CMakeFiles/JSON_LOADER.dir/main.cpp.o.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I/home/ortur/CLionProjects/brown_belt/libs
+  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs
   OBJECT_DIR = week2/build/json_loader/CMakeFiles/JSON_LOADER.dir
   OBJECT_FILE_DIR = week2/build/json_loader/CMakeFiles/JSON_LOADER.dir
 
-build week2/build/json_loader/CMakeFiles/JSON_LOADER.dir/json.cpp.o: CXX_COMPILER__JSON_LOADER_Debug /home/ortur/CLionProjects/brown_belt/week2/json_loader/json.cpp || cmake_object_order_depends_target_JSON_LOADER
+build week2/build/json_loader/CMakeFiles/JSON_LOADER.dir/json.cpp.o: CXX_COMPILER__JSON_LOADER_Debug /home/ortur/CLionProjects/brown_belt_cxx/week2/json_loader/json.cpp || cmake_object_order_depends_target_JSON_LOADER
   DEP_FILE = week2/build/json_loader/CMakeFiles/JSON_LOADER.dir/json.cpp.o.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I/home/ortur/CLionProjects/brown_belt/libs
+  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs
   OBJECT_DIR = week2/build/json_loader/CMakeFiles/JSON_LOADER.dir
   OBJECT_FILE_DIR = week2/build/json_loader/CMakeFiles/JSON_LOADER.dir
 
@@ -569,7 +569,7 @@ build week2/build/json_loader/JSON_LOADER: CXX_EXECUTABLE_LINKER__JSON_LOADER_De
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/ortur/CLionProjects/brown_belt/week2/CMakeLists.txt
+# /home/ortur/CLionProjects/brown_belt_cxx/week2/CMakeLists.txt
 # =============================================================================
 
 
@@ -577,7 +577,7 @@ build week2/build/json_loader/JSON_LOADER: CXX_EXECUTABLE_LINKER__JSON_LOADER_De
 # Utility command for edit_cache
 
 build week2/build/ini_loader/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week2/build/ini_loader && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week2/build/ini_loader && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -588,7 +588,7 @@ build week2/build/ini_loader/edit_cache: phony week2/build/ini_loader/CMakeFiles
 # Utility command for rebuild_cache
 
 build week2/build/ini_loader/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week2/build/ini_loader && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt -B/home/ortur/CLionProjects/brown_belt/cmake-build-debug
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week2/build/ini_loader && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt_cxx -B/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -604,17 +604,17 @@ build week2/build/ini_loader/rebuild_cache: phony week2/build/ini_loader/CMakeFi
 
 build cmake_object_order_depends_target_INI_LOADER: phony || week2/build/ini_loader/CMakeFiles/INI_LOADER.dir
 
-build week2/build/ini_loader/CMakeFiles/INI_LOADER.dir/main.cpp.o: CXX_COMPILER__INI_LOADER_Debug /home/ortur/CLionProjects/brown_belt/week2/ini_loader/main.cpp || cmake_object_order_depends_target_INI_LOADER
+build week2/build/ini_loader/CMakeFiles/INI_LOADER.dir/main.cpp.o: CXX_COMPILER__INI_LOADER_Debug /home/ortur/CLionProjects/brown_belt_cxx/week2/ini_loader/main.cpp || cmake_object_order_depends_target_INI_LOADER
   DEP_FILE = week2/build/ini_loader/CMakeFiles/INI_LOADER.dir/main.cpp.o.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I/home/ortur/CLionProjects/brown_belt/libs
+  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs
   OBJECT_DIR = week2/build/ini_loader/CMakeFiles/INI_LOADER.dir
   OBJECT_FILE_DIR = week2/build/ini_loader/CMakeFiles/INI_LOADER.dir
 
-build week2/build/ini_loader/CMakeFiles/INI_LOADER.dir/ini.cpp.o: CXX_COMPILER__INI_LOADER_Debug /home/ortur/CLionProjects/brown_belt/week2/ini_loader/ini.cpp || cmake_object_order_depends_target_INI_LOADER
+build week2/build/ini_loader/CMakeFiles/INI_LOADER.dir/ini.cpp.o: CXX_COMPILER__INI_LOADER_Debug /home/ortur/CLionProjects/brown_belt_cxx/week2/ini_loader/ini.cpp || cmake_object_order_depends_target_INI_LOADER
   DEP_FILE = week2/build/ini_loader/CMakeFiles/INI_LOADER.dir/ini.cpp.o.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I/home/ortur/CLionProjects/brown_belt/libs
+  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs
   OBJECT_DIR = week2/build/ini_loader/CMakeFiles/INI_LOADER.dir
   OBJECT_FILE_DIR = week2/build/ini_loader/CMakeFiles/INI_LOADER.dir
 
@@ -636,7 +636,7 @@ build week2/build/ini_loader/INI_LOADER: CXX_EXECUTABLE_LINKER__INI_LOADER_Debug
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/ortur/CLionProjects/brown_belt/week2/CMakeLists.txt
+# /home/ortur/CLionProjects/brown_belt_cxx/week2/CMakeLists.txt
 # =============================================================================
 
 
@@ -644,7 +644,7 @@ build week2/build/ini_loader/INI_LOADER: CXX_EXECUTABLE_LINKER__INI_LOADER_Debug
 # Utility command for rebuild_cache
 
 build week2/build/code_refactoring/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week2/build/code_refactoring && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt -B/home/ortur/CLionProjects/brown_belt/cmake-build-debug
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week2/build/code_refactoring && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt_cxx -B/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -656,7 +656,7 @@ build week2/build/code_refactoring/rebuild_cache: phony week2/build/code_refacto
 # Utility command for edit_cache
 
 build week2/build/code_refactoring/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week2/build/code_refactoring && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week2/build/code_refactoring && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -671,24 +671,24 @@ build week2/build/code_refactoring/edit_cache: phony week2/build/code_refactorin
 
 build cmake_object_order_depends_target_CODE_REFACTORING: phony || week2/build/code_refactoring/CMakeFiles/CODE_REFACTORING.dir
 
-build week2/build/code_refactoring/CMakeFiles/CODE_REFACTORING.dir/main.cpp.o: CXX_COMPILER__CODE_REFACTORING_Debug /home/ortur/CLionProjects/brown_belt/week2/code_refactoring/main.cpp || cmake_object_order_depends_target_CODE_REFACTORING
+build week2/build/code_refactoring/CMakeFiles/CODE_REFACTORING.dir/main.cpp.o: CXX_COMPILER__CODE_REFACTORING_Debug /home/ortur/CLionProjects/brown_belt_cxx/week2/code_refactoring/main.cpp || cmake_object_order_depends_target_CODE_REFACTORING
   DEP_FILE = week2/build/code_refactoring/CMakeFiles/CODE_REFACTORING.dir/main.cpp.o.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I/home/ortur/CLionProjects/brown_belt/libs
+  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs
   OBJECT_DIR = week2/build/code_refactoring/CMakeFiles/CODE_REFACTORING.dir
   OBJECT_FILE_DIR = week2/build/code_refactoring/CMakeFiles/CODE_REFACTORING.dir
 
-build week2/build/code_refactoring/CMakeFiles/CODE_REFACTORING.dir/stats_aggregator.cpp.o: CXX_COMPILER__CODE_REFACTORING_Debug /home/ortur/CLionProjects/brown_belt/week2/code_refactoring/stats_aggregator.cpp || cmake_object_order_depends_target_CODE_REFACTORING
+build week2/build/code_refactoring/CMakeFiles/CODE_REFACTORING.dir/stats_aggregator.cpp.o: CXX_COMPILER__CODE_REFACTORING_Debug /home/ortur/CLionProjects/brown_belt_cxx/week2/code_refactoring/stats_aggregator.cpp || cmake_object_order_depends_target_CODE_REFACTORING
   DEP_FILE = week2/build/code_refactoring/CMakeFiles/CODE_REFACTORING.dir/stats_aggregator.cpp.o.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I/home/ortur/CLionProjects/brown_belt/libs
+  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs
   OBJECT_DIR = week2/build/code_refactoring/CMakeFiles/CODE_REFACTORING.dir
   OBJECT_FILE_DIR = week2/build/code_refactoring/CMakeFiles/CODE_REFACTORING.dir
 
-build week2/build/code_refactoring/CMakeFiles/CODE_REFACTORING.dir/stats_aggregator_test.cpp.o: CXX_COMPILER__CODE_REFACTORING_Debug /home/ortur/CLionProjects/brown_belt/week2/code_refactoring/stats_aggregator_test.cpp || cmake_object_order_depends_target_CODE_REFACTORING
+build week2/build/code_refactoring/CMakeFiles/CODE_REFACTORING.dir/stats_aggregator_test.cpp.o: CXX_COMPILER__CODE_REFACTORING_Debug /home/ortur/CLionProjects/brown_belt_cxx/week2/code_refactoring/stats_aggregator_test.cpp || cmake_object_order_depends_target_CODE_REFACTORING
   DEP_FILE = week2/build/code_refactoring/CMakeFiles/CODE_REFACTORING.dir/stats_aggregator_test.cpp.o.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I/home/ortur/CLionProjects/brown_belt/libs
+  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs
   OBJECT_DIR = week2/build/code_refactoring/CMakeFiles/CODE_REFACTORING.dir
   OBJECT_FILE_DIR = week2/build/code_refactoring/CMakeFiles/CODE_REFACTORING.dir
 
@@ -710,7 +710,7 @@ build week2/build/code_refactoring/CODE_REFACTORING: CXX_EXECUTABLE_LINKER__CODE
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/ortur/CLionProjects/brown_belt/week2/CMakeLists.txt
+# /home/ortur/CLionProjects/brown_belt_cxx/week2/CMakeLists.txt
 # =============================================================================
 
 
@@ -718,7 +718,7 @@ build week2/build/code_refactoring/CODE_REFACTORING: CXX_EXECUTABLE_LINKER__CODE
 # Utility command for edit_cache
 
 build week2/build/game_collisions/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week2/build/game_collisions && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week2/build/game_collisions && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -729,7 +729,7 @@ build week2/build/game_collisions/edit_cache: phony week2/build/game_collisions/
 # Utility command for rebuild_cache
 
 build week2/build/game_collisions/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week2/build/game_collisions && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt -B/home/ortur/CLionProjects/brown_belt/cmake-build-debug
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week2/build/game_collisions && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt_cxx -B/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -745,10 +745,10 @@ build week2/build/game_collisions/rebuild_cache: phony week2/build/game_collisio
 
 build cmake_object_order_depends_target_GAME_COLLISIONS: phony || cmake_object_order_depends_target_geo2d
 
-build week2/build/game_collisions/CMakeFiles/GAME_COLLISIONS.dir/collide.cpp.o: CXX_COMPILER__GAME_COLLISIONS_Debug /home/ortur/CLionProjects/brown_belt/week2/game_collisions/collide.cpp || cmake_object_order_depends_target_GAME_COLLISIONS
+build week2/build/game_collisions/CMakeFiles/GAME_COLLISIONS.dir/collide.cpp.o: CXX_COMPILER__GAME_COLLISIONS_Debug /home/ortur/CLionProjects/brown_belt_cxx/week2/game_collisions/collide.cpp || cmake_object_order_depends_target_GAME_COLLISIONS
   DEP_FILE = week2/build/game_collisions/CMakeFiles/GAME_COLLISIONS.dir/collide.cpp.o.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I/home/ortur/CLionProjects/brown_belt/libs -I/home/ortur/CLionProjects/brown_belt/week2/game_collisions/geo2d
+  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs -I/home/ortur/CLionProjects/brown_belt_cxx/week2/game_collisions/geo2d
   OBJECT_DIR = week2/build/game_collisions/CMakeFiles/GAME_COLLISIONS.dir
   OBJECT_FILE_DIR = week2/build/game_collisions/CMakeFiles/GAME_COLLISIONS.dir
 
@@ -771,7 +771,7 @@ build week2/build/game_collisions/GAME_COLLISIONS: CXX_EXECUTABLE_LINKER__GAME_C
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/ortur/CLionProjects/brown_belt/week2/game_collisions/CMakeLists.txt
+# /home/ortur/CLionProjects/brown_belt_cxx/week2/game_collisions/CMakeLists.txt
 # =============================================================================
 
 
@@ -779,7 +779,7 @@ build week2/build/game_collisions/GAME_COLLISIONS: CXX_EXECUTABLE_LINKER__GAME_C
 # Utility command for rebuild_cache
 
 build week2/build/game_collisions/geo2d/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week2/build/game_collisions/geo2d && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt -B/home/ortur/CLionProjects/brown_belt/cmake-build-debug
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week2/build/game_collisions/geo2d && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt_cxx -B/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -791,7 +791,7 @@ build week2/build/game_collisions/geo2d/rebuild_cache: phony week2/build/game_co
 # Utility command for edit_cache
 
 build week2/build/game_collisions/geo2d/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week2/build/game_collisions/geo2d && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week2/build/game_collisions/geo2d && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -806,10 +806,10 @@ build week2/build/game_collisions/geo2d/edit_cache: phony week2/build/game_colli
 
 build cmake_object_order_depends_target_geo2d: phony || week2/build/game_collisions/geo2d/CMakeFiles/geo2d.dir
 
-build week2/build/game_collisions/geo2d/CMakeFiles/geo2d.dir/geo2d.cpp.o: CXX_COMPILER__geo2d_Debug /home/ortur/CLionProjects/brown_belt/week2/game_collisions/geo2d/geo2d.cpp || cmake_object_order_depends_target_geo2d
+build week2/build/game_collisions/geo2d/CMakeFiles/geo2d.dir/geo2d.cpp.o: CXX_COMPILER__geo2d_Debug /home/ortur/CLionProjects/brown_belt_cxx/week2/game_collisions/geo2d/geo2d.cpp || cmake_object_order_depends_target_geo2d
   DEP_FILE = week2/build/game_collisions/geo2d/CMakeFiles/geo2d.dir/geo2d.cpp.o.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I/home/ortur/CLionProjects/brown_belt/libs -I/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week2/build/game_collisions/geo2d
+  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs -I/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week2/build/game_collisions/geo2d
   OBJECT_DIR = week2/build/game_collisions/geo2d/CMakeFiles/geo2d.dir
   OBJECT_FILE_DIR = week2/build/game_collisions/geo2d/CMakeFiles/geo2d.dir
 
@@ -831,7 +831,7 @@ build week2/build/game_collisions/geo2d/libgeo2d.a: CXX_STATIC_LIBRARY_LINKER__g
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/ortur/CLionProjects/brown_belt/week2/CMakeLists.txt
+# /home/ortur/CLionProjects/brown_belt_cxx/week2/CMakeLists.txt
 # =============================================================================
 
 
@@ -839,7 +839,7 @@ build week2/build/game_collisions/geo2d/libgeo2d.a: CXX_STATIC_LIBRARY_LINKER__g
 # Utility command for edit_cache
 
 build week2/build/http_request/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week2/build/http_request && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week2/build/http_request && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -850,7 +850,7 @@ build week2/build/http_request/edit_cache: phony week2/build/http_request/CMakeF
 # Utility command for rebuild_cache
 
 build week2/build/http_request/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week2/build/http_request && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt -B/home/ortur/CLionProjects/brown_belt/cmake-build-debug
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week2/build/http_request && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt_cxx -B/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -866,17 +866,17 @@ build week2/build/http_request/rebuild_cache: phony week2/build/http_request/CMa
 
 build cmake_object_order_depends_target_HTTP_REQUEST: phony || week2/build/http_request/CMakeFiles/HTTP_REQUEST.dir
 
-build week2/build/http_request/CMakeFiles/HTTP_REQUEST.dir/main.cpp.o: CXX_COMPILER__HTTP_REQUEST_Debug /home/ortur/CLionProjects/brown_belt/week2/http_request/main.cpp || cmake_object_order_depends_target_HTTP_REQUEST
+build week2/build/http_request/CMakeFiles/HTTP_REQUEST.dir/main.cpp.o: CXX_COMPILER__HTTP_REQUEST_Debug /home/ortur/CLionProjects/brown_belt_cxx/week2/http_request/main.cpp || cmake_object_order_depends_target_HTTP_REQUEST
   DEP_FILE = week2/build/http_request/CMakeFiles/HTTP_REQUEST.dir/main.cpp.o.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I/home/ortur/CLionProjects/brown_belt/libs -I/home/ortur/CLionProjects/brown_belt/week2/http_request/geo2d
+  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs -I/home/ortur/CLionProjects/brown_belt_cxx/week2/http_request/geo2d
   OBJECT_DIR = week2/build/http_request/CMakeFiles/HTTP_REQUEST.dir
   OBJECT_FILE_DIR = week2/build/http_request/CMakeFiles/HTTP_REQUEST.dir
 
-build week2/build/http_request/CMakeFiles/HTTP_REQUEST.dir/http_response.cpp.o: CXX_COMPILER__HTTP_REQUEST_Debug /home/ortur/CLionProjects/brown_belt/week2/http_request/http_response.cpp || cmake_object_order_depends_target_HTTP_REQUEST
+build week2/build/http_request/CMakeFiles/HTTP_REQUEST.dir/http_response.cpp.o: CXX_COMPILER__HTTP_REQUEST_Debug /home/ortur/CLionProjects/brown_belt_cxx/week2/http_request/http_response.cpp || cmake_object_order_depends_target_HTTP_REQUEST
   DEP_FILE = week2/build/http_request/CMakeFiles/HTTP_REQUEST.dir/http_response.cpp.o.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I/home/ortur/CLionProjects/brown_belt/libs -I/home/ortur/CLionProjects/brown_belt/week2/http_request/geo2d
+  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs -I/home/ortur/CLionProjects/brown_belt_cxx/week2/http_request/geo2d
   OBJECT_DIR = week2/build/http_request/CMakeFiles/HTTP_REQUEST.dir
   OBJECT_FILE_DIR = week2/build/http_request/CMakeFiles/HTTP_REQUEST.dir
 
@@ -898,7 +898,7 @@ build week2/build/http_request/HTTP_REQUEST: CXX_EXECUTABLE_LINKER__HTTP_REQUEST
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/ortur/CLionProjects/brown_belt/CMakeLists.txt
+# /home/ortur/CLionProjects/brown_belt_cxx/CMakeLists.txt
 # =============================================================================
 
 
@@ -906,7 +906,7 @@ build week2/build/http_request/HTTP_REQUEST: CXX_EXECUTABLE_LINKER__HTTP_REQUEST
 # Utility command for rebuild_cache
 
 build week3/build/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week3/build && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt -B/home/ortur/CLionProjects/brown_belt/cmake-build-debug
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week3/build && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt_cxx -B/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -918,7 +918,7 @@ build week3/build/rebuild_cache: phony week3/build/CMakeFiles/rebuild_cache.util
 # Utility command for edit_cache
 
 build week3/build/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week3/build && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week3/build && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -926,7 +926,7 @@ build week3/build/edit_cache: phony week3/build/CMakeFiles/edit_cache.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/ortur/CLionProjects/brown_belt/week3/CMakeLists.txt
+# /home/ortur/CLionProjects/brown_belt_cxx/week3/CMakeLists.txt
 # =============================================================================
 
 
@@ -934,7 +934,7 @@ build week3/build/edit_cache: phony week3/build/CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build week3/build/demographical_indicators/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week3/build/demographical_indicators && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt -B/home/ortur/CLionProjects/brown_belt/cmake-build-debug
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week3/build/demographical_indicators && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt_cxx -B/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -946,7 +946,7 @@ build week3/build/demographical_indicators/rebuild_cache: phony week3/build/demo
 # Utility command for edit_cache
 
 build week3/build/demographical_indicators/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week3/build/demographical_indicators && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week3/build/demographical_indicators && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -961,10 +961,10 @@ build week3/build/demographical_indicators/edit_cache: phony week3/build/demogra
 
 build cmake_object_order_depends_target_DEM_IND: phony || week3/build/demographical_indicators/CMakeFiles/DEM_IND.dir
 
-build week3/build/demographical_indicators/CMakeFiles/DEM_IND.dir/main.cpp.o: CXX_COMPILER__DEM_IND_Debug /home/ortur/CLionProjects/brown_belt/week3/demographical_indicators/main.cpp || cmake_object_order_depends_target_DEM_IND
+build week3/build/demographical_indicators/CMakeFiles/DEM_IND.dir/main.cpp.o: CXX_COMPILER__DEM_IND_Debug /home/ortur/CLionProjects/brown_belt_cxx/week3/demographical_indicators/main.cpp || cmake_object_order_depends_target_DEM_IND
   DEP_FILE = week3/build/demographical_indicators/CMakeFiles/DEM_IND.dir/main.cpp.o.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I/home/ortur/CLionProjects/brown_belt/libs
+  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs
   OBJECT_DIR = week3/build/demographical_indicators/CMakeFiles/DEM_IND.dir
   OBJECT_FILE_DIR = week3/build/demographical_indicators/CMakeFiles/DEM_IND.dir
 
@@ -986,7 +986,7 @@ build week3/build/demographical_indicators/DEM_IND: CXX_EXECUTABLE_LINKER__DEM_I
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/ortur/CLionProjects/brown_belt/week3/CMakeLists.txt
+# /home/ortur/CLionProjects/brown_belt_cxx/week3/CMakeLists.txt
 # =============================================================================
 
 
@@ -994,7 +994,7 @@ build week3/build/demographical_indicators/DEM_IND: CXX_EXECUTABLE_LINKER__DEM_I
 # Utility command for rebuild_cache
 
 build week3/build/lazy_value/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week3/build/lazy_value && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt -B/home/ortur/CLionProjects/brown_belt/cmake-build-debug
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week3/build/lazy_value && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt_cxx -B/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -1006,7 +1006,7 @@ build week3/build/lazy_value/rebuild_cache: phony week3/build/lazy_value/CMakeFi
 # Utility command for edit_cache
 
 build week3/build/lazy_value/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week3/build/lazy_value && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week3/build/lazy_value && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -1021,10 +1021,10 @@ build week3/build/lazy_value/edit_cache: phony week3/build/lazy_value/CMakeFiles
 
 build cmake_object_order_depends_target_LAZY_VALUE: phony || week3/build/lazy_value/CMakeFiles/LAZY_VALUE.dir
 
-build week3/build/lazy_value/CMakeFiles/LAZY_VALUE.dir/main.cpp.o: CXX_COMPILER__LAZY_VALUE_Debug /home/ortur/CLionProjects/brown_belt/week3/lazy_value/main.cpp || cmake_object_order_depends_target_LAZY_VALUE
+build week3/build/lazy_value/CMakeFiles/LAZY_VALUE.dir/main.cpp.o: CXX_COMPILER__LAZY_VALUE_Debug /home/ortur/CLionProjects/brown_belt_cxx/week3/lazy_value/main.cpp || cmake_object_order_depends_target_LAZY_VALUE
   DEP_FILE = week3/build/lazy_value/CMakeFiles/LAZY_VALUE.dir/main.cpp.o.d
   FLAGS = -g -std=gnu++2a
-  INCLUDES = -I/home/ortur/CLionProjects/brown_belt/libs
+  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs
   OBJECT_DIR = week3/build/lazy_value/CMakeFiles/LAZY_VALUE.dir
   OBJECT_FILE_DIR = week3/build/lazy_value/CMakeFiles/LAZY_VALUE.dir
 
@@ -1046,7 +1046,7 @@ build week3/build/lazy_value/LAZY_VALUE: CXX_EXECUTABLE_LINKER__LAZY_VALUE_Debug
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/ortur/CLionProjects/brown_belt/week3/CMakeLists.txt
+# /home/ortur/CLionProjects/brown_belt_cxx/week3/CMakeLists.txt
 # =============================================================================
 
 
@@ -1054,7 +1054,7 @@ build week3/build/lazy_value/LAZY_VALUE: CXX_EXECUTABLE_LINKER__LAZY_VALUE_Debug
 # Utility command for edit_cache
 
 build week3/build/concurent_map/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week3/build/concurent_map && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week3/build/concurent_map && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -1065,7 +1065,7 @@ build week3/build/concurent_map/edit_cache: phony week3/build/concurent_map/CMak
 # Utility command for rebuild_cache
 
 build week3/build/concurent_map/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week3/build/concurent_map && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt -B/home/ortur/CLionProjects/brown_belt/cmake-build-debug
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week3/build/concurent_map && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt_cxx -B/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -1081,10 +1081,10 @@ build week3/build/concurent_map/rebuild_cache: phony week3/build/concurent_map/C
 
 build cmake_object_order_depends_target_concurent_map: phony || week3/build/concurent_map/CMakeFiles/concurent_map.dir
 
-build week3/build/concurent_map/CMakeFiles/concurent_map.dir/main.cpp.o: CXX_COMPILER__concurent_map_Debug /home/ortur/CLionProjects/brown_belt/week3/concurent_map/main.cpp || cmake_object_order_depends_target_concurent_map
+build week3/build/concurent_map/CMakeFiles/concurent_map.dir/main.cpp.o: CXX_COMPILER__concurent_map_Debug /home/ortur/CLionProjects/brown_belt_cxx/week3/concurent_map/main.cpp || cmake_object_order_depends_target_concurent_map
   DEP_FILE = week3/build/concurent_map/CMakeFiles/concurent_map.dir/main.cpp.o.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I/home/ortur/CLionProjects/brown_belt/libs
+  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs
   OBJECT_DIR = week3/build/concurent_map/CMakeFiles/concurent_map.dir
   OBJECT_FILE_DIR = week3/build/concurent_map/CMakeFiles/concurent_map.dir
 
@@ -1107,7 +1107,7 @@ build week3/build/concurent_map/concurent_map: CXX_EXECUTABLE_LINKER__concurent_
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/ortur/CLionProjects/brown_belt/week3/CMakeLists.txt
+# /home/ortur/CLionProjects/brown_belt_cxx/week3/CMakeLists.txt
 # =============================================================================
 
 
@@ -1115,7 +1115,7 @@ build week3/build/concurent_map/concurent_map: CXX_EXECUTABLE_LINKER__concurent_
 # Utility command for rebuild_cache
 
 build week3/build/synchronized/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week3/build/synchronized && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt -B/home/ortur/CLionProjects/brown_belt/cmake-build-debug
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week3/build/synchronized && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt_cxx -B/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -1127,7 +1127,7 @@ build week3/build/synchronized/rebuild_cache: phony week3/build/synchronized/CMa
 # Utility command for edit_cache
 
 build week3/build/synchronized/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week3/build/synchronized && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week3/build/synchronized && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -1142,10 +1142,10 @@ build week3/build/synchronized/edit_cache: phony week3/build/synchronized/CMakeF
 
 build cmake_object_order_depends_target_SYNCHRONIZED: phony || week3/build/synchronized/CMakeFiles/SYNCHRONIZED.dir
 
-build week3/build/synchronized/CMakeFiles/SYNCHRONIZED.dir/main.cpp.o: CXX_COMPILER__SYNCHRONIZED_Debug /home/ortur/CLionProjects/brown_belt/week3/synchronized/main.cpp || cmake_object_order_depends_target_SYNCHRONIZED
+build week3/build/synchronized/CMakeFiles/SYNCHRONIZED.dir/main.cpp.o: CXX_COMPILER__SYNCHRONIZED_Debug /home/ortur/CLionProjects/brown_belt_cxx/week3/synchronized/main.cpp || cmake_object_order_depends_target_SYNCHRONIZED
   DEP_FILE = week3/build/synchronized/CMakeFiles/SYNCHRONIZED.dir/main.cpp.o.d
   FLAGS = -g -std=gnu++2a
-  INCLUDES = -I/home/ortur/CLionProjects/brown_belt/libs
+  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs
   OBJECT_DIR = week3/build/synchronized/CMakeFiles/SYNCHRONIZED.dir
   OBJECT_FILE_DIR = week3/build/synchronized/CMakeFiles/SYNCHRONIZED.dir
 
@@ -1168,7 +1168,7 @@ build week3/build/synchronized/SYNCHRONIZED: CXX_EXECUTABLE_LINKER__SYNCHRONIZED
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/ortur/CLionProjects/brown_belt/week3/CMakeLists.txt
+# /home/ortur/CLionProjects/brown_belt_cxx/week3/CMakeLists.txt
 # =============================================================================
 
 
@@ -1176,7 +1176,7 @@ build week3/build/synchronized/SYNCHRONIZED: CXX_EXECUTABLE_LINKER__SYNCHRONIZED
 # Utility command for rebuild_cache
 
 build week3/build/object_pool/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week3/build/object_pool && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt -B/home/ortur/CLionProjects/brown_belt/cmake-build-debug
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week3/build/object_pool && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt_cxx -B/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -1188,7 +1188,7 @@ build week3/build/object_pool/rebuild_cache: phony week3/build/object_pool/CMake
 # Utility command for edit_cache
 
 build week3/build/object_pool/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week3/build/object_pool && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week3/build/object_pool && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -1203,10 +1203,10 @@ build week3/build/object_pool/edit_cache: phony week3/build/object_pool/CMakeFil
 
 build cmake_object_order_depends_target_OBJECT_POOL: phony || week3/build/object_pool/CMakeFiles/OBJECT_POOL.dir
 
-build week3/build/object_pool/CMakeFiles/OBJECT_POOL.dir/main.cpp.o: CXX_COMPILER__OBJECT_POOL_Debug /home/ortur/CLionProjects/brown_belt/week3/object_pool/main.cpp || cmake_object_order_depends_target_OBJECT_POOL
+build week3/build/object_pool/CMakeFiles/OBJECT_POOL.dir/main.cpp.o: CXX_COMPILER__OBJECT_POOL_Debug /home/ortur/CLionProjects/brown_belt_cxx/week3/object_pool/main.cpp || cmake_object_order_depends_target_OBJECT_POOL
   DEP_FILE = week3/build/object_pool/CMakeFiles/OBJECT_POOL.dir/main.cpp.o.d
   FLAGS = -g -std=gnu++2a
-  INCLUDES = -I/home/ortur/CLionProjects/brown_belt/libs
+  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs
   OBJECT_DIR = week3/build/object_pool/CMakeFiles/OBJECT_POOL.dir
   OBJECT_FILE_DIR = week3/build/object_pool/CMakeFiles/OBJECT_POOL.dir
 
@@ -1228,7 +1228,7 @@ build week3/build/object_pool/OBJECT_POOL: CXX_EXECUTABLE_LINKER__OBJECT_POOL_De
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/ortur/CLionProjects/brown_belt/week3/CMakeLists.txt
+# /home/ortur/CLionProjects/brown_belt_cxx/week3/CMakeLists.txt
 # =============================================================================
 
 
@@ -1236,7 +1236,7 @@ build week3/build/object_pool/OBJECT_POOL: CXX_EXECUTABLE_LINKER__OBJECT_POOL_De
 # Utility command for rebuild_cache
 
 build week3/build/zoo/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week3/build/zoo && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt -B/home/ortur/CLionProjects/brown_belt/cmake-build-debug
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week3/build/zoo && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt_cxx -B/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -1248,7 +1248,7 @@ build week3/build/zoo/rebuild_cache: phony week3/build/zoo/CMakeFiles/rebuild_ca
 # Utility command for edit_cache
 
 build week3/build/zoo/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week3/build/zoo && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week3/build/zoo && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -1263,10 +1263,10 @@ build week3/build/zoo/edit_cache: phony week3/build/zoo/CMakeFiles/edit_cache.ut
 
 build cmake_object_order_depends_target_ZOO: phony || week3/build/zoo/CMakeFiles/ZOO.dir
 
-build week3/build/zoo/CMakeFiles/ZOO.dir/main.cpp.o: CXX_COMPILER__ZOO_Debug /home/ortur/CLionProjects/brown_belt/week3/zoo/main.cpp || cmake_object_order_depends_target_ZOO
+build week3/build/zoo/CMakeFiles/ZOO.dir/main.cpp.o: CXX_COMPILER__ZOO_Debug /home/ortur/CLionProjects/brown_belt_cxx/week3/zoo/main.cpp || cmake_object_order_depends_target_ZOO
   DEP_FILE = week3/build/zoo/CMakeFiles/ZOO.dir/main.cpp.o.d
   FLAGS = -g -std=gnu++2a
-  INCLUDES = -I/home/ortur/CLionProjects/brown_belt/libs
+  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs
   OBJECT_DIR = week3/build/zoo/CMakeFiles/ZOO.dir
   OBJECT_FILE_DIR = week3/build/zoo/CMakeFiles/ZOO.dir
 
@@ -1288,7 +1288,7 @@ build week3/build/zoo/ZOO: CXX_EXECUTABLE_LINKER__ZOO_Debug week3/build/zoo/CMak
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/ortur/CLionProjects/brown_belt/week3/CMakeLists.txt
+# /home/ortur/CLionProjects/brown_belt_cxx/week3/CMakeLists.txt
 # =============================================================================
 
 
@@ -1296,7 +1296,7 @@ build week3/build/zoo/ZOO: CXX_EXECUTABLE_LINKER__ZOO_Debug week3/build/zoo/CMak
 # Utility command for rebuild_cache
 
 build week3/build/polynomial/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week3/build/polynomial && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt -B/home/ortur/CLionProjects/brown_belt/cmake-build-debug
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week3/build/polynomial && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt_cxx -B/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -1308,7 +1308,7 @@ build week3/build/polynomial/rebuild_cache: phony week3/build/polynomial/CMakeFi
 # Utility command for edit_cache
 
 build week3/build/polynomial/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week3/build/polynomial && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week3/build/polynomial && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -1323,10 +1323,10 @@ build week3/build/polynomial/edit_cache: phony week3/build/polynomial/CMakeFiles
 
 build cmake_object_order_depends_target_POLYNOMIAL: phony || week3/build/polynomial/CMakeFiles/POLYNOMIAL.dir
 
-build week3/build/polynomial/CMakeFiles/POLYNOMIAL.dir/main.cpp.o: CXX_COMPILER__POLYNOMIAL_Debug /home/ortur/CLionProjects/brown_belt/week3/polynomial/main.cpp || cmake_object_order_depends_target_POLYNOMIAL
+build week3/build/polynomial/CMakeFiles/POLYNOMIAL.dir/main.cpp.o: CXX_COMPILER__POLYNOMIAL_Debug /home/ortur/CLionProjects/brown_belt_cxx/week3/polynomial/main.cpp || cmake_object_order_depends_target_POLYNOMIAL
   DEP_FILE = week3/build/polynomial/CMakeFiles/POLYNOMIAL.dir/main.cpp.o.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I/home/ortur/CLionProjects/brown_belt/libs
+  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs
   OBJECT_DIR = week3/build/polynomial/CMakeFiles/POLYNOMIAL.dir
   OBJECT_FILE_DIR = week3/build/polynomial/CMakeFiles/POLYNOMIAL.dir
 
@@ -1348,7 +1348,7 @@ build week3/build/polynomial/POLYNOMIAL: CXX_EXECUTABLE_LINKER__POLYNOMIAL_Debug
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/ortur/CLionProjects/brown_belt/week3/CMakeLists.txt
+# /home/ortur/CLionProjects/brown_belt_cxx/week3/CMakeLists.txt
 # =============================================================================
 
 
@@ -1356,7 +1356,7 @@ build week3/build/polynomial/POLYNOMIAL: CXX_EXECUTABLE_LINKER__POLYNOMIAL_Debug
 # Utility command for rebuild_cache
 
 build week3/build/pipline/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week3/build/pipline && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt -B/home/ortur/CLionProjects/brown_belt/cmake-build-debug
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week3/build/pipline && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt_cxx -B/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -1368,7 +1368,7 @@ build week3/build/pipline/rebuild_cache: phony week3/build/pipline/CMakeFiles/re
 # Utility command for edit_cache
 
 build week3/build/pipline/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week3/build/pipline && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week3/build/pipline && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -1383,10 +1383,10 @@ build week3/build/pipline/edit_cache: phony week3/build/pipline/CMakeFiles/edit_
 
 build cmake_object_order_depends_target_PIPLINE: phony || week3/build/pipline/CMakeFiles/PIPLINE.dir
 
-build week3/build/pipline/CMakeFiles/PIPLINE.dir/main.cpp.o: CXX_COMPILER__PIPLINE_Debug /home/ortur/CLionProjects/brown_belt/week3/pipline/main.cpp || cmake_object_order_depends_target_PIPLINE
+build week3/build/pipline/CMakeFiles/PIPLINE.dir/main.cpp.o: CXX_COMPILER__PIPLINE_Debug /home/ortur/CLionProjects/brown_belt_cxx/week3/pipline/main.cpp || cmake_object_order_depends_target_PIPLINE
   DEP_FILE = week3/build/pipline/CMakeFiles/PIPLINE.dir/main.cpp.o.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I/home/ortur/CLionProjects/brown_belt/libs
+  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs
   OBJECT_DIR = week3/build/pipline/CMakeFiles/PIPLINE.dir
   OBJECT_FILE_DIR = week3/build/pipline/CMakeFiles/PIPLINE.dir
 
@@ -1408,7 +1408,7 @@ build week3/build/pipline/PIPLINE: CXX_EXECUTABLE_LINKER__PIPLINE_Debug week3/bu
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/ortur/CLionProjects/brown_belt/week3/CMakeLists.txt
+# /home/ortur/CLionProjects/brown_belt_cxx/week3/CMakeLists.txt
 # =============================================================================
 
 
@@ -1416,7 +1416,7 @@ build week3/build/pipline/PIPLINE: CXX_EXECUTABLE_LINKER__PIPLINE_Debug week3/bu
 # Utility command for rebuild_cache
 
 build week3/build/tree/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week3/build/tree && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt -B/home/ortur/CLionProjects/brown_belt/cmake-build-debug
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week3/build/tree && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt_cxx -B/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -1428,7 +1428,7 @@ build week3/build/tree/rebuild_cache: phony week3/build/tree/CMakeFiles/rebuild_
 # Utility command for edit_cache
 
 build week3/build/tree/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week3/build/tree && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week3/build/tree && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -1443,17 +1443,17 @@ build week3/build/tree/edit_cache: phony week3/build/tree/CMakeFiles/edit_cache.
 
 build cmake_object_order_depends_target_TREE: phony || week3/build/tree/CMakeFiles/TREE.dir
 
-build week3/build/tree/CMakeFiles/TREE.dir/main.cpp.o: CXX_COMPILER__TREE_Debug /home/ortur/CLionProjects/brown_belt/week3/tree/main.cpp || cmake_object_order_depends_target_TREE
+build week3/build/tree/CMakeFiles/TREE.dir/main.cpp.o: CXX_COMPILER__TREE_Debug /home/ortur/CLionProjects/brown_belt_cxx/week3/tree/main.cpp || cmake_object_order_depends_target_TREE
   DEP_FILE = week3/build/tree/CMakeFiles/TREE.dir/main.cpp.o.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I/home/ortur/CLionProjects/brown_belt/libs
+  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs
   OBJECT_DIR = week3/build/tree/CMakeFiles/TREE.dir
   OBJECT_FILE_DIR = week3/build/tree/CMakeFiles/TREE.dir
 
-build week3/build/tree/CMakeFiles/TREE.dir/Common.cpp.o: CXX_COMPILER__TREE_Debug /home/ortur/CLionProjects/brown_belt/week3/tree/Common.cpp || cmake_object_order_depends_target_TREE
+build week3/build/tree/CMakeFiles/TREE.dir/Common.cpp.o: CXX_COMPILER__TREE_Debug /home/ortur/CLionProjects/brown_belt_cxx/week3/tree/Common.cpp || cmake_object_order_depends_target_TREE
   DEP_FILE = week3/build/tree/CMakeFiles/TREE.dir/Common.cpp.o.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I/home/ortur/CLionProjects/brown_belt/libs
+  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs
   OBJECT_DIR = week3/build/tree/CMakeFiles/TREE.dir
   OBJECT_FILE_DIR = week3/build/tree/CMakeFiles/TREE.dir
 
@@ -1475,7 +1475,7 @@ build week3/build/tree/TREE: CXX_EXECUTABLE_LINKER__TREE_Debug week3/build/tree/
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/ortur/CLionProjects/brown_belt/CMakeLists.txt
+# /home/ortur/CLionProjects/brown_belt_cxx/CMakeLists.txt
 # =============================================================================
 
 
@@ -1483,7 +1483,7 @@ build week3/build/tree/TREE: CXX_EXECUTABLE_LINKER__TREE_Debug week3/build/tree/
 # Utility command for rebuild_cache
 
 build week4/build/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week4/build && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt -B/home/ortur/CLionProjects/brown_belt/cmake-build-debug
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week4/build && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt_cxx -B/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -1495,7 +1495,7 @@ build week4/build/rebuild_cache: phony week4/build/CMakeFiles/rebuild_cache.util
 # Utility command for edit_cache
 
 build week4/build/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week4/build && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week4/build && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -1503,7 +1503,7 @@ build week4/build/edit_cache: phony week4/build/CMakeFiles/edit_cache.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/ortur/CLionProjects/brown_belt/week4/CMakeLists.txt
+# /home/ortur/CLionProjects/brown_belt_cxx/week4/CMakeLists.txt
 # =============================================================================
 
 
@@ -1511,7 +1511,7 @@ build week4/build/edit_cache: phony week4/build/CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build week4/build/textures/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week4/build/textures && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt -B/home/ortur/CLionProjects/brown_belt/cmake-build-debug
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week4/build/textures && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt_cxx -B/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -1523,7 +1523,7 @@ build week4/build/textures/rebuild_cache: phony week4/build/textures/CMakeFiles/
 # Utility command for edit_cache
 
 build week4/build/textures/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week4/build/textures && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week4/build/textures && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -1538,24 +1538,24 @@ build week4/build/textures/edit_cache: phony week4/build/textures/CMakeFiles/edi
 
 build cmake_object_order_depends_target_TEXTURES: phony || week4/build/textures/CMakeFiles/TEXTURES.dir
 
-build week4/build/textures/CMakeFiles/TEXTURES.dir/main.cpp.o: CXX_COMPILER__TEXTURES_Debug /home/ortur/CLionProjects/brown_belt/week4/textures/main.cpp || cmake_object_order_depends_target_TEXTURES
+build week4/build/textures/CMakeFiles/TEXTURES.dir/main.cpp.o: CXX_COMPILER__TEXTURES_Debug /home/ortur/CLionProjects/brown_belt_cxx/week4/textures/main.cpp || cmake_object_order_depends_target_TEXTURES
   DEP_FILE = week4/build/textures/CMakeFiles/TEXTURES.dir/main.cpp.o.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I/home/ortur/CLionProjects/brown_belt/libs
+  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs
   OBJECT_DIR = week4/build/textures/CMakeFiles/TEXTURES.dir
   OBJECT_FILE_DIR = week4/build/textures/CMakeFiles/TEXTURES.dir
 
-build week4/build/textures/CMakeFiles/TEXTURES.dir/Solution.cpp.o: CXX_COMPILER__TEXTURES_Debug /home/ortur/CLionProjects/brown_belt/week4/textures/Solution.cpp || cmake_object_order_depends_target_TEXTURES
+build week4/build/textures/CMakeFiles/TEXTURES.dir/Solution.cpp.o: CXX_COMPILER__TEXTURES_Debug /home/ortur/CLionProjects/brown_belt_cxx/week4/textures/Solution.cpp || cmake_object_order_depends_target_TEXTURES
   DEP_FILE = week4/build/textures/CMakeFiles/TEXTURES.dir/Solution.cpp.o.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I/home/ortur/CLionProjects/brown_belt/libs
+  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs
   OBJECT_DIR = week4/build/textures/CMakeFiles/TEXTURES.dir
   OBJECT_FILE_DIR = week4/build/textures/CMakeFiles/TEXTURES.dir
 
-build week4/build/textures/CMakeFiles/TEXTURES.dir/Textures.cpp.o: CXX_COMPILER__TEXTURES_Debug /home/ortur/CLionProjects/brown_belt/week4/textures/Textures.cpp || cmake_object_order_depends_target_TEXTURES
+build week4/build/textures/CMakeFiles/TEXTURES.dir/Textures.cpp.o: CXX_COMPILER__TEXTURES_Debug /home/ortur/CLionProjects/brown_belt_cxx/week4/textures/Textures.cpp || cmake_object_order_depends_target_TEXTURES
   DEP_FILE = week4/build/textures/CMakeFiles/TEXTURES.dir/Textures.cpp.o.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I/home/ortur/CLionProjects/brown_belt/libs
+  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs
   OBJECT_DIR = week4/build/textures/CMakeFiles/TEXTURES.dir
   OBJECT_FILE_DIR = week4/build/textures/CMakeFiles/TEXTURES.dir
 
@@ -1577,7 +1577,7 @@ build week4/build/textures/TEXTURES: CXX_EXECUTABLE_LINKER__TEXTURES_Debug week4
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/ortur/CLionProjects/brown_belt/week4/CMakeLists.txt
+# /home/ortur/CLionProjects/brown_belt_cxx/week4/CMakeLists.txt
 # =============================================================================
 
 
@@ -1585,7 +1585,7 @@ build week4/build/textures/TEXTURES: CXX_EXECUTABLE_LINKER__TEXTURES_Debug week4
 # Utility command for rebuild_cache
 
 build week4/build/unique_ptr/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week4/build/unique_ptr && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt -B/home/ortur/CLionProjects/brown_belt/cmake-build-debug
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week4/build/unique_ptr && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt_cxx -B/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -1597,7 +1597,7 @@ build week4/build/unique_ptr/rebuild_cache: phony week4/build/unique_ptr/CMakeFi
 # Utility command for edit_cache
 
 build week4/build/unique_ptr/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week4/build/unique_ptr && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week4/build/unique_ptr && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -1612,10 +1612,10 @@ build week4/build/unique_ptr/edit_cache: phony week4/build/unique_ptr/CMakeFiles
 
 build cmake_object_order_depends_target_UNIQ_PTR: phony || week4/build/unique_ptr/CMakeFiles/UNIQ_PTR.dir
 
-build week4/build/unique_ptr/CMakeFiles/UNIQ_PTR.dir/main.cpp.o: CXX_COMPILER__UNIQ_PTR_Debug /home/ortur/CLionProjects/brown_belt/week4/unique_ptr/main.cpp || cmake_object_order_depends_target_UNIQ_PTR
+build week4/build/unique_ptr/CMakeFiles/UNIQ_PTR.dir/main.cpp.o: CXX_COMPILER__UNIQ_PTR_Debug /home/ortur/CLionProjects/brown_belt_cxx/week4/unique_ptr/main.cpp || cmake_object_order_depends_target_UNIQ_PTR
   DEP_FILE = week4/build/unique_ptr/CMakeFiles/UNIQ_PTR.dir/main.cpp.o.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I/home/ortur/CLionProjects/brown_belt/libs
+  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs
   OBJECT_DIR = week4/build/unique_ptr/CMakeFiles/UNIQ_PTR.dir
   OBJECT_FILE_DIR = week4/build/unique_ptr/CMakeFiles/UNIQ_PTR.dir
 
@@ -1637,7 +1637,7 @@ build week4/build/unique_ptr/UNIQ_PTR: CXX_EXECUTABLE_LINKER__UNIQ_PTR_Debug wee
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/ortur/CLionProjects/brown_belt/week4/CMakeLists.txt
+# /home/ortur/CLionProjects/brown_belt_cxx/week4/CMakeLists.txt
 # =============================================================================
 
 
@@ -1645,7 +1645,7 @@ build week4/build/unique_ptr/UNIQ_PTR: CXX_EXECUTABLE_LINKER__UNIQ_PTR_Debug wee
 # Utility command for rebuild_cache
 
 build week4/build/cache/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week4/build/cache && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt -B/home/ortur/CLionProjects/brown_belt/cmake-build-debug
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week4/build/cache && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt_cxx -B/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -1657,7 +1657,7 @@ build week4/build/cache/rebuild_cache: phony week4/build/cache/CMakeFiles/rebuil
 # Utility command for edit_cache
 
 build week4/build/cache/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week4/build/cache && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week4/build/cache && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -1672,17 +1672,17 @@ build week4/build/cache/edit_cache: phony week4/build/cache/CMakeFiles/edit_cach
 
 build cmake_object_order_depends_target_CACHE: phony || week4/build/cache/CMakeFiles/CACHE.dir
 
-build week4/build/cache/CMakeFiles/CACHE.dir/main.cpp.o: CXX_COMPILER__CACHE_Debug /home/ortur/CLionProjects/brown_belt/week4/cache/main.cpp || cmake_object_order_depends_target_CACHE
+build week4/build/cache/CMakeFiles/CACHE.dir/main.cpp.o: CXX_COMPILER__CACHE_Debug /home/ortur/CLionProjects/brown_belt_cxx/week4/cache/main.cpp || cmake_object_order_depends_target_CACHE
   DEP_FILE = week4/build/cache/CMakeFiles/CACHE.dir/main.cpp.o.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I/home/ortur/CLionProjects/brown_belt/libs
+  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs
   OBJECT_DIR = week4/build/cache/CMakeFiles/CACHE.dir
   OBJECT_FILE_DIR = week4/build/cache/CMakeFiles/CACHE.dir
 
-build week4/build/cache/CMakeFiles/CACHE.dir/Solution.cpp.o: CXX_COMPILER__CACHE_Debug /home/ortur/CLionProjects/brown_belt/week4/cache/Solution.cpp || cmake_object_order_depends_target_CACHE
+build week4/build/cache/CMakeFiles/CACHE.dir/Solution.cpp.o: CXX_COMPILER__CACHE_Debug /home/ortur/CLionProjects/brown_belt_cxx/week4/cache/Solution.cpp || cmake_object_order_depends_target_CACHE
   DEP_FILE = week4/build/cache/CMakeFiles/CACHE.dir/Solution.cpp.o.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I/home/ortur/CLionProjects/brown_belt/libs
+  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs
   OBJECT_DIR = week4/build/cache/CMakeFiles/CACHE.dir
   OBJECT_FILE_DIR = week4/build/cache/CMakeFiles/CACHE.dir
 
@@ -1705,7 +1705,7 @@ build week4/build/cache/CACHE: CXX_EXECUTABLE_LINKER__CACHE_Debug week4/build/ca
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/ortur/CLionProjects/brown_belt/week4/CMakeLists.txt
+# /home/ortur/CLionProjects/brown_belt_cxx/week4/CMakeLists.txt
 # =============================================================================
 
 
@@ -1713,7 +1713,7 @@ build week4/build/cache/CACHE: CXX_EXECUTABLE_LINKER__CACHE_Debug week4/build/ca
 # Utility command for rebuild_cache
 
 build week4/build/raii_booking/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week4/build/raii_booking && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt -B/home/ortur/CLionProjects/brown_belt/cmake-build-debug
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week4/build/raii_booking && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt_cxx -B/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -1725,7 +1725,7 @@ build week4/build/raii_booking/rebuild_cache: phony week4/build/raii_booking/CMa
 # Utility command for edit_cache
 
 build week4/build/raii_booking/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week4/build/raii_booking && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week4/build/raii_booking && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -1740,10 +1740,10 @@ build week4/build/raii_booking/edit_cache: phony week4/build/raii_booking/CMakeF
 
 build cmake_object_order_depends_target_RAII_BOOKING: phony || week4/build/raii_booking/CMakeFiles/RAII_BOOKING.dir
 
-build week4/build/raii_booking/CMakeFiles/RAII_BOOKING.dir/test.cpp.o: CXX_COMPILER__RAII_BOOKING_Debug /home/ortur/CLionProjects/brown_belt/week4/raii_booking/test.cpp || cmake_object_order_depends_target_RAII_BOOKING
+build week4/build/raii_booking/CMakeFiles/RAII_BOOKING.dir/test.cpp.o: CXX_COMPILER__RAII_BOOKING_Debug /home/ortur/CLionProjects/brown_belt_cxx/week4/raii_booking/test.cpp || cmake_object_order_depends_target_RAII_BOOKING
   DEP_FILE = week4/build/raii_booking/CMakeFiles/RAII_BOOKING.dir/test.cpp.o.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I/home/ortur/CLionProjects/brown_belt/libs
+  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs
   OBJECT_DIR = week4/build/raii_booking/CMakeFiles/RAII_BOOKING.dir
   OBJECT_FILE_DIR = week4/build/raii_booking/CMakeFiles/RAII_BOOKING.dir
 
@@ -1765,7 +1765,7 @@ build week4/build/raii_booking/RAII_BOOKING: CXX_EXECUTABLE_LINKER__RAII_BOOKING
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/ortur/CLionProjects/brown_belt/CMakeLists.txt
+# /home/ortur/CLionProjects/brown_belt_cxx/CMakeLists.txt
 # =============================================================================
 
 
@@ -1773,7 +1773,7 @@ build week4/build/raii_booking/RAII_BOOKING: CXX_EXECUTABLE_LINKER__RAII_BOOKING
 # Utility command for rebuild_cache
 
 build week5/build/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week5/build && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt -B/home/ortur/CLionProjects/brown_belt/cmake-build-debug
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week5/build && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt_cxx -B/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -1785,7 +1785,7 @@ build week5/build/rebuild_cache: phony week5/build/CMakeFiles/rebuild_cache.util
 # Utility command for edit_cache
 
 build week5/build/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week5/build && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week5/build && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -1793,7 +1793,7 @@ build week5/build/edit_cache: phony week5/build/CMakeFiles/edit_cache.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/ortur/CLionProjects/brown_belt/week5/CMakeLists.txt
+# /home/ortur/CLionProjects/brown_belt_cxx/week5/CMakeLists.txt
 # =============================================================================
 
 
@@ -1801,7 +1801,7 @@ build week5/build/edit_cache: phony week5/build/CMakeFiles/edit_cache.util
 # Utility command for edit_cache
 
 build week5/build/banned_domains/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week5/build/banned_domains && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week5/build/banned_domains && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -1812,7 +1812,7 @@ build week5/build/banned_domains/edit_cache: phony week5/build/banned_domains/CM
 # Utility command for rebuild_cache
 
 build week5/build/banned_domains/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week5/build/banned_domains && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt -B/home/ortur/CLionProjects/brown_belt/cmake-build-debug
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week5/build/banned_domains && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt_cxx -B/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -1828,12 +1828,19 @@ build week5/build/banned_domains/rebuild_cache: phony week5/build/banned_domains
 
 build cmake_object_order_depends_target_DOMAINS: phony || week5/build/banned_domains/CMakeFiles/DOMAINS.dir
 
-build week5/build/banned_domains/CMakeFiles/DOMAINS.dir/main.cpp.o: CXX_COMPILER__DOMAINS_Debug /home/ortur/CLionProjects/brown_belt/week5/banned_domains/main.cpp || cmake_object_order_depends_target_DOMAINS
+build week5/build/banned_domains/CMakeFiles/DOMAINS.dir/main.cpp.o: CXX_COMPILER__DOMAINS_Debug /home/ortur/CLionProjects/brown_belt_cxx/week5/banned_domains/main.cpp || cmake_object_order_depends_target_DOMAINS
   DEP_FILE = week5/build/banned_domains/CMakeFiles/DOMAINS.dir/main.cpp.o.d
-  FLAGS = -g
-  INCLUDES = -I/home/ortur/CLionProjects/brown_belt/libs
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs
   OBJECT_DIR = week5/build/banned_domains/CMakeFiles/DOMAINS.dir
   OBJECT_FILE_DIR = week5/build/banned_domains/CMakeFiles/DOMAINS.dir
+
+build week5/build/banned_domains/CMakeFiles/DOMAINS.dir/__/budget_home_desktop_version/main.cpp.o: CXX_COMPILER__DOMAINS_Debug /home/ortur/CLionProjects/brown_belt_cxx/week5/budget_home_desktop_version/main.cpp || cmake_object_order_depends_target_DOMAINS
+  DEP_FILE = week5/build/banned_domains/CMakeFiles/DOMAINS.dir/__/budget_home_desktop_version/main.cpp.o.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs
+  OBJECT_DIR = week5/build/banned_domains/CMakeFiles/DOMAINS.dir
+  OBJECT_FILE_DIR = week5/build/banned_domains/CMakeFiles/DOMAINS.dir/__/budget_home_desktop_version
 
 
 # =============================================================================
@@ -1843,7 +1850,7 @@ build week5/build/banned_domains/CMakeFiles/DOMAINS.dir/main.cpp.o: CXX_COMPILER
 #############################################
 # Link the executable week5/build/banned_domains/DOMAINS
 
-build week5/build/banned_domains/DOMAINS: CXX_EXECUTABLE_LINKER__DOMAINS_Debug week5/build/banned_domains/CMakeFiles/DOMAINS.dir/main.cpp.o
+build week5/build/banned_domains/DOMAINS: CXX_EXECUTABLE_LINKER__DOMAINS_Debug week5/build/banned_domains/CMakeFiles/DOMAINS.dir/main.cpp.o week5/build/banned_domains/CMakeFiles/DOMAINS.dir/__/budget_home_desktop_version/main.cpp.o
   FLAGS = -g
   OBJECT_DIR = week5/build/banned_domains/CMakeFiles/DOMAINS.dir
   POST_BUILD = :
@@ -1852,7 +1859,90 @@ build week5/build/banned_domains/DOMAINS: CXX_EXECUTABLE_LINKER__DOMAINS_Debug w
   TARGET_PDB = DOMAINS.dbg
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/ortur/CLionProjects/brown_belt_cxx/week5/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build week5/build/budget_home_desktop_version/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week5/build/budget_home_desktop_version && /snap/clion/180/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt_cxx -B/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build week5/build/budget_home_desktop_version/rebuild_cache: phony week5/build/budget_home_desktop_version/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build week5/build/budget_home_desktop_version/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week5/build/budget_home_desktop_version && /snap/clion/180/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build week5/build/budget_home_desktop_version/edit_cache: phony week5/build/budget_home_desktop_version/CMakeFiles/edit_cache.util
+
+# =============================================================================
+# Object build statements for EXECUTABLE target BUDGET_HOME_DESKTOP
+
+
+#############################################
+# Order-only phony target for BUDGET_HOME_DESKTOP
+
+build cmake_object_order_depends_target_BUDGET_HOME_DESKTOP: phony || week5/build/budget_home_desktop_version/CMakeFiles/BUDGET_HOME_DESKTOP.dir
+
+build week5/build/budget_home_desktop_version/CMakeFiles/BUDGET_HOME_DESKTOP.dir/main.cpp.o: CXX_COMPILER__BUDGET_HOME_DESKTOP_Debug /home/ortur/CLionProjects/brown_belt_cxx/week5/budget_home_desktop_version/main.cpp || cmake_object_order_depends_target_BUDGET_HOME_DESKTOP
+  DEP_FILE = week5/build/budget_home_desktop_version/CMakeFiles/BUDGET_HOME_DESKTOP.dir/main.cpp.o.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs
+  OBJECT_DIR = week5/build/budget_home_desktop_version/CMakeFiles/BUDGET_HOME_DESKTOP.dir
+  OBJECT_FILE_DIR = week5/build/budget_home_desktop_version/CMakeFiles/BUDGET_HOME_DESKTOP.dir
+
+build week5/build/budget_home_desktop_version/CMakeFiles/BUDGET_HOME_DESKTOP.dir/date.cpp.o: CXX_COMPILER__BUDGET_HOME_DESKTOP_Debug /home/ortur/CLionProjects/brown_belt_cxx/week5/budget_home_desktop_version/date.cpp || cmake_object_order_depends_target_BUDGET_HOME_DESKTOP
+  DEP_FILE = week5/build/budget_home_desktop_version/CMakeFiles/BUDGET_HOME_DESKTOP.dir/date.cpp.o.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs
+  OBJECT_DIR = week5/build/budget_home_desktop_version/CMakeFiles/BUDGET_HOME_DESKTOP.dir
+  OBJECT_FILE_DIR = week5/build/budget_home_desktop_version/CMakeFiles/BUDGET_HOME_DESKTOP.dir
+
+build week5/build/budget_home_desktop_version/CMakeFiles/BUDGET_HOME_DESKTOP.dir/query.cpp.o: CXX_COMPILER__BUDGET_HOME_DESKTOP_Debug /home/ortur/CLionProjects/brown_belt_cxx/week5/budget_home_desktop_version/query.cpp || cmake_object_order_depends_target_BUDGET_HOME_DESKTOP
+  DEP_FILE = week5/build/budget_home_desktop_version/CMakeFiles/BUDGET_HOME_DESKTOP.dir/query.cpp.o.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs
+  OBJECT_DIR = week5/build/budget_home_desktop_version/CMakeFiles/BUDGET_HOME_DESKTOP.dir
+  OBJECT_FILE_DIR = week5/build/budget_home_desktop_version/CMakeFiles/BUDGET_HOME_DESKTOP.dir
+
+build week5/build/budget_home_desktop_version/CMakeFiles/BUDGET_HOME_DESKTOP.dir/income_manager.cpp.o: CXX_COMPILER__BUDGET_HOME_DESKTOP_Debug /home/ortur/CLionProjects/brown_belt_cxx/week5/budget_home_desktop_version/income_manager.cpp || cmake_object_order_depends_target_BUDGET_HOME_DESKTOP
+  DEP_FILE = week5/build/budget_home_desktop_version/CMakeFiles/BUDGET_HOME_DESKTOP.dir/income_manager.cpp.o.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs
+  OBJECT_DIR = week5/build/budget_home_desktop_version/CMakeFiles/BUDGET_HOME_DESKTOP.dir
+  OBJECT_FILE_DIR = week5/build/budget_home_desktop_version/CMakeFiles/BUDGET_HOME_DESKTOP.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target BUDGET_HOME_DESKTOP
+
+
+#############################################
+# Link the executable week5/build/budget_home_desktop_version/BUDGET_HOME_DESKTOP
+
+build week5/build/budget_home_desktop_version/BUDGET_HOME_DESKTOP: CXX_EXECUTABLE_LINKER__BUDGET_HOME_DESKTOP_Debug week5/build/budget_home_desktop_version/CMakeFiles/BUDGET_HOME_DESKTOP.dir/main.cpp.o week5/build/budget_home_desktop_version/CMakeFiles/BUDGET_HOME_DESKTOP.dir/date.cpp.o week5/build/budget_home_desktop_version/CMakeFiles/BUDGET_HOME_DESKTOP.dir/query.cpp.o week5/build/budget_home_desktop_version/CMakeFiles/BUDGET_HOME_DESKTOP.dir/income_manager.cpp.o
+  FLAGS = -g
+  OBJECT_DIR = week5/build/budget_home_desktop_version/CMakeFiles/BUDGET_HOME_DESKTOP.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = week5/build/budget_home_desktop_version/BUDGET_HOME_DESKTOP
+  TARGET_PDB = BUDGET_HOME_DESKTOP.dbg
+
+# =============================================================================
 # Target aliases.
+
+build BUDGET_HOME_DESKTOP: phony week5/build/budget_home_desktop_version/BUDGET_HOME_DESKTOP
 
 build CACHE: phony week4/build/cache/CACHE
 
@@ -1914,226 +2004,233 @@ build libgeo2d.a: phony week2/build/game_collisions/geo2d/libgeo2d.a
 # =============================================================================
 
 #############################################
-# Folder: /home/ortur/CLionProjects/brown_belt/cmake-build-debug
+# Folder: /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug
 
 build all: phony week1/build/all week2/build/all week3/build/all week4/build/all week5/build/all
 
 # =============================================================================
 
 #############################################
-# Folder: /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build
+# Folder: /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week1/build
 
 build week1/build/all: phony week1/build/hash_table/all week1/build/set_iterator/all week1/build/hash_point/all week1/build/hash_person/all week1/build/secondary_index/all
 
 # =============================================================================
 
 #############################################
-# Folder: /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build/hash_person
+# Folder: /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week1/build/hash_person
 
 build week1/build/hash_person/all: phony week1/build/hash_person/HASH_PERSON
 
 # =============================================================================
 
 #############################################
-# Folder: /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build/hash_point
+# Folder: /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week1/build/hash_point
 
 build week1/build/hash_point/all: phony week1/build/hash_point/HASH_POINT
 
 # =============================================================================
 
 #############################################
-# Folder: /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build/hash_table
+# Folder: /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week1/build/hash_table
 
 build week1/build/hash_table/all: phony week1/build/hash_table/HASH_TABLE
 
 # =============================================================================
 
 #############################################
-# Folder: /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build/secondary_index
+# Folder: /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week1/build/secondary_index
 
 build week1/build/secondary_index/all: phony week1/build/secondary_index/DATABASE
 
 # =============================================================================
 
 #############################################
-# Folder: /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build/set_iterator
+# Folder: /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week1/build/set_iterator
 
 build week1/build/set_iterator/all: phony week1/build/set_iterator/SET_ITERATOR
 
 # =============================================================================
 
 #############################################
-# Folder: /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week2/build
+# Folder: /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week2/build
 
 build week2/build/all: phony week2/build/xml_loader/all week2/build/json_loader/all week2/build/ini_loader/all week2/build/code_refactoring/all week2/build/game_collisions/all week2/build/http_request/all
 
 # =============================================================================
 
 #############################################
-# Folder: /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week2/build/code_refactoring
+# Folder: /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week2/build/code_refactoring
 
 build week2/build/code_refactoring/all: phony week2/build/code_refactoring/CODE_REFACTORING
 
 # =============================================================================
 
 #############################################
-# Folder: /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week2/build/game_collisions
+# Folder: /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week2/build/game_collisions
 
 build week2/build/game_collisions/all: phony week2/build/game_collisions/GAME_COLLISIONS week2/build/game_collisions/geo2d/all
 
 # =============================================================================
 
 #############################################
-# Folder: /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week2/build/game_collisions/geo2d
+# Folder: /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week2/build/game_collisions/geo2d
 
 build week2/build/game_collisions/geo2d/all: phony week2/build/game_collisions/geo2d/libgeo2d.a
 
 # =============================================================================
 
 #############################################
-# Folder: /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week2/build/http_request
+# Folder: /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week2/build/http_request
 
 build week2/build/http_request/all: phony week2/build/http_request/HTTP_REQUEST
 
 # =============================================================================
 
 #############################################
-# Folder: /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week2/build/ini_loader
+# Folder: /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week2/build/ini_loader
 
 build week2/build/ini_loader/all: phony week2/build/ini_loader/INI_LOADER
 
 # =============================================================================
 
 #############################################
-# Folder: /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week2/build/json_loader
+# Folder: /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week2/build/json_loader
 
 build week2/build/json_loader/all: phony week2/build/json_loader/JSON_LOADER
 
 # =============================================================================
 
 #############################################
-# Folder: /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week2/build/xml_loader
+# Folder: /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week2/build/xml_loader
 
 build week2/build/xml_loader/all: phony week2/build/xml_loader/XML_LOADER
 
 # =============================================================================
 
 #############################################
-# Folder: /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week3/build
+# Folder: /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week3/build
 
 build week3/build/all: phony week3/build/demographical_indicators/all week3/build/lazy_value/all week3/build/concurent_map/all week3/build/synchronized/all week3/build/object_pool/all week3/build/zoo/all week3/build/polynomial/all week3/build/pipline/all week3/build/tree/all
 
 # =============================================================================
 
 #############################################
-# Folder: /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week3/build/concurent_map
+# Folder: /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week3/build/concurent_map
 
 build week3/build/concurent_map/all: phony week3/build/concurent_map/concurent_map
 
 # =============================================================================
 
 #############################################
-# Folder: /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week3/build/demographical_indicators
+# Folder: /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week3/build/demographical_indicators
 
 build week3/build/demographical_indicators/all: phony week3/build/demographical_indicators/DEM_IND
 
 # =============================================================================
 
 #############################################
-# Folder: /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week3/build/lazy_value
+# Folder: /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week3/build/lazy_value
 
 build week3/build/lazy_value/all: phony week3/build/lazy_value/LAZY_VALUE
 
 # =============================================================================
 
 #############################################
-# Folder: /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week3/build/object_pool
+# Folder: /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week3/build/object_pool
 
 build week3/build/object_pool/all: phony week3/build/object_pool/OBJECT_POOL
 
 # =============================================================================
 
 #############################################
-# Folder: /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week3/build/pipline
+# Folder: /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week3/build/pipline
 
 build week3/build/pipline/all: phony week3/build/pipline/PIPLINE
 
 # =============================================================================
 
 #############################################
-# Folder: /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week3/build/polynomial
+# Folder: /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week3/build/polynomial
 
 build week3/build/polynomial/all: phony week3/build/polynomial/POLYNOMIAL
 
 # =============================================================================
 
 #############################################
-# Folder: /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week3/build/synchronized
+# Folder: /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week3/build/synchronized
 
 build week3/build/synchronized/all: phony week3/build/synchronized/SYNCHRONIZED
 
 # =============================================================================
 
 #############################################
-# Folder: /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week3/build/tree
+# Folder: /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week3/build/tree
 
 build week3/build/tree/all: phony week3/build/tree/TREE
 
 # =============================================================================
 
 #############################################
-# Folder: /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week3/build/zoo
+# Folder: /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week3/build/zoo
 
 build week3/build/zoo/all: phony week3/build/zoo/ZOO
 
 # =============================================================================
 
 #############################################
-# Folder: /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week4/build
+# Folder: /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week4/build
 
 build week4/build/all: phony week4/build/textures/all week4/build/unique_ptr/all week4/build/cache/all week4/build/raii_booking/all
 
 # =============================================================================
 
 #############################################
-# Folder: /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week4/build/cache
+# Folder: /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week4/build/cache
 
 build week4/build/cache/all: phony week4/build/cache/CACHE
 
 # =============================================================================
 
 #############################################
-# Folder: /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week4/build/raii_booking
+# Folder: /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week4/build/raii_booking
 
 build week4/build/raii_booking/all: phony week4/build/raii_booking/RAII_BOOKING
 
 # =============================================================================
 
 #############################################
-# Folder: /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week4/build/textures
+# Folder: /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week4/build/textures
 
 build week4/build/textures/all: phony week4/build/textures/TEXTURES
 
 # =============================================================================
 
 #############################################
-# Folder: /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week4/build/unique_ptr
+# Folder: /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week4/build/unique_ptr
 
 build week4/build/unique_ptr/all: phony week4/build/unique_ptr/UNIQ_PTR
 
 # =============================================================================
 
 #############################################
-# Folder: /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week5/build
+# Folder: /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week5/build
 
-build week5/build/all: phony week5/build/banned_domains/all
+build week5/build/all: phony week5/build/banned_domains/all week5/build/budget_home_desktop_version/all
 
 # =============================================================================
 
 #############################################
-# Folder: /home/ortur/CLionProjects/brown_belt/cmake-build-debug/week5/build/banned_domains
+# Folder: /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week5/build/banned_domains
 
 build week5/build/banned_domains/all: phony week5/build/banned_domains/DOMAINS
+
+# =============================================================================
+
+#############################################
+# Folder: /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week5/build/budget_home_desktop_version
+
+build week5/build/budget_home_desktop_version/all: phony week5/build/budget_home_desktop_version/BUDGET_HOME_DESKTOP
 
 # =============================================================================
 # Built-in targets
@@ -2142,14 +2239,14 @@ build week5/build/banned_domains/all: phony week5/build/banned_domains/DOMAINS
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../week1/CMakeLists.txt ../week1/hash_person/CMakeLists.txt ../week1/hash_point/CMakeLists.txt ../week1/hash_table/CMakeLists.txt ../week1/secondary_index/CMakeLists.txt ../week1/set_iterator/CMakeLists.txt ../week2/CMakeLists.txt ../week2/code_refactoring/CMakeLists.txt ../week2/game_collisions/CMakeLists.txt ../week2/game_collisions/geo2d/CMakeLists.txt ../week2/http_request/CMakeLists.txt ../week2/ini_loader/CMakeLists.txt ../week2/json_loader/CMakeLists.txt ../week2/xml_loader/CMakeLists.txt ../week3/CMakeLists.txt ../week3/concurent_map/CMakeLists.txt ../week3/demographical_indicators/CMakeLists.txt ../week3/lazy_value/CMakeLists.txt ../week3/object_pool/CMakeLists.txt ../week3/pipline/CMakeLists.txt ../week3/polynomial/CMakeLists.txt ../week3/synchronized/CMakeLists.txt ../week3/tree/CMakeLists.txt ../week3/zoo/CMakeLists.txt ../week4/CMakeLists.txt ../week4/cache/CMakeLists.txt ../week4/raii_booking/CMakeLists.txt ../week4/textures/CMakeLists.txt ../week4/unique_ptr/CMakeLists.txt ../week5/CMakeLists.txt ../week5/banned_domains/CMakeLists.txt /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCInformation.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCXXInformation.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/CMakeGenericSystem.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/CMakeInitializeConfigs.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/CMakeLanguageInformation.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-C.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-CXX.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-C.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.21.1/CMakeCCompiler.cmake CMakeFiles/3.21.1/CMakeCXXCompiler.cmake CMakeFiles/3.21.1/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../week1/CMakeLists.txt ../week1/hash_person/CMakeLists.txt ../week1/hash_point/CMakeLists.txt ../week1/hash_table/CMakeLists.txt ../week1/secondary_index/CMakeLists.txt ../week1/set_iterator/CMakeLists.txt ../week2/CMakeLists.txt ../week2/code_refactoring/CMakeLists.txt ../week2/game_collisions/CMakeLists.txt ../week2/game_collisions/geo2d/CMakeLists.txt ../week2/http_request/CMakeLists.txt ../week2/ini_loader/CMakeLists.txt ../week2/json_loader/CMakeLists.txt ../week2/xml_loader/CMakeLists.txt ../week3/CMakeLists.txt ../week3/concurent_map/CMakeLists.txt ../week3/demographical_indicators/CMakeLists.txt ../week3/lazy_value/CMakeLists.txt ../week3/object_pool/CMakeLists.txt ../week3/pipline/CMakeLists.txt ../week3/polynomial/CMakeLists.txt ../week3/synchronized/CMakeLists.txt ../week3/tree/CMakeLists.txt ../week3/zoo/CMakeLists.txt ../week4/CMakeLists.txt ../week4/cache/CMakeLists.txt ../week4/raii_booking/CMakeLists.txt ../week4/textures/CMakeLists.txt ../week4/unique_ptr/CMakeLists.txt ../week5/CMakeLists.txt ../week5/banned_domains/CMakeLists.txt ../week5/budget_home_desktop_version/CMakeLists.txt /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCInformation.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCXXInformation.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/CMakeGenericSystem.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/CMakeInitializeConfigs.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/CMakeLanguageInformation.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/Clang-C.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/Clang-CXX.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/Clang.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-Clang-C.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-Clang-CXX.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-C.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.21.1/CMakeCCompiler.cmake CMakeFiles/3.21.1/CMakeCXXCompiler.cmake CMakeFiles/3.21.1/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt ../week1/CMakeLists.txt ../week1/hash_person/CMakeLists.txt ../week1/hash_point/CMakeLists.txt ../week1/hash_table/CMakeLists.txt ../week1/secondary_index/CMakeLists.txt ../week1/set_iterator/CMakeLists.txt ../week2/CMakeLists.txt ../week2/code_refactoring/CMakeLists.txt ../week2/game_collisions/CMakeLists.txt ../week2/game_collisions/geo2d/CMakeLists.txt ../week2/http_request/CMakeLists.txt ../week2/ini_loader/CMakeLists.txt ../week2/json_loader/CMakeLists.txt ../week2/xml_loader/CMakeLists.txt ../week3/CMakeLists.txt ../week3/concurent_map/CMakeLists.txt ../week3/demographical_indicators/CMakeLists.txt ../week3/lazy_value/CMakeLists.txt ../week3/object_pool/CMakeLists.txt ../week3/pipline/CMakeLists.txt ../week3/polynomial/CMakeLists.txt ../week3/synchronized/CMakeLists.txt ../week3/tree/CMakeLists.txt ../week3/zoo/CMakeLists.txt ../week4/CMakeLists.txt ../week4/cache/CMakeLists.txt ../week4/raii_booking/CMakeLists.txt ../week4/textures/CMakeLists.txt ../week4/unique_ptr/CMakeLists.txt ../week5/CMakeLists.txt ../week5/banned_domains/CMakeLists.txt /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCInformation.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCXXInformation.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/CMakeGenericSystem.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/CMakeInitializeConfigs.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/CMakeLanguageInformation.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-C.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-CXX.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-C.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.21.1/CMakeCCompiler.cmake CMakeFiles/3.21.1/CMakeCXXCompiler.cmake CMakeFiles/3.21.1/CMakeSystem.cmake: phony
+build ../CMakeLists.txt ../week1/CMakeLists.txt ../week1/hash_person/CMakeLists.txt ../week1/hash_point/CMakeLists.txt ../week1/hash_table/CMakeLists.txt ../week1/secondary_index/CMakeLists.txt ../week1/set_iterator/CMakeLists.txt ../week2/CMakeLists.txt ../week2/code_refactoring/CMakeLists.txt ../week2/game_collisions/CMakeLists.txt ../week2/game_collisions/geo2d/CMakeLists.txt ../week2/http_request/CMakeLists.txt ../week2/ini_loader/CMakeLists.txt ../week2/json_loader/CMakeLists.txt ../week2/xml_loader/CMakeLists.txt ../week3/CMakeLists.txt ../week3/concurent_map/CMakeLists.txt ../week3/demographical_indicators/CMakeLists.txt ../week3/lazy_value/CMakeLists.txt ../week3/object_pool/CMakeLists.txt ../week3/pipline/CMakeLists.txt ../week3/polynomial/CMakeLists.txt ../week3/synchronized/CMakeLists.txt ../week3/tree/CMakeLists.txt ../week3/zoo/CMakeLists.txt ../week4/CMakeLists.txt ../week4/cache/CMakeLists.txt ../week4/raii_booking/CMakeLists.txt ../week4/textures/CMakeLists.txt ../week4/unique_ptr/CMakeLists.txt ../week5/CMakeLists.txt ../week5/banned_domains/CMakeLists.txt ../week5/budget_home_desktop_version/CMakeLists.txt /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCInformation.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCXXInformation.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/CMakeGenericSystem.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/CMakeInitializeConfigs.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/CMakeLanguageInformation.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/Clang-C.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/Clang-CXX.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/Clang.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-Clang-C.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-Clang-CXX.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-C.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux.cmake /snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.21.1/CMakeCCompiler.cmake CMakeFiles/3.21.1/CMakeCXXCompiler.cmake CMakeFiles/3.21.1/CMakeSystem.cmake: phony
 
 
 #############################################

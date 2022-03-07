@@ -1,4 +1,4 @@
-# Install script for directory: /home/ortur/CLionProjects/brown_belt/week1
+# Install script for directory: /home/ortur/CLionProjects/brown_belt_cxx/week1
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,26 +44,26 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build/hash_table/cmake_install.cmake")
+  include("/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week1/build/hash_table/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build/set_iterator/cmake_install.cmake")
+  include("/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week1/build/set_iterator/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build/hash_point/cmake_install.cmake")
+  include("/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week1/build/hash_point/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build/hash_person/cmake_install.cmake")
+  include("/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week1/build/hash_person/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build/secondary_index/cmake_install.cmake")
+  include("/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week1/build/secondary_index/cmake_install.cmake")
 endif()
 

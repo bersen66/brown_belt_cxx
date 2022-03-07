@@ -1,4 +1,4 @@
-# Install script for directory: /home/ortur/CLionProjects/brown_belt
+# Install script for directory: /home/ortur/CLionProjects/brown_belt_cxx
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,27 +44,27 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week1/build/cmake_install.cmake")
+  include("/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week1/build/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week2/build/cmake_install.cmake")
+  include("/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week2/build/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week3/build/cmake_install.cmake")
+  include("/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week3/build/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week4/build/cmake_install.cmake")
+  include("/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week4/build/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ortur/CLionProjects/brown_belt/cmake-build-debug/week5/build/cmake_install.cmake")
+  include("/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week5/build/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -75,5 +75,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/ortur/CLionProjects/brown_belt/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
