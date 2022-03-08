@@ -11,6 +11,7 @@ int main() {
     IncomeManager im;
     int Q;
     cin >> Q;
+    std::cout.precision(25);
     for (int i = 0; i < Q; i++) {
 
         string line;

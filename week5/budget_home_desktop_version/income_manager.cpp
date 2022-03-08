@@ -22,7 +22,7 @@ MoneyType IncomeManager::ComputeIncome(const Date& from, const Date& to) const {
 
 
 void IncomeManager::PayTax(const Date& from, const Date& to, double percent) {
-    IterateThrough(from, to,[&percent](MoneyType& val){
+    IterateThrough(from, to, [percent](MoneyType& val){
         val *= (1.0 - percent);
     });
 }
@@ -38,7 +38,7 @@ void IncomeManager::IterateThrough(const Date& begin, const Date& end, Callback 
 template<typename Callback>
 void IncomeManager::IterateThrougPeriod(const Date& begin, const Date& end, Callback callback) const {
     auto start = spendings_info_.lower_bound(begin);
-    auto finish = spendings_info_.lower_bound(end);
+    auto finish = spendings_info_.upper_bound(end);
 
     for (auto it = start; it != finish; it++) {
         auto& [date, value] = *it;
