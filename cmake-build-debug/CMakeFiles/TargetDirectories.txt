@@ -91,3 +91,6 @@
 /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week5/build/budget_home_desktop_version/CMakeFiles/rebuild_cache.dir
 /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week5/build/budget_home_desktop_version/CMakeFiles/edit_cache.dir
 /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week5/build/budget_home_desktop_version/CMakeFiles/BUDGET_HOME_DESKTOP.dir
+/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week5/build/budget_proffessional_desktop_version/CMakeFiles/edit_cache.dir
+/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week5/build/budget_proffessional_desktop_version/CMakeFiles/rebuild_cache.dir
+/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week5/build/budget_proffessional_desktop_version/CMakeFiles/BUDGET_PROF_DESKTOP.dir

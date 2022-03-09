@@ -8,7 +8,7 @@
 using namespace std;
 
 int main() {
-    IncomeManager im;
+    BudgetSystem im;
     int Q;
     cin >> Q;
     std::cout.precision(25);

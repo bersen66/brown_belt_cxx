@@ -1,0 +1,255 @@
+{
+	"inputs" : 
+	[
+		{
+			"path" : "CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/3.21.1/CMakeSystem.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/3.21.1/CMakeCCompiler.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/3.21.1/CMakeCXXCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/CMakeGenericSystem.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/CMakeInitializeConfigs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Platform/UnixPaths.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/CMakeLanguageInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/Clang-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/Clang.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-Clang-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCXXInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/CMakeLanguageInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/Clang-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/Clang.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-Clang-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/180/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"path" : "week1/CMakeLists.txt"
+		},
+		{
+			"path" : "week1/hash_table/CMakeLists.txt"
+		},
+		{
+			"path" : "week1/set_iterator/CMakeLists.txt"
+		},
+		{
+			"path" : "week1/hash_point/CMakeLists.txt"
+		},
+		{
+			"path" : "week1/hash_person/CMakeLists.txt"
+		},
+		{
+			"path" : "week1/secondary_index/CMakeLists.txt"
+		},
+		{
+			"path" : "week2/CMakeLists.txt"
+		},
+		{
+			"path" : "week2/xml_loader/CMakeLists.txt"
+		},
+		{
+			"path" : "week2/json_loader/CMakeLists.txt"
+		},
+		{
+			"path" : "week2/ini_loader/CMakeLists.txt"
+		},
+		{
+			"path" : "week2/code_refactoring/CMakeLists.txt"
+		},
+		{
+			"path" : "week2/game_collisions/CMakeLists.txt"
+		},
+		{
+			"path" : "week2/game_collisions/geo2d/CMakeLists.txt"
+		},
+		{
+			"path" : "week2/http_request/CMakeLists.txt"
+		},
+		{
+			"path" : "week3/CMakeLists.txt"
+		},
+		{
+			"path" : "week3/demographical_indicators/CMakeLists.txt"
+		},
+		{
+			"path" : "week3/lazy_value/CMakeLists.txt"
+		},
+		{
+			"path" : "week3/concurent_map/CMakeLists.txt"
+		},
+		{
+			"path" : "week3/synchronized/CMakeLists.txt"
+		},
+		{
+			"path" : "week3/object_pool/CMakeLists.txt"
+		},
+		{
+			"path" : "week3/zoo/CMakeLists.txt"
+		},
+		{
+			"path" : "week3/polynomial/CMakeLists.txt"
+		},
+		{
+			"path" : "week3/pipline/CMakeLists.txt"
+		},
+		{
+			"path" : "week3/tree/CMakeLists.txt"
+		},
+		{
+			"path" : "week4/CMakeLists.txt"
+		},
+		{
+			"path" : "week4/textures/CMakeLists.txt"
+		},
+		{
+			"path" : "week4/unique_ptr/CMakeLists.txt"
+		},
+		{
+			"path" : "week4/cache/CMakeLists.txt"
+		},
+		{
+			"path" : "week4/raii_booking/CMakeLists.txt"
+		},
+		{
+			"path" : "week5/CMakeLists.txt"
+		},
+		{
+			"path" : "week5/banned_domains/CMakeLists.txt"
+		},
+		{
+			"path" : "week5/budget_home_desktop_version/CMakeLists.txt"
+		},
+		{
+			"path" : "week5/budget_proffessional_desktop_version/CMakeLists.txt"
+		}
+	],
+	"kind" : "cmakeFiles",
+	"paths" : 
+	{
+		"build" : "/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug",
+		"source" : "/home/ortur/CLionProjects/brown_belt_cxx"
+	},
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 0
+	}
+}
