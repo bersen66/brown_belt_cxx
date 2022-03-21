@@ -17,7 +17,8 @@ struct Request {
     enum class Type {
         ADD_ROUTE,
         ADD_STOP,
-        GET_BUS_INFO
+        GET_BUS_INFO,
+        GET_STOP_INFO,
     };
 
     Request(Type type) : type(type) {}
@@ -97,7 +98,19 @@ struct GetBusInfoRequest : ReadRequest<TransportDirectory::BusInfo> {
     std::string bus_name;
 };
 
+struct GetStopInfoRequest : ReadRequest<TransportDirectory::StopInfo> {
+    GetStopInfoRequest() : ReadRequest<TransportDirectory::StopInfo>(Type::GET_STOP_INFO) {}
 
+    void ParseFrom(std::string_view input) override {
+        stop_name = input;
+    }
+
+    std::optional<TransportDirectory::StopInfo> Process(const TransportDirectory &directory) const override {
+        return directory.GetStopInfo(stop_name);
+    }
+
+    std::string stop_name;
+};
 
 RequestHolder Request::Create(Type type) {
     switch (type) {
@@ -107,6 +120,8 @@ RequestHolder Request::Create(Type type) {
             return std::make_unique<AddStopRequest>();
         case Request::Type::GET_BUS_INFO:
             return std::make_unique<GetBusInfoRequest>();
+        case Request::Type::GET_STOP_INFO:
+            return std::make_unique<GetStopInfoRequest>();
         default:
             return nullptr;
     }
@@ -119,6 +134,7 @@ const std::unordered_map<std::string_view, Request::Type> STR_TO_MODIFY_REQUEST_
 
 const std::unordered_map<std::string_view, Request::Type> STR_TO_READ_REQUEST_TYPE = {
         {"Bus", Request::Type::GET_BUS_INFO},
+        {"Stop", Request::Type::GET_STOP_INFO},
 };
 
 enum class RequestMode {
@@ -196,6 +212,8 @@ std::vector<std::string> ProcessReadRequests(const std::vector<RequestHolder>& r
     std::vector<std::string> responses;
 
     for (const auto& request_holder : requests) {
+
+
         if (request_holder->type == Request::Type::GET_BUS_INFO) {
             const auto& request = static_cast<const GetBusInfoRequest&>(*request_holder);
             auto result = request.Process(dir);
@@ -205,6 +223,21 @@ std::vector<std::string> ProcessReadRequests(const std::vector<RequestHolder>& r
                 responses.push_back("Bus " + request.bus_name + ": " +"not found");
             }
         }
+
+        if (request_holder->type == Request::Type::GET_STOP_INFO) {
+            const auto& request = static_cast<const GetStopInfoRequest&>(*request_holder);
+            auto result = request.Process(dir);
+
+            if (result.has_value()) {
+                if (!result->buses.empty())
+                    responses.push_back("Stop " + request.stop_name + ": buses" + result->ToString());
+                else
+                    responses.push_back("Stop " + request.stop_name + ": no buses");
+            } else {
+                responses.push_back("Stop " + request.stop_name + ": not found");
+            }
+        }
+
     }
 
     return responses;

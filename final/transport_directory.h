@@ -6,12 +6,11 @@
 #include <memory>
 #include <sstream>
 #include <unordered_set>
+#include <set>
 
 #include "route.h"
 #include "bus_stop.h"
 
-
-class hash_set;
 
 class TransportDirectory {
 public:
@@ -20,7 +19,7 @@ public:
 
     void AddStop(const BusStop& stop) {
         if (!HasStop(stop.GetName())) {
-            stops_statistics_[stop.GetName()] = StopStatisticsParams();
+            stops_statistics_[stop.GetName()] = std::move(StopInfo());
             stops_[std::move(stop.GetName())] = stop;
         } else {
             SetCoordinatesIfNeeded(stop);
@@ -116,8 +115,9 @@ private:
         bool IsCircular = route.GetType() == Route::Type::CIRCLE;
 
         for (int i = 0; i < route_stations.size() - IsCircular; i++) {
-            if (HasStop(route_stations[i]))
-                stops_statistics_.at(route_stations[i]).buses_through_stop++;
+            stops_statistics_[route_stations[i]].AddBusNameToUsedSet(route_name);
+//            if (HasStop(route_stations[i]))
+//                stops_statistics_.at(route_stations[i]).buses_through_stop++;
         }
     }
 
@@ -153,16 +153,38 @@ private:
 
         return unique.size();
     }
-private:
+public:
 
-    struct StopStatisticsParams{
+    struct StopInfo{
         size_t buses_through_stop;
+        std::set<std::string> buses;
+
+        void AddBusNameToUsedSet(const std::string& bus_name) {
+            buses.insert(bus_name);
+            buses_through_stop = buses.size();
+        }
+
+        std::string ToString() const {
+            std::stringstream out;
+
+            for (const auto& stop_name : buses) {
+                out << " " << stop_name;
+            }
+
+            return out.str();
+        }
     };
 
+    std::optional<StopInfo> GetStopInfo(const std::string& stop_name) const {
+        if (HasStop(stop_name))
+            return  std::make_optional<StopInfo>(stops_statistics_.at(stop_name));
+        else
+            return std::nullopt;
+    }
 
-public:
+private:
     std::unordered_map<std::string, BusStop> stops_;
-    std::unordered_map<std::string, StopStatisticsParams> stops_statistics_;
+    std::unordered_map<std::string, StopInfo> stops_statistics_;
     std::unordered_map<std::string, Route> routes_;
 };
 

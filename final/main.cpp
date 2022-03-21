@@ -8,57 +8,57 @@
 #include "request.h"
 
 using namespace std;
-
-void DebugStopParsing() {
-    TransportDirectory dr;
-    {
-
-        int n;
-        cin >> n;
-        for (int i = 0; i < n; i++) {
-
-            string line;
-            while (line.empty()) {
-                getline(cin, line);
-            }
-
-            auto stop = ParseBusStop(line);
-            if (stop) {
-                dr.AddStop(*stop);
-            }
-        }
-
-    }
-
-    for (const auto& [key, val] : dr) {
-        cout << val << endl;
-    }
-
-}
-
-
-void PrintState(TransportDirectory& dr) {
-
-
-    for (const auto& [key, val] : dr.stops_) {
-        cout  << key << " " << val << endl;
-    }
-
-    cout << endl;
-    cout << endl;
-
-    for (const auto& [key, val] : dr.routes_) {
-        cout << key << " " << val<< endl;
-    }
-
-    cout << endl;
-    cout << endl;
-
-    for (const auto& [key, val] : dr.stops_statistics_) {
-        cout << key << " " << val.buses_through_stop << endl;
-    }
-
-}
+//
+//void DebugStopParsing() {
+//    TransportDirectory dr;
+//    {
+//
+//        int n;
+//        cin >> n;
+//        for (int i = 0; i < n; i++) {
+//
+//            string line;
+//            while (line.empty()) {
+//                getline(cin, line);
+//            }
+//
+//            auto stop = ParseBusStop(line);
+//            if (stop) {
+//                dr.AddStop(*stop);
+//            }
+//        }
+//
+//    }
+//
+//    for (const auto& [key, val] : dr) {
+//        cout << val << endl;
+//    }
+//
+//}
+//
+//
+//void PrintState(TransportDirectory& dr) {
+//
+//
+//    for (const auto& [key, val] : dr.stops_) {
+//        cout  << key << " " << val << endl;
+//    }
+//
+//    cout << endl;
+//    cout << endl;
+//
+//    for (const auto& [key, val] : dr.routes_) {
+//        cout << key << " " << val<< endl;
+//    }
+//
+//    cout << endl;
+//    cout << endl;
+//
+//    for (const auto& [key, val] : dr.stops_statistics_) {
+//        cout << key << " " << val.buses_through_stop << endl;
+//    }
+//
+//}
 
 int main() {
 
