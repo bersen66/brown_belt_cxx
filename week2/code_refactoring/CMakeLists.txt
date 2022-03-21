@@ -14,7 +14,7 @@ set(
 set(
         HEADERS
         stats_aggregator.h
-)
+        ../../final/main.cpp ../../stop.h)
 
 add_executable(${PROJECT_NAME} ${HEADERS} ${SOURCES})
 

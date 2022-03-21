@@ -20,7 +20,6 @@ set(
 		query.h
 		budget_system.h
 		income.h
-		#solution.cpp
 )
 
 add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS})

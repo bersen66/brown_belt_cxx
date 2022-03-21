@@ -16,7 +16,6 @@ MoneyType BudgetSystem::ComputeIncome(const Date& from, const Date& to) const {
     IterateThrougPeriod(from, to, [&result](const MoneyType& val){
         result += val;
     });
-    result = result;
     return result;
 }
 

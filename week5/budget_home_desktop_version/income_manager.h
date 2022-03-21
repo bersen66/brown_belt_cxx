@@ -2,7 +2,7 @@
 #define BROWN_BELT_INCOME_MANAGER
 
 #include "date.h"
-#include "../budget_proffessional_desktop_version/income.h"
+#include "income.h"
 #include <map>
 
 using MoneyType = double;
