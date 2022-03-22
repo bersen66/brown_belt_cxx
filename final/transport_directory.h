@@ -17,50 +17,13 @@ public:
     TransportDirectory() = default;
     TransportDirectory(const TransportDirectory&) = delete;
 
-    void AddStop(const BusStop& stop) {
-        if (!HasStop(stop.GetName())) {
-            stops_statistics_[stop.GetName()] = std::move(StopInfo());
-            stops_[std::move(stop.GetName())] = stop;
-        } else {
-            SetCoordinatesIfNeeded(stop);
-        }
+    void AddStop(const BusStop& stop);
+    void AddRoute(const Route& route);
 
-    }
-
-    void SetCoordinatesIfNeeded(const BusStop& stop) {
-        auto& uninit_stop = stops_[stop.GetName()];
-
-        if (uninit_stop.GetLatitude() == 0 && uninit_stop.GetLongitude() == 0) {
-            uninit_stop.SetLatitude(stop.GetLatitude());
-            uninit_stop.SetLongitude(stop.GetLongitude());
-        }
-    }
-
-    void AddRoute(const Route& route) {
-        routes_[route.GetName()] = route;
-        AddRouteStops(route);
-        UpdateStopsStatistic(route.GetName());
-    }
-
-    bool HasBus(const std::string& bus_name) const {
-        return routes_.find(bus_name) != routes_.end();
-    }
-
-
-    bool HasStop(const std::string& stop_name) const {
-        return stops_.find(stop_name) != stops_.end();
-    }
-
-    inline auto begin() {
-        return stops_.begin();
-    }
-
-    inline auto end() {
-        return stops_.end();
-    }
+    bool HasBus(const std::string& bus_name) const;
+    bool HasStop(const std::string& stop_name) const;
 
 public:
-
     struct BusInfo {
         double distance;
         size_t stations_num;
@@ -72,87 +35,21 @@ public:
             return out.str();
         }
     };
-
-    std::optional<BusInfo>  GetBusInfo(const std::string& bus_name) const {
-        if (!HasBus(bus_name))
-            return std::nullopt;
-
-        BusInfo result;
-
-        const Route& rt = routes_.at(bus_name);
-
-        result.distance = ComputeRouteLength(bus_name);
-
-        result.stations_num = ComputeRouteSize(rt);
-        result.unique_stops = ComputeUniqueStops(bus_name);
-
-        return result;
-    }
+    std::optional<BusInfo>  GetBusInfo(const std::string& bus_name) const;
 private:
 
-    size_t ComputeRouteSize(const Route& route) const {
-        if (route.GetType() == Route::Type::CIRCLE) {
-            return route.GetNumberOfStations();
-        } else {
-            return route.GetNumberOfStations() * 2 - 1;
-        }
-    }
-
-    void AddRouteStops(const Route& route) {
-        const auto& route_stations = route.GetStations();
-        bool IsCircular = route.GetType() == Route::Type::CIRCLE;
-
-        for (int i = 0; i < route_stations.size() - IsCircular; i++) {
-            if (!HasStop(route_stations[i]))
-                AddStop(BusStop(route_stations[i]));
-        }
-    }
-
-    void UpdateStopsStatistic(const std::string& route_name) {
-        const auto& route = routes_.at(route_name);
-
-        const auto& route_stations = route.GetStations();
-        bool IsCircular = route.GetType() == Route::Type::CIRCLE;
-
-        for (int i = 0; i < route_stations.size() - IsCircular; i++) {
-            stops_statistics_[route_stations[i]].AddBusNameToUsedSet(route_name);
-//            if (HasStop(route_stations[i]))
-//                stops_statistics_.at(route_stations[i]).buses_through_stop++;
-        }
-    }
-
-    double ComputeRouteLength(const std::string& route_name) const {
-        const Route& rt = routes_.at(route_name);
-        const std::vector<std::string>& stations = rt.GetStations();
-
-        double result = 0.0;
-        for (int i = 0; i < stations.size() - 1; i++) {
-            result += stops_.at(stations[i]).DistanceTo(stops_.at(stations[i+1]));
-        }
-
-        if (rt.GetType() == Route::Type::STRAIGHT) {
-            result *= 2;
-        }
+    void SetStopCoordinatesIfNeeded(const BusStop& stop);
 
 
-        return result;
-    }
+    size_t ComputeRouteSize(const Route& route) const;
 
-    size_t ComputeUniqueStops(const std::string& route_name) const {
-        const Route& rt = routes_.at(route_name);
+    void AddRouteStops(const Route& route);
 
-        const std::vector<std::string>& stations = rt.GetStations();
+    void UpdateStopsStatistic(const std::string& route_name);
 
+    double ComputeRouteLength(const std::string& route_name) const;
 
-
-        std::unordered_set<std::string_view> unique;
-
-        for (const auto& station : stations) {
-             unique.insert(station);
-        }
-
-        return unique.size();
-    }
+    size_t ComputeUniqueStops(const std::string& route_name) const;
 public:
 
     struct StopInfo{
@@ -174,13 +71,7 @@ public:
             return out.str();
         }
     };
-
-    std::optional<StopInfo> GetStopInfo(const std::string& stop_name) const {
-        if (HasStop(stop_name))
-            return  std::make_optional<StopInfo>(stops_statistics_.at(stop_name));
-        else
-            return std::nullopt;
-    }
+    std::optional<StopInfo> GetStopInfo(const std::string& stop_name) const;
 
 private:
     std::unordered_map<std::string, BusStop> stops_;

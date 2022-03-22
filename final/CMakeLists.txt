@@ -12,6 +12,6 @@ set(
 
 set(
         HEADERS
-        sphere_point.h sphere_point.cpp parsing_stuff.h parsing_stuff.cpp bus_stop.h bus_stop.cpp transport_directory.h request.h test_transport_directory.h)
+        sphere_point.h sphere_point.cpp parsing_stuff.h parsing_stuff.cpp bus_stop.h bus_stop.cpp transport_directory.h request.h test_transport_directory.h graph_lib/graph.h range.h transport_directory.cpp)
 
 add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS})
