@@ -1,0 +1,1350 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						7,
+						15,
+						25,
+						30,
+						34
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "week1/build",
+					"childIndexes" : 
+					[
+						2,
+						3,
+						4,
+						5,
+						6
+					],
+					"jsonFile" : "directory-week1.build-Debug-f76a5957a08375535d2e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "week1"
+				},
+				{
+					"build" : "week1/build/hash_table",
+					"jsonFile" : "directory-week1.build.hash_table-Debug-759d445b3860487cda0e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 2,
+					"source" : "week1/hash_table",
+					"targetIndexes" : 
+					[
+						11
+					]
+				},
+				{
+					"build" : "week1/build/set_iterator",
+					"jsonFile" : "directory-week1.build.set_iterator-Debug-acf59f00f8774182cb0d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 3,
+					"source" : "week1/set_iterator",
+					"targetIndexes" : 
+					[
+						20
+					]
+				},
+				{
+					"build" : "week1/build/hash_point",
+					"jsonFile" : "directory-week1.build.hash_point-Debug-95e467e5f6b3669d73c1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 4,
+					"source" : "week1/hash_point",
+					"targetIndexes" : 
+					[
+						10
+					]
+				},
+				{
+					"build" : "week1/build/hash_person",
+					"jsonFile" : "directory-week1.build.hash_person-Debug-7b4b91a85fa04aa0711a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 5,
+					"source" : "week1/hash_person",
+					"targetIndexes" : 
+					[
+						9
+					]
+				},
+				{
+					"build" : "week1/build/secondary_index",
+					"jsonFile" : "directory-week1.build.secondary_index-Debug-e9f2531b28a4dd9fa099.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 6,
+					"source" : "week1/secondary_index",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "week2/build",
+					"childIndexes" : 
+					[
+						8,
+						9,
+						10,
+						11,
+						12,
+						14
+					],
+					"jsonFile" : "directory-week2.build-Debug-30c517d78229d3884a68.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 7,
+					"source" : "week2"
+				},
+				{
+					"build" : "week2/build/xml_loader",
+					"jsonFile" : "directory-week2.build.xml_loader-Debug-0f0dfead09743355fc0a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 7,
+					"projectIndex" : 8,
+					"source" : "week2/xml_loader",
+					"targetIndexes" : 
+					[
+						25
+					]
+				},
+				{
+					"build" : "week2/build/json_loader",
+					"jsonFile" : "directory-week2.build.json_loader-Debug-15ad2614726fbff705e4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 7,
+					"projectIndex" : 9,
+					"source" : "week2/json_loader",
+					"targetIndexes" : 
+					[
+						14
+					]
+				},
+				{
+					"build" : "week2/build/ini_loader",
+					"jsonFile" : "directory-week2.build.ini_loader-Debug-00bc136b0c305177be03.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 7,
+					"projectIndex" : 10,
+					"source" : "week2/ini_loader",
+					"targetIndexes" : 
+					[
+						13
+					]
+				},
+				{
+					"build" : "week2/build/code_refactoring",
+					"jsonFile" : "directory-week2.build.code_refactoring-Debug-96e88c7e9cb058fd5903.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 7,
+					"projectIndex" : 11,
+					"source" : "week2/code_refactoring",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "week2/build/game_collisions",
+					"childIndexes" : 
+					[
+						13
+					],
+					"jsonFile" : "directory-week2.build.game_collisions-Debug-611445e4c805093750f6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 7,
+					"projectIndex" : 12,
+					"source" : "week2/game_collisions",
+					"targetIndexes" : 
+					[
+						8
+					]
+				},
+				{
+					"build" : "week2/build/game_collisions/geo2d",
+					"jsonFile" : "directory-week2.build.game_collisions.geo2d-Debug-e0f8189c798821f3f688.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 12,
+					"projectIndex" : 13,
+					"source" : "week2/game_collisions/geo2d",
+					"targetIndexes" : 
+					[
+						28
+					]
+				},
+				{
+					"build" : "week2/build/http_request",
+					"jsonFile" : "directory-week2.build.http_request-Debug-9a314bddb006ec6fe881.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 7,
+					"projectIndex" : 14,
+					"source" : "week2/http_request",
+					"targetIndexes" : 
+					[
+						12
+					]
+				},
+				{
+					"build" : "week3/build",
+					"childIndexes" : 
+					[
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24
+					],
+					"jsonFile" : "directory-week3.build-Debug-a66fa1361169e7baa01d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 15,
+					"source" : "week3"
+				},
+				{
+					"build" : "week3/build/demographical_indicators",
+					"jsonFile" : "directory-week3.build.demographical_indicators-Debug-982879b1db09ede9da6e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 15,
+					"projectIndex" : 16,
+					"source" : "week3/demographical_indicators",
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"build" : "week3/build/lazy_value",
+					"jsonFile" : "directory-week3.build.lazy_value-Debug-abda5ed3f9168c6bd0d8.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 15,
+					"projectIndex" : 17,
+					"source" : "week3/lazy_value",
+					"targetIndexes" : 
+					[
+						15
+					]
+				},
+				{
+					"build" : "week3/build/concurent_map",
+					"jsonFile" : "directory-week3.build.concurent_map-Debug-40ee7d25dbe3303b3717.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 15,
+					"projectIndex" : 18,
+					"source" : "week3/concurent_map",
+					"targetIndexes" : 
+					[
+						27
+					]
+				},
+				{
+					"build" : "week3/build/synchronized",
+					"jsonFile" : "directory-week3.build.synchronized-Debug-04130979d3302f3d66e9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 15,
+					"projectIndex" : 19,
+					"source" : "week3/synchronized",
+					"targetIndexes" : 
+					[
+						21
+					]
+				},
+				{
+					"build" : "week3/build/object_pool",
+					"jsonFile" : "directory-week3.build.object_pool-Debug-f5e6113cfe61b993693a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 15,
+					"projectIndex" : 20,
+					"source" : "week3/object_pool",
+					"targetIndexes" : 
+					[
+						16
+					]
+				},
+				{
+					"build" : "week3/build/zoo",
+					"jsonFile" : "directory-week3.build.zoo-Debug-941a45f2322eec7cc9e0.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 15,
+					"projectIndex" : 21,
+					"source" : "week3/zoo",
+					"targetIndexes" : 
+					[
+						26
+					]
+				},
+				{
+					"build" : "week3/build/polynomial",
+					"jsonFile" : "directory-week3.build.polynomial-Debug-b6d1bbf786998fca4242.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 15,
+					"projectIndex" : 22,
+					"source" : "week3/polynomial",
+					"targetIndexes" : 
+					[
+						18
+					]
+				},
+				{
+					"build" : "week3/build/pipline",
+					"jsonFile" : "directory-week3.build.pipline-Debug-04c81a3fbcbaa7d4eabd.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 15,
+					"projectIndex" : 23,
+					"source" : "week3/pipline",
+					"targetIndexes" : 
+					[
+						17
+					]
+				},
+				{
+					"build" : "week3/build/tree",
+					"jsonFile" : "directory-week3.build.tree-Debug-bf78e4568ae91f2f449d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 15,
+					"projectIndex" : 24,
+					"source" : "week3/tree",
+					"targetIndexes" : 
+					[
+						23
+					]
+				},
+				{
+					"build" : "week4/build",
+					"childIndexes" : 
+					[
+						26,
+						27,
+						28,
+						29
+					],
+					"jsonFile" : "directory-week4.build-Debug-669390435cdd87b440de.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 25,
+					"source" : "week4"
+				},
+				{
+					"build" : "week4/build/textures",
+					"jsonFile" : "directory-week4.build.textures-Debug-8541a547e0df80d590e5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 25,
+					"projectIndex" : 26,
+					"source" : "week4/textures",
+					"targetIndexes" : 
+					[
+						22
+					]
+				},
+				{
+					"build" : "week4/build/unique_ptr",
+					"jsonFile" : "directory-week4.build.unique_ptr-Debug-6965986af637aa723e10.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 25,
+					"projectIndex" : 27,
+					"source" : "week4/unique_ptr",
+					"targetIndexes" : 
+					[
+						24
+					]
+				},
+				{
+					"build" : "week4/build/cache",
+					"jsonFile" : "directory-week4.build.cache-Debug-a8d6fccf1c8d59e35720.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 25,
+					"projectIndex" : 28,
+					"source" : "week4/cache",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "week4/build/raii_booking",
+					"jsonFile" : "directory-week4.build.raii_booking-Debug-fbef35841e64139bb12d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 25,
+					"projectIndex" : 29,
+					"source" : "week4/raii_booking",
+					"targetIndexes" : 
+					[
+						19
+					]
+				},
+				{
+					"build" : "week5/build",
+					"childIndexes" : 
+					[
+						31,
+						32,
+						33
+					],
+					"jsonFile" : "directory-week5.build-Debug-dd8654d5df60123cc805.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 30,
+					"source" : "week5"
+				},
+				{
+					"build" : "week5/build/banned_domains",
+					"jsonFile" : "directory-week5.build.banned_domains-Debug-b821b920048bae924e08.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 30,
+					"projectIndex" : 31,
+					"source" : "week5/banned_domains",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"build" : "week5/build/budget_home_desktop_version",
+					"jsonFile" : "directory-week5.build.budget_home_desktop_version-Debug-2c74a64ea58860f5709a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 30,
+					"projectIndex" : 32,
+					"source" : "week5/budget_home_desktop_version",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "week5/build/budget_proffessional_desktop_version",
+					"jsonFile" : "directory-week5.build.budget_proffessional_desktop_version-Debug-0a827347e81245699770.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 30,
+					"projectIndex" : 33,
+					"source" : "week5/budget_proffessional_desktop_version",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "final/build",
+					"childIndexes" : 
+					[
+						35,
+						36,
+						37
+					],
+					"jsonFile" : "directory-final.build-Debug-4cdcaf5981ba1e994c37.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 34,
+					"source" : "final",
+					"targetIndexes" : 
+					[
+						7
+					]
+				},
+				{
+					"build" : "final/build/transport_directory",
+					"jsonFile" : "directory-final.build.transport_directory-Debug-0305ea87e7dfb6d8395e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 34,
+					"projectIndex" : 35,
+					"source" : "final/transport_directory",
+					"targetIndexes" : 
+					[
+						31
+					]
+				},
+				{
+					"build" : "final/build/parsers",
+					"jsonFile" : "directory-final.build.parsers-Debug-f782f0a2be4ff03aa3d7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 34,
+					"projectIndex" : 36,
+					"source" : "final/parsers",
+					"targetIndexes" : 
+					[
+						30
+					]
+				},
+				{
+					"build" : "final/build/geometry",
+					"jsonFile" : "directory-final.build.geometry-Debug-d1aa15804f42a77921e0.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 34,
+					"projectIndex" : 37,
+					"source" : "final/geometry",
+					"targetIndexes" : 
+					[
+						29
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						7,
+						15,
+						25,
+						30,
+						34
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "BROWN_BELT"
+				},
+				{
+					"childIndexes" : 
+					[
+						2,
+						3,
+						4,
+						5,
+						6
+					],
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "WEEK_1",
+					"parentIndex" : 0
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "HASH_TABLE",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						11
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "SET_ITERATOR",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						20
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "HASH_POINT",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						10
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "HASH_PERSON",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						9
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						6
+					],
+					"name" : "DATABASE",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						8,
+						9,
+						10,
+						11,
+						12,
+						14
+					],
+					"directoryIndexes" : 
+					[
+						7
+					],
+					"name" : "WEEK2",
+					"parentIndex" : 0
+				},
+				{
+					"directoryIndexes" : 
+					[
+						8
+					],
+					"name" : "XML_LOADER",
+					"parentIndex" : 7,
+					"targetIndexes" : 
+					[
+						25
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						9
+					],
+					"name" : "JSON_LOADER",
+					"parentIndex" : 7,
+					"targetIndexes" : 
+					[
+						14
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						10
+					],
+					"name" : "INI_LOADER",
+					"parentIndex" : 7,
+					"targetIndexes" : 
+					[
+						13
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						11
+					],
+					"name" : "CODE_REFACTORING",
+					"parentIndex" : 7,
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						13
+					],
+					"directoryIndexes" : 
+					[
+						12
+					],
+					"name" : "GAME_COLLISIONS",
+					"parentIndex" : 7,
+					"targetIndexes" : 
+					[
+						8
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						13
+					],
+					"name" : "geo2d",
+					"parentIndex" : 12,
+					"targetIndexes" : 
+					[
+						28
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						14
+					],
+					"name" : "HTTP_REQUEST",
+					"parentIndex" : 7,
+					"targetIndexes" : 
+					[
+						12
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24
+					],
+					"directoryIndexes" : 
+					[
+						15
+					],
+					"name" : "WEEK_3",
+					"parentIndex" : 0
+				},
+				{
+					"directoryIndexes" : 
+					[
+						16
+					],
+					"name" : "DEM_IND",
+					"parentIndex" : 15,
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						17
+					],
+					"name" : "LAZY_VALUE",
+					"parentIndex" : 15,
+					"targetIndexes" : 
+					[
+						15
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						18
+					],
+					"name" : "concurent_map",
+					"parentIndex" : 15,
+					"targetIndexes" : 
+					[
+						27
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						19
+					],
+					"name" : "SYNCHRONIZED",
+					"parentIndex" : 15,
+					"targetIndexes" : 
+					[
+						21
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						20
+					],
+					"name" : "OBJECT_POOL",
+					"parentIndex" : 15,
+					"targetIndexes" : 
+					[
+						16
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						21
+					],
+					"name" : "ZOO",
+					"parentIndex" : 15,
+					"targetIndexes" : 
+					[
+						26
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						22
+					],
+					"name" : "POLYNOMIAL",
+					"parentIndex" : 15,
+					"targetIndexes" : 
+					[
+						18
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						23
+					],
+					"name" : "PIPLINE",
+					"parentIndex" : 15,
+					"targetIndexes" : 
+					[
+						17
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						24
+					],
+					"name" : "TREE",
+					"parentIndex" : 15,
+					"targetIndexes" : 
+					[
+						23
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						26,
+						27,
+						28,
+						29
+					],
+					"directoryIndexes" : 
+					[
+						25
+					],
+					"name" : "WEEK_4",
+					"parentIndex" : 0
+				},
+				{
+					"directoryIndexes" : 
+					[
+						26
+					],
+					"name" : "TEXTURES",
+					"parentIndex" : 25,
+					"targetIndexes" : 
+					[
+						22
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						27
+					],
+					"name" : "UNIQ_PTR",
+					"parentIndex" : 25,
+					"targetIndexes" : 
+					[
+						24
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						28
+					],
+					"name" : "CACHE",
+					"parentIndex" : 25,
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						29
+					],
+					"name" : "RAII_BOOKING",
+					"parentIndex" : 25,
+					"targetIndexes" : 
+					[
+						19
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						31,
+						32,
+						33
+					],
+					"directoryIndexes" : 
+					[
+						30
+					],
+					"name" : "WEEK5",
+					"parentIndex" : 0
+				},
+				{
+					"directoryIndexes" : 
+					[
+						31
+					],
+					"name" : "DOMAINS",
+					"parentIndex" : 30,
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						32
+					],
+					"name" : "BUDGET_HOME_DESKTOP",
+					"parentIndex" : 30,
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						33
+					],
+					"name" : "BUDGET_PROF_DESKTOP",
+					"parentIndex" : 30,
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						35,
+						36,
+						37
+					],
+					"directoryIndexes" : 
+					[
+						34
+					],
+					"name" : "FINAL",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						7
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						35
+					],
+					"name" : "transport_directory",
+					"parentIndex" : 34,
+					"targetIndexes" : 
+					[
+						31
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						36
+					],
+					"name" : "parsing_stuff",
+					"parentIndex" : 34,
+					"targetIndexes" : 
+					[
+						30
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						37
+					],
+					"name" : "geometry",
+					"parentIndex" : 34,
+					"targetIndexes" : 
+					[
+						29
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 32,
+					"id" : "BUDGET_HOME_DESKTOP::@c6bfcef88aa9b3c380ca",
+					"jsonFile" : "target-BUDGET_HOME_DESKTOP-Debug-5c54a297e721a4a9b220.json",
+					"name" : "BUDGET_HOME_DESKTOP",
+					"projectIndex" : 32
+				},
+				{
+					"directoryIndex" : 33,
+					"id" : "BUDGET_PROF_DESKTOP::@19840137a9c99f42851b",
+					"jsonFile" : "target-BUDGET_PROF_DESKTOP-Debug-1a07a39ab1a1894f2008.json",
+					"name" : "BUDGET_PROF_DESKTOP",
+					"projectIndex" : 33
+				},
+				{
+					"directoryIndex" : 28,
+					"id" : "CACHE::@5851d0fa9392d9a9bdcc",
+					"jsonFile" : "target-CACHE-Debug-913083475107c6128195.json",
+					"name" : "CACHE",
+					"projectIndex" : 28
+				},
+				{
+					"directoryIndex" : 11,
+					"id" : "CODE_REFACTORING::@73ef341b5cf9175e6095",
+					"jsonFile" : "target-CODE_REFACTORING-Debug-6952241b9aec4feb61e6.json",
+					"name" : "CODE_REFACTORING",
+					"projectIndex" : 11
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "DATABASE::@d5f686b7d8f67bdd07c4",
+					"jsonFile" : "target-DATABASE-Debug-c79c2b85f966f1a71b26.json",
+					"name" : "DATABASE",
+					"projectIndex" : 6
+				},
+				{
+					"directoryIndex" : 16,
+					"id" : "DEM_IND::@2ac5d26738183e78680c",
+					"jsonFile" : "target-DEM_IND-Debug-6d281c04de2b30df9ec2.json",
+					"name" : "DEM_IND",
+					"projectIndex" : 16
+				},
+				{
+					"directoryIndex" : 31,
+					"id" : "DOMAINS::@5ba7f270cff42b063630",
+					"jsonFile" : "target-DOMAINS-Debug-ec6749af7b6d62e87e36.json",
+					"name" : "DOMAINS",
+					"projectIndex" : 31
+				},
+				{
+					"directoryIndex" : 34,
+					"id" : "FINAL::@60edfea61e8b3a50c6c9",
+					"jsonFile" : "target-FINAL-Debug-5fee43fe589e3562fc49.json",
+					"name" : "FINAL",
+					"projectIndex" : 34
+				},
+				{
+					"directoryIndex" : 12,
+					"id" : "GAME_COLLISIONS::@e59b8aa56cde6d76d6bc",
+					"jsonFile" : "target-GAME_COLLISIONS-Debug-e1ee16f47b15606edc1b.json",
+					"name" : "GAME_COLLISIONS",
+					"projectIndex" : 12
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "HASH_PERSON::@bbdd269987a7ecb2c12e",
+					"jsonFile" : "target-HASH_PERSON-Debug-4ef022da35d3763c19d1.json",
+					"name" : "HASH_PERSON",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "HASH_POINT::@f579143b169bbc1f3bdb",
+					"jsonFile" : "target-HASH_POINT-Debug-d0b94b721cd458a0e5f8.json",
+					"name" : "HASH_POINT",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "HASH_TABLE::@44ea947f2c117c2d635d",
+					"jsonFile" : "target-HASH_TABLE-Debug-669e5e8f611e4194802e.json",
+					"name" : "HASH_TABLE",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 14,
+					"id" : "HTTP_REQUEST::@8525074fae65d26f7277",
+					"jsonFile" : "target-HTTP_REQUEST-Debug-5a7aee193baacec74b56.json",
+					"name" : "HTTP_REQUEST",
+					"projectIndex" : 14
+				},
+				{
+					"directoryIndex" : 10,
+					"id" : "INI_LOADER::@8abd029995e9516d872f",
+					"jsonFile" : "target-INI_LOADER-Debug-f6159813bac9cecbfbb6.json",
+					"name" : "INI_LOADER",
+					"projectIndex" : 10
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "JSON_LOADER::@45cd548b2c164705ad70",
+					"jsonFile" : "target-JSON_LOADER-Debug-1c00f88fa2128997841e.json",
+					"name" : "JSON_LOADER",
+					"projectIndex" : 9
+				},
+				{
+					"directoryIndex" : 17,
+					"id" : "LAZY_VALUE::@72e430f1d9ce7106fd6b",
+					"jsonFile" : "target-LAZY_VALUE-Debug-9246e4a24ae035f2afb9.json",
+					"name" : "LAZY_VALUE",
+					"projectIndex" : 17
+				},
+				{
+					"directoryIndex" : 20,
+					"id" : "OBJECT_POOL::@13c1c9f853a71eb38a05",
+					"jsonFile" : "target-OBJECT_POOL-Debug-1c9de0d3b22d40617af6.json",
+					"name" : "OBJECT_POOL",
+					"projectIndex" : 20
+				},
+				{
+					"directoryIndex" : 23,
+					"id" : "PIPLINE::@544a47c7cc90f3849c32",
+					"jsonFile" : "target-PIPLINE-Debug-1cfabccdb1458d6a3d27.json",
+					"name" : "PIPLINE",
+					"projectIndex" : 23
+				},
+				{
+					"directoryIndex" : 22,
+					"id" : "POLYNOMIAL::@13f0fe739efff67254cb",
+					"jsonFile" : "target-POLYNOMIAL-Debug-0b5ec2416f156e9cf7b8.json",
+					"name" : "POLYNOMIAL",
+					"projectIndex" : 22
+				},
+				{
+					"directoryIndex" : 29,
+					"id" : "RAII_BOOKING::@8842a4fcce381a585530",
+					"jsonFile" : "target-RAII_BOOKING-Debug-7d4cf8cfc976550acd70.json",
+					"name" : "RAII_BOOKING",
+					"projectIndex" : 29
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "SET_ITERATOR::@ea04dad1b55a47cd64bd",
+					"jsonFile" : "target-SET_ITERATOR-Debug-9cc7f977fa896fde4cac.json",
+					"name" : "SET_ITERATOR",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 19,
+					"id" : "SYNCHRONIZED::@26c90ec4e18429d2e278",
+					"jsonFile" : "target-SYNCHRONIZED-Debug-9ff983d4f57e1e7f8158.json",
+					"name" : "SYNCHRONIZED",
+					"projectIndex" : 19
+				},
+				{
+					"directoryIndex" : 26,
+					"id" : "TEXTURES::@f34bfea54e43fe53b63e",
+					"jsonFile" : "target-TEXTURES-Debug-28d057b8166ea1c7aa25.json",
+					"name" : "TEXTURES",
+					"projectIndex" : 26
+				},
+				{
+					"directoryIndex" : 24,
+					"id" : "TREE::@17cb506008109b0bb273",
+					"jsonFile" : "target-TREE-Debug-692fd2c3c24fa3f3b278.json",
+					"name" : "TREE",
+					"projectIndex" : 24
+				},
+				{
+					"directoryIndex" : 27,
+					"id" : "UNIQ_PTR::@5fb727f1ed18d277abc2",
+					"jsonFile" : "target-UNIQ_PTR-Debug-e453d1ae2190fa528af0.json",
+					"name" : "UNIQ_PTR",
+					"projectIndex" : 27
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "XML_LOADER::@8c4950e4d3463bdbf7f0",
+					"jsonFile" : "target-XML_LOADER-Debug-099f5908d58b7b5f5394.json",
+					"name" : "XML_LOADER",
+					"projectIndex" : 8
+				},
+				{
+					"directoryIndex" : 21,
+					"id" : "ZOO::@e0801ec5a42e295d7d21",
+					"jsonFile" : "target-ZOO-Debug-b260381f33ec5089d06d.json",
+					"name" : "ZOO",
+					"projectIndex" : 21
+				},
+				{
+					"directoryIndex" : 18,
+					"id" : "concurent_map::@7e9a4732dfebe679eb8c",
+					"jsonFile" : "target-concurent_map-Debug-370a176af878488f23d6.json",
+					"name" : "concurent_map",
+					"projectIndex" : 18
+				},
+				{
+					"directoryIndex" : 13,
+					"id" : "geo2d::@dec56eb3ffaaee62bebf",
+					"jsonFile" : "target-geo2d-Debug-67a0c3b79cb22eeb6b2c.json",
+					"name" : "geo2d",
+					"projectIndex" : 13
+				},
+				{
+					"directoryIndex" : 37,
+					"id" : "geometry::@e3f48ce80d036e994a72",
+					"jsonFile" : "target-geometry-Debug-b9d3674f8b798207672e.json",
+					"name" : "geometry",
+					"projectIndex" : 37
+				},
+				{
+					"directoryIndex" : 36,
+					"id" : "parsing_stuff::@ba1b2f455ef908844f6a",
+					"jsonFile" : "target-parsing_stuff-Debug-6a13a6ce2fb8ed91dbe8.json",
+					"name" : "parsing_stuff",
+					"projectIndex" : 36
+				},
+				{
+					"directoryIndex" : 35,
+					"id" : "transport_directory::@8a69a7d8d26c4f4f024b",
+					"jsonFile" : "target-transport_directory-Debug-cd8361a3b7a35ec2ea20.json",
+					"name" : "transport_directory",
+					"projectIndex" : 35
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug",
+		"source" : "/home/ortur/CLionProjects/brown_belt_cxx"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

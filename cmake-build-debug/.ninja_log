@@ -163,3 +163,8 @@
 2226	2325	1648317353535756234	final/build/transport_directory/libtransport_directory.a	de5a2db9d55e174c
 2	3103	1648317354335860399	final/build/CMakeFiles/FINAL.dir/main.cpp.o	99d72ba41a3f4f94
 3103	3352	1648317354587893212	final/build/FINAL	32abdadf3b3978d1
+1	1700	1648318095814180767	final/build/transport_directory/CMakeFiles/transport_directory.dir/route_informator.cpp.o	9a721658c2b4c3c2
+1	2972	1648318097084533614	final/build/transport_directory/CMakeFiles/transport_directory.dir/road_map.cpp.o	d71aacdb5e9be71f
+1	2988	1648318097100560339	final/build/CMakeFiles/FINAL.dir/main.cpp.o	99d72ba41a3f4f94
+2972	3446	1648318097441128255	final/build/transport_directory/libtransport_directory.a	de5a2db9d55e174c
+3447	3643	1648318097757656083	final/build/FINAL	32abdadf3b3978d1
