@@ -2069,47 +2069,12 @@ build final/build/edit_cache: phony final/build/CMakeFiles/edit_cache.util
 #############################################
 # Order-only phony target for FINAL
 
-build cmake_object_order_depends_target_FINAL: phony || final/build/CMakeFiles/FINAL.dir
+build cmake_object_order_depends_target_FINAL: phony || cmake_object_order_depends_target_geometry cmake_object_order_depends_target_parsing_stuff cmake_object_order_depends_target_transport_directory
 
 build final/build/CMakeFiles/FINAL.dir/main.cpp.o: CXX_COMPILER__FINAL_Debug /home/ortur/CLionProjects/brown_belt_cxx/final/main.cpp || cmake_object_order_depends_target_FINAL
   DEP_FILE = final/build/CMakeFiles/FINAL.dir/main.cpp.o.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs
-  OBJECT_DIR = final/build/CMakeFiles/FINAL.dir
-  OBJECT_FILE_DIR = final/build/CMakeFiles/FINAL.dir
-
-build final/build/CMakeFiles/FINAL.dir/route.cpp.o: CXX_COMPILER__FINAL_Debug /home/ortur/CLionProjects/brown_belt_cxx/final/route.cpp || cmake_object_order_depends_target_FINAL
-  DEP_FILE = final/build/CMakeFiles/FINAL.dir/route.cpp.o.d
-  FLAGS = -g -std=gnu++17
-  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs
-  OBJECT_DIR = final/build/CMakeFiles/FINAL.dir
-  OBJECT_FILE_DIR = final/build/CMakeFiles/FINAL.dir
-
-build final/build/CMakeFiles/FINAL.dir/sphere_point.cpp.o: CXX_COMPILER__FINAL_Debug /home/ortur/CLionProjects/brown_belt_cxx/final/sphere_point.cpp || cmake_object_order_depends_target_FINAL
-  DEP_FILE = final/build/CMakeFiles/FINAL.dir/sphere_point.cpp.o.d
-  FLAGS = -g -std=gnu++17
-  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs
-  OBJECT_DIR = final/build/CMakeFiles/FINAL.dir
-  OBJECT_FILE_DIR = final/build/CMakeFiles/FINAL.dir
-
-build final/build/CMakeFiles/FINAL.dir/parsing_stuff.cpp.o: CXX_COMPILER__FINAL_Debug /home/ortur/CLionProjects/brown_belt_cxx/final/parsing_stuff.cpp || cmake_object_order_depends_target_FINAL
-  DEP_FILE = final/build/CMakeFiles/FINAL.dir/parsing_stuff.cpp.o.d
-  FLAGS = -g -std=gnu++17
-  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs
-  OBJECT_DIR = final/build/CMakeFiles/FINAL.dir
-  OBJECT_FILE_DIR = final/build/CMakeFiles/FINAL.dir
-
-build final/build/CMakeFiles/FINAL.dir/bus_stop.cpp.o: CXX_COMPILER__FINAL_Debug /home/ortur/CLionProjects/brown_belt_cxx/final/bus_stop.cpp || cmake_object_order_depends_target_FINAL
-  DEP_FILE = final/build/CMakeFiles/FINAL.dir/bus_stop.cpp.o.d
-  FLAGS = -g -std=gnu++17
-  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs
-  OBJECT_DIR = final/build/CMakeFiles/FINAL.dir
-  OBJECT_FILE_DIR = final/build/CMakeFiles/FINAL.dir
-
-build final/build/CMakeFiles/FINAL.dir/transport_directory.cpp.o: CXX_COMPILER__FINAL_Debug /home/ortur/CLionProjects/brown_belt_cxx/final/transport_directory.cpp || cmake_object_order_depends_target_FINAL
-  DEP_FILE = final/build/CMakeFiles/FINAL.dir/transport_directory.cpp.o.d
-  FLAGS = -g -std=gnu++17
-  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs
+  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs -I/home/ortur/CLionProjects/brown_belt_cxx/final/requests -I/home/ortur/CLionProjects/brown_belt_cxx/final/graphs -I/home/ortur/CLionProjects/brown_belt_cxx/final/transport_directory -I/home/ortur/CLionProjects/brown_belt_cxx/final/parsers -I/home/ortur/CLionProjects/brown_belt_cxx/final/geometry
   OBJECT_DIR = final/build/CMakeFiles/FINAL.dir
   OBJECT_FILE_DIR = final/build/CMakeFiles/FINAL.dir
 
@@ -2121,13 +2086,215 @@ build final/build/CMakeFiles/FINAL.dir/transport_directory.cpp.o: CXX_COMPILER__
 #############################################
 # Link the executable final/build/FINAL
 
-build final/build/FINAL: CXX_EXECUTABLE_LINKER__FINAL_Debug final/build/CMakeFiles/FINAL.dir/main.cpp.o final/build/CMakeFiles/FINAL.dir/route.cpp.o final/build/CMakeFiles/FINAL.dir/sphere_point.cpp.o final/build/CMakeFiles/FINAL.dir/parsing_stuff.cpp.o final/build/CMakeFiles/FINAL.dir/bus_stop.cpp.o final/build/CMakeFiles/FINAL.dir/transport_directory.cpp.o
+build final/build/FINAL: CXX_EXECUTABLE_LINKER__FINAL_Debug final/build/CMakeFiles/FINAL.dir/main.cpp.o | final/build/transport_directory/libtransport_directory.a final/build/parsers/libparsing_stuff.a final/build/geometry/libgeometry.a || final/build/geometry/libgeometry.a final/build/parsers/libparsing_stuff.a final/build/transport_directory/libtransport_directory.a
   FLAGS = -g
+  LINK_LIBRARIES = final/build/transport_directory/libtransport_directory.a  final/build/parsers/libparsing_stuff.a  final/build/geometry/libgeometry.a
   OBJECT_DIR = final/build/CMakeFiles/FINAL.dir
   POST_BUILD = :
   PRE_LINK = :
   TARGET_FILE = final/build/FINAL
   TARGET_PDB = FINAL.dbg
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/ortur/CLionProjects/brown_belt_cxx/final/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build final/build/transport_directory/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/final/build/transport_directory && /snap/clion/184/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt_cxx -B/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build final/build/transport_directory/rebuild_cache: phony final/build/transport_directory/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build final/build/transport_directory/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/final/build/transport_directory && /snap/clion/184/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build final/build/transport_directory/edit_cache: phony final/build/transport_directory/CMakeFiles/edit_cache.util
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target transport_directory
+
+
+#############################################
+# Order-only phony target for transport_directory
+
+build cmake_object_order_depends_target_transport_directory: phony || cmake_object_order_depends_target_geometry cmake_object_order_depends_target_parsing_stuff
+
+build final/build/transport_directory/CMakeFiles/transport_directory.dir/road_map.cpp.o: CXX_COMPILER__transport_directory_Debug /home/ortur/CLionProjects/brown_belt_cxx/final/transport_directory/road_map.cpp || cmake_object_order_depends_target_transport_directory
+  DEP_FILE = final/build/transport_directory/CMakeFiles/transport_directory.dir/road_map.cpp.o.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs -I/home/ortur/CLionProjects/brown_belt_cxx/final/requests -I/home/ortur/CLionProjects/brown_belt_cxx/final/graphs -I/home/ortur/CLionProjects/brown_belt_cxx/final/transport_directory/../parsers -I/home/ortur/CLionProjects/brown_belt_cxx/final/transport_directory/../geometry
+  OBJECT_DIR = final/build/transport_directory/CMakeFiles/transport_directory.dir
+  OBJECT_FILE_DIR = final/build/transport_directory/CMakeFiles/transport_directory.dir
+
+build final/build/transport_directory/CMakeFiles/transport_directory.dir/route.cpp.o: CXX_COMPILER__transport_directory_Debug /home/ortur/CLionProjects/brown_belt_cxx/final/transport_directory/route.cpp || cmake_object_order_depends_target_transport_directory
+  DEP_FILE = final/build/transport_directory/CMakeFiles/transport_directory.dir/route.cpp.o.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs -I/home/ortur/CLionProjects/brown_belt_cxx/final/requests -I/home/ortur/CLionProjects/brown_belt_cxx/final/graphs -I/home/ortur/CLionProjects/brown_belt_cxx/final/transport_directory/../parsers -I/home/ortur/CLionProjects/brown_belt_cxx/final/transport_directory/../geometry
+  OBJECT_DIR = final/build/transport_directory/CMakeFiles/transport_directory.dir
+  OBJECT_FILE_DIR = final/build/transport_directory/CMakeFiles/transport_directory.dir
+
+build final/build/transport_directory/CMakeFiles/transport_directory.dir/route_informator.cpp.o: CXX_COMPILER__transport_directory_Debug /home/ortur/CLionProjects/brown_belt_cxx/final/transport_directory/route_informator.cpp || cmake_object_order_depends_target_transport_directory
+  DEP_FILE = final/build/transport_directory/CMakeFiles/transport_directory.dir/route_informator.cpp.o.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs -I/home/ortur/CLionProjects/brown_belt_cxx/final/requests -I/home/ortur/CLionProjects/brown_belt_cxx/final/graphs -I/home/ortur/CLionProjects/brown_belt_cxx/final/transport_directory/../parsers -I/home/ortur/CLionProjects/brown_belt_cxx/final/transport_directory/../geometry
+  OBJECT_DIR = final/build/transport_directory/CMakeFiles/transport_directory.dir
+  OBJECT_FILE_DIR = final/build/transport_directory/CMakeFiles/transport_directory.dir
+
+build final/build/transport_directory/CMakeFiles/transport_directory.dir/bus_stop.cpp.o: CXX_COMPILER__transport_directory_Debug /home/ortur/CLionProjects/brown_belt_cxx/final/transport_directory/bus_stop.cpp || cmake_object_order_depends_target_transport_directory
+  DEP_FILE = final/build/transport_directory/CMakeFiles/transport_directory.dir/bus_stop.cpp.o.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs -I/home/ortur/CLionProjects/brown_belt_cxx/final/requests -I/home/ortur/CLionProjects/brown_belt_cxx/final/graphs -I/home/ortur/CLionProjects/brown_belt_cxx/final/transport_directory/../parsers -I/home/ortur/CLionProjects/brown_belt_cxx/final/transport_directory/../geometry
+  OBJECT_DIR = final/build/transport_directory/CMakeFiles/transport_directory.dir
+  OBJECT_FILE_DIR = final/build/transport_directory/CMakeFiles/transport_directory.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target transport_directory
+
+
+#############################################
+# Link the static library final/build/transport_directory/libtransport_directory.a
+
+build final/build/transport_directory/libtransport_directory.a: CXX_STATIC_LIBRARY_LINKER__transport_directory_Debug final/build/transport_directory/CMakeFiles/transport_directory.dir/road_map.cpp.o final/build/transport_directory/CMakeFiles/transport_directory.dir/route.cpp.o final/build/transport_directory/CMakeFiles/transport_directory.dir/route_informator.cpp.o final/build/transport_directory/CMakeFiles/transport_directory.dir/bus_stop.cpp.o || final/build/geometry/libgeometry.a final/build/parsers/libparsing_stuff.a
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = final/build/transport_directory/CMakeFiles/transport_directory.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = final/build/transport_directory/libtransport_directory.a
+  TARGET_PDB = transport_directory.a.dbg
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/ortur/CLionProjects/brown_belt_cxx/final/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build final/build/parsers/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/final/build/parsers && /snap/clion/184/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt_cxx -B/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build final/build/parsers/rebuild_cache: phony final/build/parsers/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build final/build/parsers/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/final/build/parsers && /snap/clion/184/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build final/build/parsers/edit_cache: phony final/build/parsers/CMakeFiles/edit_cache.util
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target parsing_stuff
+
+
+#############################################
+# Order-only phony target for parsing_stuff
+
+build cmake_object_order_depends_target_parsing_stuff: phony || final/build/parsers/CMakeFiles/parsing_stuff.dir
+
+build final/build/parsers/CMakeFiles/parsing_stuff.dir/parsing_stuff.cpp.o: CXX_COMPILER__parsing_stuff_Debug /home/ortur/CLionProjects/brown_belt_cxx/final/parsers/parsing_stuff.cpp || cmake_object_order_depends_target_parsing_stuff
+  DEP_FILE = final/build/parsers/CMakeFiles/parsing_stuff.dir/parsing_stuff.cpp.o.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs -I/home/ortur/CLionProjects/brown_belt_cxx/final/requests -I/home/ortur/CLionProjects/brown_belt_cxx/final/graphs -I/home/ortur/CLionProjects/brown_belt_cxx/final/transport_directory
+  OBJECT_DIR = final/build/parsers/CMakeFiles/parsing_stuff.dir
+  OBJECT_FILE_DIR = final/build/parsers/CMakeFiles/parsing_stuff.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target parsing_stuff
+
+
+#############################################
+# Link the static library final/build/parsers/libparsing_stuff.a
+
+build final/build/parsers/libparsing_stuff.a: CXX_STATIC_LIBRARY_LINKER__parsing_stuff_Debug final/build/parsers/CMakeFiles/parsing_stuff.dir/parsing_stuff.cpp.o
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = final/build/parsers/CMakeFiles/parsing_stuff.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = final/build/parsers/libparsing_stuff.a
+  TARGET_PDB = parsing_stuff.a.dbg
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/ortur/CLionProjects/brown_belt_cxx/final/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build final/build/geometry/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/final/build/geometry && /snap/clion/184/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ortur/CLionProjects/brown_belt_cxx -B/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build final/build/geometry/rebuild_cache: phony final/build/geometry/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build final/build/geometry/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/final/build/geometry && /snap/clion/184/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build final/build/geometry/edit_cache: phony final/build/geometry/CMakeFiles/edit_cache.util
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target geometry
+
+
+#############################################
+# Order-only phony target for geometry
+
+build cmake_object_order_depends_target_geometry: phony || final/build/geometry/CMakeFiles/geometry.dir
+
+build final/build/geometry/CMakeFiles/geometry.dir/sphere_point.cpp.o: CXX_COMPILER__geometry_Debug /home/ortur/CLionProjects/brown_belt_cxx/final/geometry/sphere_point.cpp || cmake_object_order_depends_target_geometry
+  DEP_FILE = final/build/geometry/CMakeFiles/geometry.dir/sphere_point.cpp.o.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs -I/home/ortur/CLionProjects/brown_belt_cxx/final/requests -I/home/ortur/CLionProjects/brown_belt_cxx/final/graphs -I/home/ortur/CLionProjects/brown_belt_cxx/final/transport_directory -I/home/ortur/CLionProjects/brown_belt_cxx/final/parsers
+  OBJECT_DIR = final/build/geometry/CMakeFiles/geometry.dir
+  OBJECT_FILE_DIR = final/build/geometry/CMakeFiles/geometry.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target geometry
+
+
+#############################################
+# Link the static library final/build/geometry/libgeometry.a
+
+build final/build/geometry/libgeometry.a: CXX_STATIC_LIBRARY_LINKER__geometry_Debug final/build/geometry/CMakeFiles/geometry.dir/sphere_point.cpp.o
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = final/build/geometry/CMakeFiles/geometry.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = final/build/geometry/libgeometry.a
+  TARGET_PDB = geometry.a.dbg
 
 # =============================================================================
 # Target aliases.
@@ -2190,7 +2357,19 @@ build concurent_map: phony week3/build/concurent_map/concurent_map
 
 build geo2d: phony week2/build/game_collisions/geo2d/libgeo2d.a
 
+build geometry: phony final/build/geometry/libgeometry.a
+
 build libgeo2d.a: phony week2/build/game_collisions/geo2d/libgeo2d.a
+
+build libgeometry.a: phony final/build/geometry/libgeometry.a
+
+build libparsing_stuff.a: phony final/build/parsers/libparsing_stuff.a
+
+build libtransport_directory.a: phony final/build/transport_directory/libtransport_directory.a
+
+build parsing_stuff: phony final/build/parsers/libparsing_stuff.a
+
+build transport_directory: phony final/build/transport_directory/libtransport_directory.a
 
 # =============================================================================
 # Folder targets.
@@ -2207,7 +2386,28 @@ build all: phony week1/build/all week2/build/all week3/build/all week4/build/all
 #############################################
 # Folder: /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/final/build
 
-build final/build/all: phony final/build/FINAL
+build final/build/all: phony final/build/FINAL final/build/transport_directory/all final/build/parsers/all final/build/geometry/all
+
+# =============================================================================
+
+#############################################
+# Folder: /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/final/build/geometry
+
+build final/build/geometry/all: phony final/build/geometry/libgeometry.a
+
+# =============================================================================
+
+#############################################
+# Folder: /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/final/build/parsers
+
+build final/build/parsers/all: phony final/build/parsers/libparsing_stuff.a
+
+# =============================================================================
+
+#############################################
+# Folder: /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/final/build/transport_directory
+
+build final/build/transport_directory/all: phony final/build/transport_directory/libtransport_directory.a
 
 # =============================================================================
 
@@ -2447,14 +2647,14 @@ build week5/build/budget_proffessional_desktop_version/all: phony week5/build/bu
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../final/CMakeLists.txt ../week1/CMakeLists.txt ../week1/hash_person/CMakeLists.txt ../week1/hash_point/CMakeLists.txt ../week1/hash_table/CMakeLists.txt ../week1/secondary_index/CMakeLists.txt ../week1/set_iterator/CMakeLists.txt ../week2/CMakeLists.txt ../week2/code_refactoring/CMakeLists.txt ../week2/game_collisions/CMakeLists.txt ../week2/game_collisions/geo2d/CMakeLists.txt ../week2/http_request/CMakeLists.txt ../week2/ini_loader/CMakeLists.txt ../week2/json_loader/CMakeLists.txt ../week2/xml_loader/CMakeLists.txt ../week3/CMakeLists.txt ../week3/concurent_map/CMakeLists.txt ../week3/demographical_indicators/CMakeLists.txt ../week3/lazy_value/CMakeLists.txt ../week3/object_pool/CMakeLists.txt ../week3/pipline/CMakeLists.txt ../week3/polynomial/CMakeLists.txt ../week3/synchronized/CMakeLists.txt ../week3/tree/CMakeLists.txt ../week3/zoo/CMakeLists.txt ../week4/CMakeLists.txt ../week4/cache/CMakeLists.txt ../week4/raii_booking/CMakeLists.txt ../week4/textures/CMakeLists.txt ../week4/unique_ptr/CMakeLists.txt ../week5/CMakeLists.txt ../week5/banned_domains/CMakeLists.txt ../week5/budget_home_desktop_version/CMakeLists.txt ../week5/budget_proffessional_desktop_version/CMakeLists.txt /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCInformation.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCXXInformation.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/CMakeGenericSystem.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/CMakeInitializeConfigs.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/CMakeLanguageInformation.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-C.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-CXX.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-C.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.21.1/CMakeCCompiler.cmake CMakeFiles/3.21.1/CMakeCXXCompiler.cmake CMakeFiles/3.21.1/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../final/CMakeLists.txt ../final/geometry/CMakeLists.txt ../final/parsers/CMakeLists.txt ../final/transport_directory/CMakeLists.txt ../week1/CMakeLists.txt ../week1/hash_person/CMakeLists.txt ../week1/hash_point/CMakeLists.txt ../week1/hash_table/CMakeLists.txt ../week1/secondary_index/CMakeLists.txt ../week1/set_iterator/CMakeLists.txt ../week2/CMakeLists.txt ../week2/code_refactoring/CMakeLists.txt ../week2/game_collisions/CMakeLists.txt ../week2/game_collisions/geo2d/CMakeLists.txt ../week2/http_request/CMakeLists.txt ../week2/ini_loader/CMakeLists.txt ../week2/json_loader/CMakeLists.txt ../week2/xml_loader/CMakeLists.txt ../week3/CMakeLists.txt ../week3/concurent_map/CMakeLists.txt ../week3/demographical_indicators/CMakeLists.txt ../week3/lazy_value/CMakeLists.txt ../week3/object_pool/CMakeLists.txt ../week3/pipline/CMakeLists.txt ../week3/polynomial/CMakeLists.txt ../week3/synchronized/CMakeLists.txt ../week3/tree/CMakeLists.txt ../week3/zoo/CMakeLists.txt ../week4/CMakeLists.txt ../week4/cache/CMakeLists.txt ../week4/raii_booking/CMakeLists.txt ../week4/textures/CMakeLists.txt ../week4/unique_ptr/CMakeLists.txt ../week5/CMakeLists.txt ../week5/banned_domains/CMakeLists.txt ../week5/budget_home_desktop_version/CMakeLists.txt ../week5/budget_proffessional_desktop_version/CMakeLists.txt /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCInformation.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCXXInformation.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/CMakeGenericSystem.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/CMakeInitializeConfigs.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/CMakeLanguageInformation.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-C.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-CXX.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-C.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.21.1/CMakeCCompiler.cmake CMakeFiles/3.21.1/CMakeCXXCompiler.cmake CMakeFiles/3.21.1/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt ../final/CMakeLists.txt ../week1/CMakeLists.txt ../week1/hash_person/CMakeLists.txt ../week1/hash_point/CMakeLists.txt ../week1/hash_table/CMakeLists.txt ../week1/secondary_index/CMakeLists.txt ../week1/set_iterator/CMakeLists.txt ../week2/CMakeLists.txt ../week2/code_refactoring/CMakeLists.txt ../week2/game_collisions/CMakeLists.txt ../week2/game_collisions/geo2d/CMakeLists.txt ../week2/http_request/CMakeLists.txt ../week2/ini_loader/CMakeLists.txt ../week2/json_loader/CMakeLists.txt ../week2/xml_loader/CMakeLists.txt ../week3/CMakeLists.txt ../week3/concurent_map/CMakeLists.txt ../week3/demographical_indicators/CMakeLists.txt ../week3/lazy_value/CMakeLists.txt ../week3/object_pool/CMakeLists.txt ../week3/pipline/CMakeLists.txt ../week3/polynomial/CMakeLists.txt ../week3/synchronized/CMakeLists.txt ../week3/tree/CMakeLists.txt ../week3/zoo/CMakeLists.txt ../week4/CMakeLists.txt ../week4/cache/CMakeLists.txt ../week4/raii_booking/CMakeLists.txt ../week4/textures/CMakeLists.txt ../week4/unique_ptr/CMakeLists.txt ../week5/CMakeLists.txt ../week5/banned_domains/CMakeLists.txt ../week5/budget_home_desktop_version/CMakeLists.txt ../week5/budget_proffessional_desktop_version/CMakeLists.txt /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCInformation.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCXXInformation.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/CMakeGenericSystem.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/CMakeInitializeConfigs.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/CMakeLanguageInformation.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-C.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-CXX.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-C.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.21.1/CMakeCCompiler.cmake CMakeFiles/3.21.1/CMakeCXXCompiler.cmake CMakeFiles/3.21.1/CMakeSystem.cmake: phony
+build ../CMakeLists.txt ../final/CMakeLists.txt ../final/geometry/CMakeLists.txt ../final/parsers/CMakeLists.txt ../final/transport_directory/CMakeLists.txt ../week1/CMakeLists.txt ../week1/hash_person/CMakeLists.txt ../week1/hash_point/CMakeLists.txt ../week1/hash_table/CMakeLists.txt ../week1/secondary_index/CMakeLists.txt ../week1/set_iterator/CMakeLists.txt ../week2/CMakeLists.txt ../week2/code_refactoring/CMakeLists.txt ../week2/game_collisions/CMakeLists.txt ../week2/game_collisions/geo2d/CMakeLists.txt ../week2/http_request/CMakeLists.txt ../week2/ini_loader/CMakeLists.txt ../week2/json_loader/CMakeLists.txt ../week2/xml_loader/CMakeLists.txt ../week3/CMakeLists.txt ../week3/concurent_map/CMakeLists.txt ../week3/demographical_indicators/CMakeLists.txt ../week3/lazy_value/CMakeLists.txt ../week3/object_pool/CMakeLists.txt ../week3/pipline/CMakeLists.txt ../week3/polynomial/CMakeLists.txt ../week3/synchronized/CMakeLists.txt ../week3/tree/CMakeLists.txt ../week3/zoo/CMakeLists.txt ../week4/CMakeLists.txt ../week4/cache/CMakeLists.txt ../week4/raii_booking/CMakeLists.txt ../week4/textures/CMakeLists.txt ../week4/unique_ptr/CMakeLists.txt ../week5/CMakeLists.txt ../week5/banned_domains/CMakeLists.txt ../week5/budget_home_desktop_version/CMakeLists.txt ../week5/budget_proffessional_desktop_version/CMakeLists.txt /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCInformation.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCXXInformation.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/CMakeGenericSystem.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/CMakeInitializeConfigs.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/CMakeLanguageInformation.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-C.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-CXX.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-C.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux.cmake /snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.21.1/CMakeCCompiler.cmake CMakeFiles/3.21.1/CMakeCXXCompiler.cmake CMakeFiles/3.21.1/CMakeSystem.cmake: phony
 
 
 #############################################

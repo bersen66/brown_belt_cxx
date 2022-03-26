@@ -97,3 +97,12 @@
 /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/final/build/CMakeFiles/rebuild_cache.dir
 /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/final/build/CMakeFiles/edit_cache.dir
 /home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/final/build/CMakeFiles/FINAL.dir
+/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/final/build/transport_directory/CMakeFiles/rebuild_cache.dir
+/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/final/build/transport_directory/CMakeFiles/edit_cache.dir
+/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/final/build/transport_directory/CMakeFiles/transport_directory.dir
+/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/final/build/parsers/CMakeFiles/rebuild_cache.dir
+/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/final/build/parsers/CMakeFiles/edit_cache.dir
+/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/final/build/parsers/CMakeFiles/parsing_stuff.dir
+/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/final/build/geometry/CMakeFiles/rebuild_cache.dir
+/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/final/build/geometry/CMakeFiles/edit_cache.dir
+/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/final/build/geometry/CMakeFiles/geometry.dir

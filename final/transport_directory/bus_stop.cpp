@@ -18,7 +18,7 @@ BusStop::BusStop(std::string&& name, double latitude, double longitude)
     : SpherePoint(latitude, longitude), name_(std::move(name)) {}
 
 
-std::string BusStop::GetName() const { 
+const std::string& BusStop::GetName() const {
 	return name_;
 }
 
@@ -46,4 +46,10 @@ std::optional<BusStop> ParseBusStop(std::string_view input) {
 std::ostream& operator<<(std::ostream& out, const BusStop& stop) {
     out << stop.GetName() << ": " << stop.GetLatitude() << ", " << stop.GetLongitude();
     return out;
+}
+
+bool operator==(const BusStop& lhs, const BusStop& rhs) {
+    return (lhs.GetName() == rhs.GetName())
+            && (lhs.GetLatitude() == rhs.GetLatitude())
+            && (lhs.GetLongitude() == rhs.GetLongitude());
 }

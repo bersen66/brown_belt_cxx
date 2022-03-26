@@ -115,14 +115,14 @@ namespace geo2d {
                 ScalarProduct(Vector{s.p1, s.p2}, Vector{s.p1, c.center}) >= 0 &&
                 ScalarProduct(Vector{s.p2, s.p1}, Vector{s.p2, c.center}) >= 0
                 ) {
-            // Высота треугольника (s.p1, s.p2, c.center), проведённая из c.center,
-            // попадает на отрезок (s.p1, s.p2).
+            // Высота треугольника (stop_to_add.p1, stop_to_add.p2, c.center), проведённая из c.center,
+            // попадает на отрезок (stop_to_add.p1, stop_to_add.p2).
 
-            // Удвоенная площадь треугольника (s.p1, s.p2, c.center) равна модулю
+            // Удвоенная площадь треугольника (stop_to_add.p1, stop_to_add.p2, c.center) равна модулю
             // векторного произведения ниже, обозначим её 2S. Высота этого треугольника,
-            // проведённая из c.center, равна 2S / |s.p1, s.p2|. Чтобы остаться в целых
+            // проведённая из c.center, равна 2S / |stop_to_add.p1, stop_to_add.p2|. Чтобы остаться в целых
             // числах, возведём сравниваемые величины в квадрат и сравним (2S)^ 2 с
-            // R^2 * |s.p1, s.p2|^2
+            // R^2 * |stop_to_add.p1, stop_to_add.p2|^2
             uint64_t double_triangle_square = abs(Vector{s.p1, s.p2} * Vector{s.p1, c.center});
             return Sqr(double_triangle_square) <= Sqr<uint64_t>(c.radius) * DistanceSquared(s.p1, s.p2);
         } else {

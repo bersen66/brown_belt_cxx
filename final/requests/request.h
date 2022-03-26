@@ -1,13 +1,14 @@
 #ifndef BROWN_BELT_REQUEST_H
 #define BROWN_BELT_REQUEST_H
 
+#include <iostream>
 #include <memory>
 
 #include "bus_stop.h"
 #include "route.h"
 #include "parsing_stuff.h"
-#include "transport_directory.h"
-
+#include "road_map.h"
+#include "route_informator.h"
 
 struct Request;
 
@@ -37,14 +38,14 @@ struct Request {
 struct ModifyRequest : Request {
     using Request::Request;
 
-    virtual void Process(TransportDirectory &directory) const = 0;
+    virtual void Process(RoadMap &directory) const = 0;
 };
 
 template<typename ResultType>
 struct ReadRequest : Request {
     using Request::Request;
 
-    virtual std::optional<ResultType> Process(const TransportDirectory &directory) const = 0;
+    virtual std::optional<ResultType> Process(const RoadMap &directory) const = 0;
 };
 
 
@@ -58,7 +59,7 @@ struct AddBusRequest : ModifyRequest {
         }
     }
 
-    void Process(TransportDirectory &directory) const override {
+    void Process(RoadMap &directory) const override {
         directory.AddRoute(r);
     }
 
@@ -71,41 +72,51 @@ struct AddStopRequest : ModifyRequest {
 
     void ParseFrom(std::string_view input) override {
         auto parsed_stop = ParseBusStop(input);
+        //std::cout << input;
         if (parsed_stop.has_value()) {
-            s = *parsed_stop;
+            stop_to_add = *parsed_stop;
         }
     }
 
-    void Process(TransportDirectory &directory) const override {
-        directory.AddStop(s);
+    void Process(RoadMap &directory) const override {
+        directory.AddStop(stop_to_add);
     }
 
-    BusStop s;
+    BusStop stop_to_add;
+
+//    struct Binding {
+//        double distance;
+//        std::string to;
+//    };
+
 };
 
 
-struct GetBusInfoRequest : ReadRequest<TransportDirectory::BusInfo> {
-    GetBusInfoRequest() : ReadRequest<TransportDirectory::BusInfo>(Type::GET_BUS_INFO) {}
+struct GetBusInfoRequest : ReadRequest<RouteInfo> {
+    GetBusInfoRequest() : ReadRequest<RouteInfo>(Type::GET_BUS_INFO) {}
 
     void ParseFrom(std::string_view input) override {
         bus_name = input;
     }
 
-    std::optional<TransportDirectory::BusInfo> Process(const TransportDirectory &directory) const override {
-        return directory.GetBusInfo(bus_name);
+    std::optional<RouteInfo> Process(const RoadMap &directory) const override {
+        RouteInformator informator(directory);
+        if (directory.HasRoute(bus_name))
+            return informator.AssembleInfo(directory.GetRoute(bus_name));
+        return std::nullopt;
     }
 
     std::string bus_name;
 };
 
-struct GetStopInfoRequest : ReadRequest<TransportDirectory::StopInfo> {
-    GetStopInfoRequest() : ReadRequest<TransportDirectory::StopInfo>(Type::GET_STOP_INFO) {}
+struct GetStopInfoRequest : ReadRequest<RoadMap::StopInfo> {
+    GetStopInfoRequest() : ReadRequest<RoadMap::StopInfo>(Type::GET_STOP_INFO) {}
 
     void ParseFrom(std::string_view input) override {
         stop_name = input;
     }
 
-    std::optional<TransportDirectory::StopInfo> Process(const TransportDirectory &directory) const override {
+    std::optional<RoadMap::StopInfo> Process(const RoadMap &directory) const override {
         return directory.GetStopInfo(stop_name);
     }
 
@@ -208,7 +219,7 @@ std::vector<RequestHolder> ReadRequests(std::istream &in_stream = std::cin, Requ
 }
 
 
-std::vector<std::string> ProcessReadRequests(const std::vector<RequestHolder>& requests, const TransportDirectory& dir) {
+std::vector<std::string> ProcessReadRequests(const std::vector<RequestHolder>& requests, const RoadMap& dir) {
     std::vector<std::string> responses;
 
     for (const auto& request_holder : requests) {
@@ -243,7 +254,7 @@ std::vector<std::string> ProcessReadRequests(const std::vector<RequestHolder>& r
     return responses;
 }
 
-void ProcessModifyRequests(const std::vector<RequestHolder>& requests, TransportDirectory& dir) {
+void ProcessModifyRequests(const std::vector<RequestHolder>& requests, RoadMap& dir) {
 
     for (const auto& request_holder : requests) {
         if (request_holder->type == Request::Type::ADD_ROUTE) {
@@ -254,6 +265,8 @@ void ProcessModifyRequests(const std::vector<RequestHolder>& requests, Transport
             request.Process(dir);
         }
     }
+
+    dir.FinishBuilding();
 
 }
 

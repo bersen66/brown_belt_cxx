@@ -252,6 +252,15 @@ CODE_REFACTORING_IS_TOP_LEVEL:STATIC=OFF
 CODE_REFACTORING_SOURCE_DIR:STATIC=/home/ortur/CLionProjects/brown_belt_cxx/week2/code_refactoring
 
 //Value Computed by CMake
+CONNECTIONS_BINARY_DIR:STATIC=/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/final/build/transport_directory
+
+//Value Computed by CMake
+CONNECTIONS_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+CONNECTIONS_SOURCE_DIR:STATIC=/home/ortur/CLionProjects/brown_belt_cxx/final/transport_directory
+
+//Value Computed by CMake
 DATABASE_BINARY_DIR:STATIC=/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/week1/build/secondary_index
 
 //Value Computed by CMake
@@ -521,6 +530,33 @@ geo2d_IS_TOP_LEVEL:STATIC=OFF
 //Value Computed by CMake
 geo2d_SOURCE_DIR:STATIC=/home/ortur/CLionProjects/brown_belt_cxx/week2/game_collisions/geo2d
 
+//Value Computed by CMake
+geometry_BINARY_DIR:STATIC=/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/final/build/geometry
+
+//Value Computed by CMake
+geometry_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+geometry_SOURCE_DIR:STATIC=/home/ortur/CLionProjects/brown_belt_cxx/final/geometry
+
+//Value Computed by CMake
+parsing_stuff_BINARY_DIR:STATIC=/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/final/build/parsers
+
+//Value Computed by CMake
+parsing_stuff_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+parsing_stuff_SOURCE_DIR:STATIC=/home/ortur/CLionProjects/brown_belt_cxx/final/parsers
+
+//Value Computed by CMake
+transport_directory_BINARY_DIR:STATIC=/home/ortur/CLionProjects/brown_belt_cxx/cmake-build-debug/final/build/transport_directory
+
+//Value Computed by CMake
+transport_directory_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+transport_directory_SOURCE_DIR:STATIC=/home/ortur/CLionProjects/brown_belt_cxx/final/transport_directory
+
 
 ########################
 # INTERNAL cache entries
@@ -622,7 +658,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=35
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=38
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

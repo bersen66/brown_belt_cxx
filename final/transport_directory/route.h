@@ -9,35 +9,9 @@
 #include <vector>
 #include <unordered_map>
 #include <string_view>
-/*
-struct Route {
-    enum class Type {
-        CIRCLE,
-        STRAIGHT
-    };
-
-    const Type type;
-
-    const std::vector<std::string_view> stops;
-};
 
 
-const std::unordered_map<Route::Type, std::string> TYPE_DELIMETER = {
-        {Route::Type::STRAIGHT, " - "},
-        {Route::Type::CIRCLE, " > "},
-};
 
-std::ostream& operator << (std::ostream& stream, const Route& route);
-
-
-class RouteBuilder {
-public:
-    Route Build(std::string_view line) const;
-private:
-    Route::Type IdentifyRouteType(std::string_view input) const;
-};
-
-*/
 
 class Route {
 public:
@@ -51,7 +25,7 @@ public:
     Route(std::string&& name, std::vector<std::string>&& stops, Type type)
         : type(type), stops_(stops), name_(name) {}
 
-    std::string GetName() const {
+    const std::string& GetName() const {
         return name_;
     }
 

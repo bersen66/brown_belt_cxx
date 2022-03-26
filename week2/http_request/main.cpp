@@ -97,7 +97,7 @@ public:
                 os << "HTTP/1.1 200 OK\n" << "Content-Length: " << response.size() << response;
             } else if (req.path == "/captcha") {
                 os << "HTTP/1.1 200 OK\n" << "Content-Length: 80\n" << "\n"
-                   << "What's the answer for The Ultimate Question of Life, the Universe, and Everything?";
+                   << "What'stop_to_add the answer for The Ultimate Question of Life, the Universe, and Everything?";
             } else {
                 os << "HTTP/1.1 404 Not found\n\n";
             }
@@ -213,7 +213,7 @@ void TestServer() {
     Test(
             cs,
             {"GET", "/captcha"},
-            {200, {}, {"What's the answer for The Ultimate Question of Life, the Universe, and Everything?"}}
+            {200, {}, {"What'stop_to_add the answer for The Ultimate Question of Life, the Universe, and Everything?"}}
     );
     Test(cs, {"POST", "/checkcaptcha", "1 24"}, redirect_to_captcha);
     Test(cs, {"POST", "/checkcaptcha", "1 42"}, ok);

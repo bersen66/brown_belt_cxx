@@ -7,6 +7,7 @@
 
 #include <string_view>
 #include <optional>
+#include <tuple>
 
 class SpherePoint {
 public:
@@ -37,4 +38,16 @@ protected:
 std::optional<SpherePoint> ParseSpherePoint(std::string_view input, std::string_view delimeter = ", ");
 
 std::ostream& operator<<(std::ostream& out, const SpherePoint& point);
+
+namespace std {
+    template<>
+    struct hash<SpherePoint> {
+        size_t operator()(const SpherePoint& point) const {
+            size_t base = 37;
+            size_t A = std::hash<double>{}(point.GetLatitude());
+            size_t B = std::hash<double>{}(point.GetLongitude());
+            return base * A + B;
+        }
+    };
+};
 #endif //BROWN_BELT_SPHERE_POINT_H
