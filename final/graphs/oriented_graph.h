@@ -38,7 +38,6 @@ template<typename ValueType>
 using VertexHolder = std::unique_ptr<Vertex<ValueType>>;
 
 
-
 namespace std {
     template<typename ValueType>
     struct hash<Vertex<ValueType>> {
@@ -107,6 +106,28 @@ public:
     EdgeHolder MakeEdge(VertexId from, VertexId to, WeightType weight) const {
         return std::make_unique<Edge>(from, to, weight);
     }
+
+private:
+    struct Binding {
+        VertexId from;
+        VertexId to;
+
+        bool operator==(const Binding& other) const {
+            return std::tie(from, to) == std::tie(other.from, other.to);
+        }
+    };
+
+    struct BindingHasher {
+        size_t operator()(const Binding& binding) const {
+            size_t base = 37;
+            size_t A = std::hash<VertexId>{}(binding.from);
+            size_t B = std::hash<VertexId>{}(binding.to);
+
+            return base * base * A +
+                   base * B;
+        }
+    };
+
 public:
 
     OrientedGraph() {
@@ -134,38 +155,22 @@ public:
 
 
     const EdgeHolder& GetEdge(VertexId from, VertexId to) const {
-        for (auto& edge_id : vertex_connections_.at(from)) {
-            const auto& edge = GetEdge(edge_id);
-            if (edge->to == to) {
-                return edge;
-            }
-        }
-        return (nullptr);
+        auto& edge_id = has_connection_.at(Binding{from, to});
+        auto& edge = GetEdge(edge_id);
+        return edge;
     }
 
     EdgeHolder& GetEdge(VertexId from, VertexId to) {
-        for (auto& edge_id : vertex_connections_.at(from)) {
-            const auto& edge = GetEdge(edge_id);
-            if (edge->to == to) {
-                return edge;
-            }
-        }
-        return nullptr;
+        auto& edge_id = has_connection_.at(Binding{from, to});
+        auto& edge = GetEdge(edge_id);
+        return edge;
     }
 
     std::optional<EdgeId> GetEdgeId(VertexId from, VertexId to) const {
         if (!HasEdge(from, to)) {
             return std::nullopt;
         }
-
-        for (size_t i = 0; i < edges_.size(); i++) {
-            const auto& edge = edges_.at(i);
-            if (edge->from == from && edge->to == to) {
-                return std::make_optional(i);
-            }
-        }
-
-        return std::nullopt;
+        return has_connection_.at(Binding{from, to});
     }
 
 
@@ -179,12 +184,11 @@ public:
 
     }
 
-
     EdgeId Bind(VertexId from, VertexId to, WeightType weight = 0) {
         edges_.push_back(std::move(MakeEdge(from, to, weight)));
         EdgeId id = edges_.size() - 1;
         vertex_connections_[from].insert(id);
-
+        has_connection_[Binding{from, to}] = id;
         return id;
     }
 
@@ -199,13 +203,7 @@ public:
 
     bool HasEdge(VertexId from, VertexId to) const {
         if (HasVertex(from) && HasVertex(to)) {
-            auto connections = vertex_connections_.at(from);
-            for (auto edge_id : connections) {
-                const auto& edge =  GetEdge(edge_id);
-                if (edge->to == to) {
-                    return true;
-                }
-            }
+            return has_connection_.find(Binding{from, to}) != has_connection_.end();
         }
         return false;
     }
@@ -222,6 +220,8 @@ private:
 
 public:
     std::unordered_map<VertexId, std::set<EdgeId>> vertex_connections_;
+    std::unordered_map<Binding, EdgeId, BindingHasher> has_connection_;
+
 
     std::vector<VertexHolder<ValueType>> vertexes_;
     std::vector<EdgeHolder> edges_;

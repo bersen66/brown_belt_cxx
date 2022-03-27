@@ -19,7 +19,6 @@ void RoadMap::AddStop(const BusStop& stop) {
 void RoadMap::AddRoute(const Route& route) {
     InsertRoute(route);
     ConnectStops(route);
-    UpdateStopStatistic(route.GetName());
 }
 
 void RoadMap::ConnectStops(const Route& route) {
@@ -99,7 +98,7 @@ BusStop& RoadMap::GetStop(const std::string& name) {
 void RoadMap::CorrectMapCoordinates(const BusStop& stop) {
     std::string name = stop.GetName();
     auto& stop_to_modify = GetStop(name);
-    if (stop.GetLatitude() != 0.0 && stop.GetLongitude() != 0.0) {
+    if (stop.GetLatitude() != 0.0 || stop.GetLongitude() != 0.0) {
         stop_to_modify.SetLatitude(stop.GetLatitude());
         stop_to_modify.SetLongitude(stop.GetLongitude());
     }
@@ -128,7 +127,7 @@ const Route &RoadMap::GetRoute(const std::string &name) const {
 }
 
 double RoadMap::GetDirectRoadLength(const std::string &from, const std::string &to) const {
-    if (HasStop(from) && HasStop(to)) {
+    if (HasStop(from) && HasStop(to) && map_.HasEdge(GetStopId(from), GetStopId(to))) {
         auto from_id = GetStopId(from);
         auto to_id = GetStopId(to);
 
@@ -142,11 +141,22 @@ void RoadMap::FinishBuilding(){
         const auto& stop = map_.GetVertex(id);
         CorrectDistancesToConnectedVertexes(stop->GetValue());
     }
+
+    for (auto& [route_name, route] : routes_) {
+        auto info = AssembleRouteInfo(route);
+        if (info.has_value()) {
+            route_info_[route_name] = info.value();
+        }
+
+
+        UpdateStopStatistic(route_name);
+    }
+
 }
 
 double RoadMap::GetGeographicalDistance(const std::string& from, const std::string& to) const {
     if (HasStop(from) && HasStop(to)) {
-//
+
         auto &fpoint = GetStop(from);
         auto &tpoint = GetStop(to);
 
@@ -156,7 +166,7 @@ double RoadMap::GetGeographicalDistance(const std::string& from, const std::stri
 }
 
 bool RoadMap::AlreadyBinded(const std::string& from, const std::string& to) const {
-    return AlreadyBinded(BusStop(from), BusStop(to));
+    return HasStop(from) && HasStop(to) && AlreadyBinded(BusStop(from), BusStop(to));
 }
 
 void RoadMap::SetDirectRoadDistance(const std::string& from, const std::string& to, LengthType len) {
@@ -167,14 +177,15 @@ void RoadMap::SetDirectRoadDistance(const std::string& from, const std::string& 
         auto from_id = GetStopId(from);
         auto to_id = GetStopId(to);
 
-        auto &fpoint = GetStop(from);
-        auto &tpoint = GetStop(to);
-
-
         auto edge_id = map_.GetEdgeId(from_id, to_id);
         if (edge_id.has_value()) {
             map_.SetWeight(edge_id.value(), len);
         }
+
+        if (!map_.HasEdge(to_id, from_id)) {
+            Bind(to, from, len);
+        }
+
     }
 }
 
@@ -195,5 +206,107 @@ void RoadMap::UpdateStopStatistic(const std::string& route_name) {
 
     for (int i = 0; i < route_stations.size() - IsCircular; i++) {
         stops_statistic_[GetStopId(route_stations [i])].AddBusNameToUsedSet(route_name);
+    }
+}
+
+const std::unordered_map<std::string, Route>& RoadMap::GetRoutes() const {
+    return routes_;
+}
+
+
+
+std::optional<RoadMap::RouteInfo> RoadMap::AssembleRouteInfo(const Route& route) const {
+
+    if (!HasRoute(route.GetName())) {
+        return std::nullopt;
+    }
+
+    RouteInfo result;
+
+    result.stations_num = ComputeStopsNum(route);
+    result.unique_stops = ComputeUniqueStops(route);
+
+
+    //std::future<double> f_dist =
+    result.distance = ComputeRealDistance(route);
+    result.curvature = (result.distance / ComputeGeographicalDistance(route));
+
+    return std::make_optional<RouteInfo>(result);
+
+}
+
+size_t RoadMap::ComputeStopsNum(const Route &route) const {
+    if (route.GetType() == Route::Type::STRAIGHT)
+        return 2*route.GetNumberOfStations() - 1;
+    else
+        return route.GetNumberOfStations();
+}
+
+size_t RoadMap::ComputeUniqueStops(const Route &route) const {
+    std::unordered_set<std::string> unique;
+
+    for (auto& station : route.GetStations()) {
+        unique.insert(station);
+    }
+
+    return unique.size();
+}
+
+double RoadMap::ComputeGeographicalDistance(const Route &route) const {
+    const auto& stations = route.GetStations();
+
+    double result = 0.0;
+    for (int i = 0; i < stations.size() - 1; i++) {
+        result += GetGeographicalDistance(stations[i], stations[i + 1]);
+    }
+
+    if (route.GetType() == Route::Type::STRAIGHT) {
+        result *= 2;
+    }
+
+    return result;
+}
+
+double RoadMap::ComputeRealDistance(const Route &route) const {
+    const auto& stations = route.GetStations();
+
+    double result = 0.0;
+
+
+
+
+
+    for (int i = 0; i < stations.size() - 1; i++) {
+
+        double dist = GetDirectRoadLength(stations[i], stations[i + 1]);
+        if (dist == 0) {
+            result += GetGeographicalDistance(stations[i], stations[i+1]);
+        } else {
+            result += dist;
+        }
+    }
+
+
+    if (route.GetType() == Route::Type::STRAIGHT) {
+        for (int i = stations.size() - 1; i >= 1; i--) {
+
+            double dist = GetDirectRoadLength(stations[i], stations[i - 1]);
+            if (dist == 0) {
+                result += GetGeographicalDistance(stations[i], stations[i-1]);
+            } else {
+                result += dist;
+            }
+        }
+    }
+
+
+    return result;
+}
+
+std::optional<RoadMap::RouteInfo> RoadMap::GetRouteInfo(const std::string &route_name) const {
+    if (!HasRoute(route_name)) {
+        return std::nullopt;
+    } else {
+        return route_info_.at(route_name);
     }
 }

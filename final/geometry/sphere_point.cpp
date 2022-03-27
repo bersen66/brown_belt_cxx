@@ -50,16 +50,21 @@ double SpherePoint::DistanceTo(const SpherePoint &other) const {
 }
 
 std::optional<SpherePoint> ParseSpherePoint(std::string_view input, std::string_view delimeter) {
-    auto [latitude, longitude] = SplitTwoStrict(input, delimeter);
+//    auto [latitude, longitude] = SplitTwoStrict(input, delimeter);
+//
+//    if (longitude.has_value()) {
+//        return std::make_optional<SpherePoint>(
+//                ConvertToDouble(latitude),
+//                ConvertToDouble(longitude.value())
+//        );
+//    }
+    auto lat = ReadToken(input, ", ");
+    auto lon = ReadToken(input, ", ");
+    return std::make_optional<SpherePoint>(
+            ConvertToDouble(std::string(lat)),
+            ConvertToDouble(std::string(lon))
+            );
 
-    if (longitude.has_value()) {
-        return std::make_optional<SpherePoint>(
-                ConvertToDouble(latitude),
-                ConvertToDouble(longitude.value())
-        );
-    }
-
-    return std::nullopt;
 }
 
 std::ostream &operator<<(std::ostream &out, const SpherePoint &point) {

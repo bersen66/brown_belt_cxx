@@ -8,7 +8,7 @@
 #include "route.h"
 #include "parsing_stuff.h"
 #include "road_map.h"
-#include "route_informator.h"
+
 
 struct Request;
 
@@ -71,39 +71,80 @@ struct AddStopRequest : ModifyRequest {
     AddStopRequest() : ModifyRequest(Type::ADD_STOP) {}
 
     void ParseFrom(std::string_view input) override {
-        auto parsed_stop = ParseBusStop(input);
-        //std::cout << input;
-        if (parsed_stop.has_value()) {
-            stop_to_add = *parsed_stop;
-        }
+        std::string bus_name(ReadToken(input, ": "));
+        double latitude = ConvertToDouble(std::string(ReadToken(input, ", ")));
+        double longitude = ConvertToDouble(std::string(ReadToken(input, ", ")));
+
+        stop_to_add = BusStop(bus_name, latitude, longitude);
+
+        if (!input.empty())
+            bindings_ = ParseBindings(input);
     }
 
     void Process(RoadMap &directory) const override {
         directory.AddStop(stop_to_add);
+        for (auto& [from, to, dist] : bindings_) {
+           directory.SetDirectRoadDistance(from, to, dist);
+        }
+
     }
 
-    BusStop stop_to_add;
+private:
+    struct Binding {
+        std::string from;
+        std::string to;
+        double distance;
 
-//    struct Binding {
-//        double distance;
-//        std::string to;
-//    };
+        Binding Swap() const {
+            return Binding{to, from, distance};
+        }
+
+        bool operator==(const Binding& other) const {
+            return std::tie(from, to) == std::tie(other.from, other.to);
+        }
+    };
+
+    struct BindingHasher {
+        size_t operator()(const Binding& binding) const {
+            size_t base = 37;
+            size_t A = std::hash<std::string>{}(binding.from);
+            size_t B = std::hash<std::string>{}(binding.to);
+
+            return base * base * base * A +
+                   base * base * B;
+        }
+    };
+
+
+    std::vector<Binding> ParseBindings(std::string_view input) {
+        std::vector<Binding> bindings;
+        bindings.reserve(100);
+        do {
+            double dist = ConvertToDouble(ReadToken(input, "m to "));
+            auto bind = Binding{stop_to_add.GetName(),std::move(std::string(ReadToken(input, ", "))), dist};
+            bindings.push_back(std::move(bind));
+        } while (!input.empty());
+
+        return bindings;
+}
+
+public:
+    using RoadId = double;
+    BusStop stop_to_add;
+    std::vector<Binding> bindings_;
 
 };
 
 
-struct GetBusInfoRequest : ReadRequest<RouteInfo> {
-    GetBusInfoRequest() : ReadRequest<RouteInfo>(Type::GET_BUS_INFO) {}
+struct GetBusInfoRequest : ReadRequest<RoadMap::RouteInfo> {
+    GetBusInfoRequest() : ReadRequest<RoadMap::RouteInfo>(Type::GET_BUS_INFO) {}
 
     void ParseFrom(std::string_view input) override {
         bus_name = input;
     }
 
-    std::optional<RouteInfo> Process(const RoadMap &directory) const override {
-        RouteInformator informator(directory);
-        if (directory.HasRoute(bus_name))
-            return informator.AssembleInfo(directory.GetRoute(bus_name));
-        return std::nullopt;
+    std::optional<RoadMap::RouteInfo> Process(const RoadMap &directory) const override {
+        return directory.GetRouteInfo(bus_name);
     }
 
     std::string bus_name;
@@ -219,7 +260,7 @@ std::vector<RequestHolder> ReadRequests(std::istream &in_stream = std::cin, Requ
 }
 
 
-std::vector<std::string> ProcessReadRequests(const std::vector<RequestHolder>& requests, const RoadMap& dir) {
+std::vector<std::string> ProcessReadRequests(std::vector<RequestHolder>&& requests, const RoadMap& dir) {
     std::vector<std::string> responses;
 
     for (const auto& request_holder : requests) {
@@ -254,7 +295,7 @@ std::vector<std::string> ProcessReadRequests(const std::vector<RequestHolder>& r
     return responses;
 }
 
-void ProcessModifyRequests(const std::vector<RequestHolder>& requests, RoadMap& dir) {
+void ProcessModifyRequests(std::vector<RequestHolder>&& requests, RoadMap& dir) {
 
     for (const auto& request_holder : requests) {
         if (request_holder->type == Request::Type::ADD_ROUTE) {
@@ -270,7 +311,7 @@ void ProcessModifyRequests(const std::vector<RequestHolder>& requests, RoadMap& 
 
 }
 
-void PrintResponses(const std::vector<std::string>& responses, std::ostream& stream = std::cout) {
+void PrintResponses(std::vector<std::string>&& responses, std::ostream& stream = std::cout) {
     for (const auto& response : responses) {
         stream << response << std::endl;
     }

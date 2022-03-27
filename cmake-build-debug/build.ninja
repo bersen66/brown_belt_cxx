@@ -2146,13 +2146,6 @@ build final/build/transport_directory/CMakeFiles/transport_directory.dir/route.c
   OBJECT_DIR = final/build/transport_directory/CMakeFiles/transport_directory.dir
   OBJECT_FILE_DIR = final/build/transport_directory/CMakeFiles/transport_directory.dir
 
-build final/build/transport_directory/CMakeFiles/transport_directory.dir/route_informator.cpp.o: CXX_COMPILER__transport_directory_Debug /home/ortur/CLionProjects/brown_belt_cxx/final/transport_directory/route_informator.cpp || cmake_object_order_depends_target_transport_directory
-  DEP_FILE = final/build/transport_directory/CMakeFiles/transport_directory.dir/route_informator.cpp.o.d
-  FLAGS = -g -std=gnu++17
-  INCLUDES = -I/home/ortur/CLionProjects/brown_belt_cxx/libs -I/home/ortur/CLionProjects/brown_belt_cxx/final/requests -I/home/ortur/CLionProjects/brown_belt_cxx/final/graphs -I/home/ortur/CLionProjects/brown_belt_cxx/final/transport_directory/../parsers -I/home/ortur/CLionProjects/brown_belt_cxx/final/transport_directory/../geometry
-  OBJECT_DIR = final/build/transport_directory/CMakeFiles/transport_directory.dir
-  OBJECT_FILE_DIR = final/build/transport_directory/CMakeFiles/transport_directory.dir
-
 build final/build/transport_directory/CMakeFiles/transport_directory.dir/bus_stop.cpp.o: CXX_COMPILER__transport_directory_Debug /home/ortur/CLionProjects/brown_belt_cxx/final/transport_directory/bus_stop.cpp || cmake_object_order_depends_target_transport_directory
   DEP_FILE = final/build/transport_directory/CMakeFiles/transport_directory.dir/bus_stop.cpp.o.d
   FLAGS = -g -std=gnu++17
@@ -2168,7 +2161,7 @@ build final/build/transport_directory/CMakeFiles/transport_directory.dir/bus_sto
 #############################################
 # Link the static library final/build/transport_directory/libtransport_directory.a
 
-build final/build/transport_directory/libtransport_directory.a: CXX_STATIC_LIBRARY_LINKER__transport_directory_Debug final/build/transport_directory/CMakeFiles/transport_directory.dir/road_map.cpp.o final/build/transport_directory/CMakeFiles/transport_directory.dir/route.cpp.o final/build/transport_directory/CMakeFiles/transport_directory.dir/route_informator.cpp.o final/build/transport_directory/CMakeFiles/transport_directory.dir/bus_stop.cpp.o || final/build/geometry/libgeometry.a final/build/parsers/libparsing_stuff.a
+build final/build/transport_directory/libtransport_directory.a: CXX_STATIC_LIBRARY_LINKER__transport_directory_Debug final/build/transport_directory/CMakeFiles/transport_directory.dir/road_map.cpp.o final/build/transport_directory/CMakeFiles/transport_directory.dir/route.cpp.o final/build/transport_directory/CMakeFiles/transport_directory.dir/bus_stop.cpp.o || final/build/geometry/libgeometry.a final/build/parsers/libparsing_stuff.a
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = final/build/transport_directory/CMakeFiles/transport_directory.dir
   POST_BUILD = :

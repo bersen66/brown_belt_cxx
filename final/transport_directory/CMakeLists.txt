@@ -11,7 +11,7 @@ set(
         bus_stop.h
         road_map.cpp
         route.cpp
-        route_informator.cpp
+        #route_informator.cpp
 )
 
 set(
@@ -19,7 +19,7 @@ set(
         bus_stop.cpp
         road_map.h
         route.h
-        route_informator.h
+        #route_informator.h
 )
 
 

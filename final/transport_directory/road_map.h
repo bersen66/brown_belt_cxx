@@ -6,6 +6,8 @@
 #include "oriented_graph.h"
 #include "bus_stop.h"
 #include "route.h"
+#include <iomanip>
+
 
 
 class RoadMap {
@@ -34,9 +36,42 @@ public:
             return out.str();
         }
     };
+
     std::optional<StopInfo> GetStopInfo(const std::string& stop_name) const;
 
 public:
+    struct RouteInfo {
+        size_t stations_num;
+        size_t unique_stops;
+        double distance;
+        double curvature;
+
+        std::string ToString() const {
+            std::stringstream  out;
+            out << stations_num << " stops on route, "
+                << unique_stops << " unique stops, "
+                << std::fixed << std::setprecision(9) << distance << " route length, "
+                << std::fixed << std::setprecision(9) << curvature << " curvature";
+            return out.str();
+        }
+    };
+
+    std::optional<RouteInfo> GetRouteInfo(const std::string& route_name) const;
+
+private:
+    std::optional<RouteInfo> AssembleRouteInfo(const Route& route) const;
+
+    size_t ComputeStopsNum(const Route &route) const;
+
+    size_t ComputeUniqueStops(const Route &route) const;
+
+    double ComputeGeographicalDistance(const Route &route) const;
+
+    double ComputeRealDistance(const Route& route) const;
+
+
+public:
+
     RoadMap() = default;
     RoadMap(const RoadMap&) = delete;
     const RoadMap& operator=(const RoadMap&) const = delete;
@@ -60,11 +95,13 @@ public:
     BusStop& GetStop(const std::string& name);
     const Route& GetRoute(const std::string& name) const;
 
-
     void Bind(const BusStop& from, const BusStop& to, LengthType weight = 0);
     void FinishBuilding();
 
+    const std::unordered_map<std::string, Route>& GetRoutes() const;
+
 private:
+
     void CorrectDistancesToConnectedVertexes(const BusStop& stop);
     StopId GetStopId(const std::string& name) const;
     void InsertStop(const BusStop& stop);
@@ -73,13 +110,14 @@ private:
     void ConnectStops(const Route& route);
     void UpdateStopStatistic(const std::string& route_name);
 
-public:
+private:
     OrientedGraph<BusStop, double> map_;
-    //std::unordered_map<std::pair<StopId, StopId>, RoadId> roads_;
+
     std::unordered_map<std::string, StopId> stops_;
     std::unordered_map<StopId, std::string> stop_id_to_name_;
-    std::unordered_map<StopId, StopInfo> stops_statistic_;
     std::unordered_map<std::string, Route> routes_;
+    std::unordered_map<StopId, StopInfo> stops_statistic_;
+    std::unordered_map<std::string, RouteInfo> route_info_;
 };
 
 

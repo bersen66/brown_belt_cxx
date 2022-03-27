@@ -27,20 +27,10 @@ void BusStop::SetName(std::string_view name) {
 } 
 
 std::optional<BusStop> ParseBusStop(std::string_view input) {
-	auto [name, location_info] = SplitTwoStrict(input, ": ");
-	if (location_info.has_value()) {
-		auto location = ParseSpherePoint(*location_info);
-        if (location.has_value()) {
-            return std::make_optional<BusStop>(std::move(std::string(name)),
-                                               location->GetLatitude(),
-                                               location->GetLongitude()
-            );
-        } else {
-            return std::nullopt;
-        }
-	}
-
-    return std::nullopt;
+    std::string name(ReadToken(input, ": "));
+    double latitude = ConvertToDouble(ReadToken(input, ", "));
+    double longitude = ConvertToDouble(ReadToken(input, ", "));
+    return std::make_optional<BusStop>(name, latitude, longitude);
 }
 
 std::ostream& operator<<(std::ostream& out, const BusStop& stop) {
