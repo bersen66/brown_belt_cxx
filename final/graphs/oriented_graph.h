@@ -86,7 +86,6 @@ bool operator==(const VertexHolder<ValueType>& lhs, const VertexHolder<ValueType
 template<typename ValueType, typename WeightType>
 class OrientedGraph {
 public:
-public:
     using VertexId = size_t;
     using EdgeId = size_t;
 
@@ -217,8 +216,6 @@ public:
     }
 
 private:
-
-public:
     std::unordered_map<VertexId, std::set<EdgeId>> vertex_connections_;
     std::unordered_map<Binding, EdgeId, BindingHasher> has_connection_;
 
